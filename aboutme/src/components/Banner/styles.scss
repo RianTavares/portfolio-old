@@ -1,17 +1,21 @@
-.banner {
-    width: 100vw;
-    height: 220px;
-    background-image: url($BANNER_TOP);
-    background-size: cover;
-    background-repeat: no-repeat;
+header {
+    position: relative;
 
-    @media #{$BREAKPOINT-TABLET} {
-        height: 380px;
-    }
+    .banner {
+        width: 100vw;
+        height: 220px;
+        background-image: url($BANNER_TOP);
+        background-size: cover;
+        background-repeat: no-repeat;
 
-    @media #{$BREAKPOINT-TABLET-LAND} {
-        background-image: url($BANNER_TOP_DESK);
-        height: 580px;
+        @media #{$BREAKPOINT-TABLET} {
+            height: 380px;
+        }
+
+        @media #{$BREAKPOINT-TABLET-LAND} {
+            background-image: url($BANNER_TOP_DESK);
+            height: 580px;
+        }
+        
     }
-    
 }
