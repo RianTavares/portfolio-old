@@ -5,6 +5,11 @@ footer {
     height: 100px;
     background-color: $FOOTER;
 
+    @media #{$BREAKPOINT-TABLET} {
+        position: absolute;
+        bottom: 0;
+    }
+
     .social {
         width: 220px;
         margin-top: 25px;

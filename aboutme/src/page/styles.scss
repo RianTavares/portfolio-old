@@ -1,4 +1,7 @@
 .App{
+    position: relative;
+    min-height: 100vh;
+    
     &__header {
         position: relative;
 
@@ -43,6 +46,7 @@
             @media #{$BREAKPOINT-TABLET} {
                 margin-top: 30px;
                 position: relative;
+                padding-bottom: 160px;
             }
             
             &__title {
@@ -99,7 +103,7 @@
                     padding-left: 220px;
                     margin-top: 0;
                     position: absolute;
-                    bottom: 0;
+                    top: 190px;
                 }
     
                 a {

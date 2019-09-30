@@ -8,6 +8,10 @@ header {
         left: 10px;
         bottom: 18%;
         font-family: 'Ubuntu-Mono-Regular';
+
+        @media #{$BREAKPOINT-TABLET} {
+            bottom: 15%;
+        }
     }
 
     .banner {
