@@ -1,6 +1,12 @@
 .page-content{
     width: calc(100% - 20px);
     margin: 0 auto;
+
+    @media #{$BREAKPOINT-TABLET} {
+      max-width: 1000px;
+      width: calc(100% - 30px);
+      margin: 0 auto;
+  }
 }
 
 body {

@@ -31,10 +31,12 @@ function App() {
       <section className="page-content">
         <section className="section">
           <h1 className="section__title">{l[selectedLenguage].section1.title}</h1>
-          <div className="section__img">
-            <img src={eu} />
+          <div className="section__desk">
+            <div className="section__desk__img">
+              <img src={eu} />
+            </div>
+            <div className="section__desk__text">{l[selectedLenguage].section1.aboutme}</div>
           </div>
-          <div className="section__text">{l[selectedLenguage].section1.aboutme}</div>
           <div className="social">
             <a href="https://twitter.com/rian_tavares" target="_blank" rel="noopener noreferrer" alt="Twitter Rian Tavares">
               <FontAwesomeIcon icon={faTwitter} size="2x" />
