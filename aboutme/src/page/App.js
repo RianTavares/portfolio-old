@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import BannerTop from '../components/Banner';
 import l from '../components/LenguageSwitcher/lenguage';
 import eu from '../assets/imgs/rian-tavares.png';
@@ -11,6 +11,11 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 function App() {
 
   const [selectedLenguage, setLenguage] = useState(0);
+
+  // useEffect(()=>{
+  //   const jobClass = document.querySelector('.job');
+  //   jobClass.classList.add('fade-in');
+  // })
 
   return (
     <div className="App">

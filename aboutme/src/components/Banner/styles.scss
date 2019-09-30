@@ -1,6 +1,15 @@
 header {
     position: relative;
 
+    .job {
+        position: absolute;
+        color: #DFDFDF;
+        font-size: 4.5vw;
+        left: 10px;
+        bottom: 18%;
+        font-family: 'Ubuntu-Mono-Regular';
+    }
+
     .banner {
         width: 100vw;
         height: 220px;

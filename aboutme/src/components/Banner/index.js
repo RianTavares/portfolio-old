@@ -7,6 +7,7 @@ const Banner = () => {
             <header>
 
                 <TypedJs />
+                <div className="job fade-in">Web Developer</div>
                 <div className="banner">
 
                 </div>

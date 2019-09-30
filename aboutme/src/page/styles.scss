@@ -10,6 +10,11 @@
 
     &__img {
         width: 250px;
+
+        img {
+            width: 100%;
+            margin-left: 10px;
+        }
     }
 
     &__text {

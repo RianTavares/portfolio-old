@@ -7,7 +7,7 @@ const TypedJs = () => {
             <Typed
                 strings={[
                     '$ Rian Tavares/ ']}
-                typeSpeed={40}
+                typeSpeed={30}
             />
         </div>
     );
