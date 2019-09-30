@@ -1,13 +1,18 @@
+.page-content{
+    width: calc(100% - 20px);
+    margin: 0 auto;
+}
+
 body {
     margin: 0px;
 }
 
 #root {
     background-color: $BACKGROUND;
-    height: 100vh;
-    widows: 100vw;
 }
 
 h1 {
-    margin: 0px;
+    font-family: 'Ubuntu-Mono-Bold';
+    font-size: 25px;
+    margin: 60px 0 30px 0;
 }

@@ -1,0 +1,33 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        color: $WHITE_THEME;
+        margin-bottom: 10px;
+    }
+
+    &__img {
+        width: 250px;
+    }
+
+    &__text {
+        font-family: 'Ubuntu-Mono-Regular';
+        color: $WHITE_THEME;
+        margin-top: 30px;
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .social {
+        width: 60vw;
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            color: $BASE_GREEN;
+        }
+    }
+}

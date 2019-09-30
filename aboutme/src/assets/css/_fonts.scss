@@ -9,3 +9,31 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Ubuntu-Mono-Regular';
+    src: url('../fonts/UbuntuMono-Regular.eot');
+    src: url('../fonts/UbuntuMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UbuntuMono-Regular.woff2') format('woff2'),
+        url('../fonts/UbuntuMono-Regular.woff') format('woff'),
+        url('../fonts/UbuntuMono-Regular.ttf') format('truetype'),
+        url('../fonts/UbuntuMono-Regular.svg#UbuntuMono-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Mono-Bold';
+    src: url('../fonts/UbuntuMono-Bold.eot');
+    src: url('../fonts/UbuntuMono-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UbuntuMono-Bold.woff2') format('woff2'),
+        url('../fonts/UbuntuMono-Bold.woff') format('woff'),
+        url('../fonts/UbuntuMono-Bold.ttf') format('truetype'),
+        url('../fonts/UbuntuMono-Bold.svg#UbuntuMono-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+
