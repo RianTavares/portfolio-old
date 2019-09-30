@@ -1,38 +1,78 @@
-.section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.App{
+    &__header {
+        position: relative;
 
-    h1 {
-        color: $WHITE_THEME;
-        margin-bottom: 10px;
-    }
+        &__lenguage {
+            position: absolute;
+            z-index: 1;
+            right: 10px;
+            width: 100px;
+            display: flex;
+            justify-content: space-between;
 
-    &__img {
-        width: 250px;
+            * {
+                margin-top: 15px;
+                width: 32px;
+                height: 19px;
+                background: transparent;
+                border: 0;    
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
 
-        img {
-            width: 100%;
-            margin-left: 10px;
+            #brazil {
+                background-image: url($BRAZIL);
+            }
+
+            #england {
+                background-image: url($ENGLAND);
+            }
+
+            #germany {
+                background-image: url($GERMANY);
+            }
         }
     }
 
-    &__text {
-        font-family: 'Ubuntu-Mono-Regular';
-        color: $WHITE_THEME;
-        margin-top: 30px;
-        font-size: 16px;
-        text-align: justify;
-    }
-
-    .social {
-        width: 60vw;
-        margin-top: 25px;
-        display: flex;
-        justify-content: space-between;
-
-        a {
-            color: $BASE_GREEN;
+    .page-content {
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            h1 {
+                color: $WHITE_THEME;
+                margin-bottom: 10px;
+            }
+    
+            &__img {
+                width: 250px;
+    
+                img {
+                    width: 100%;
+                    margin-left: 10px;
+                }
+            }
+    
+            &__text {
+                font-family: 'Ubuntu-Mono-Regular';
+                color: $WHITE_THEME;
+                margin-top: 30px;
+                font-size: 16px;
+                text-align: justify;
+            }
+    
+            .social {
+                width: 60vw;
+                margin-top: 25px;
+                display: flex;
+                justify-content: space-between;
+    
+                a {
+                    color: $BASE_GREEN;
+                }
+            }
         }
     }
 }
+

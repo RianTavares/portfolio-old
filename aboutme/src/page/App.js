@@ -19,12 +19,15 @@ function App() {
 
   return (
     <div className="App">
-      <BannerTop />
+      <section className="App__header">
+        <div className="App__header__lenguage">
+          <button id="brazil" onClick={() => { setLenguage(0); localStorage.setItem('lenguage_rt', 0)}}></button>
+          <button id="england" onClick={() => { setLenguage(1); localStorage.setItem('lenguage_rt', 1)}}></button>
+          <button id="germany" onClick={() => { setLenguage(2); localStorage.setItem('lenguage_rt', 2)}}></button>
+        </div>
+        <BannerTop />
+      </section>
       <section className="page-content">
-        <button onClick={() => { setLenguage(0); localStorage.setItem('lenguage_rt', 0)}}>PORTUGUÊS</button>
-        <button onClick={() => { setLenguage(1); localStorage.setItem('lenguage_rt', 1)}}>INGLÊS</button>
-        <button onClick={() => { setLenguage(2); localStorage.setItem('lenguage_rt', 2)}}>ALEMÃO</button>
-        
         <section className="section">
           <h1 className="section__title">{l[selectedLenguage].section1.title}</h1>
           <div className="section__img">
