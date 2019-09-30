@@ -12,18 +12,18 @@ function App() {
 
   const [selectedLenguage, setLenguage] = useState(0);
 
-  // useEffect(()=>{
-  //   const jobClass = document.querySelector('.job');
-  //   jobClass.classList.add('fade-in');
-  // })
+  useEffect(()=>{
+    const localStorageVar = localStorage.getItem('lenguage_rt') ? localStorage.getItem('lenguage_rt') : 0;
+    setLenguage(localStorageVar);
+  })
 
   return (
     <div className="App">
       <BannerTop />
       <section className="page-content">
-        {/* <button onClick={() => setLenguage(0)}>PORTUGUÊS</button>
-        <button onClick={() => setLenguage(1)}>INGLÊS</button>
-        <button onClick={() => setLenguage(2)}>ALEMÃO</button> */}
+        <button onClick={() => { setLenguage(0); localStorage.setItem('lenguage_rt', 0)}}>PORTUGUÊS</button>
+        <button onClick={() => { setLenguage(1); localStorage.setItem('lenguage_rt', 1)}}>INGLÊS</button>
+        <button onClick={() => { setLenguage(2); localStorage.setItem('lenguage_rt', 2)}}>ALEMÃO</button>
         
         <section className="section">
           <h1 className="section__title">{l[selectedLenguage].section1.title}</h1>
