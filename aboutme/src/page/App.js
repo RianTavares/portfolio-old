@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import BannerTop from '../components/Banner';
+import Footer from '../components/Footer';
 import l from '../components/LenguageSwitcher/lenguage';
 import eu from '../assets/imgs/rian-tavares.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -49,9 +50,8 @@ function App() {
             </a>
           </div>
         </section>
-        
-
       </section>
+      <Footer />
     </div>
   );
 }

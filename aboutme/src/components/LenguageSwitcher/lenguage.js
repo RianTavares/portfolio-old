@@ -140,7 +140,7 @@ const language = [
             "title": "PORTFOLIO"
         },
         "footer": {
-            "textStart": "Desenvolvido com",
+            "textStart": "Entwicklung",
             "textEnd": "por mim"
         }
                

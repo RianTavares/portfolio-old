@@ -1,0 +1,36 @@
+footer {
+    position: relative;
+    margin-top: 100px;
+    width: 100vw;
+    height: 100px;
+    background-color: $FOOTER;
+
+    .social {
+        width: 60vw;
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px auto 0 auto;
+        padding: 20px 0 0 0;
+
+        a {
+            color: #64C8B2;
+        }
+
+        &__copyright {
+            position: absolute;
+            bottom: 5px;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            font-family: 'Ubuntu-Mono-Regular';
+            font-size: 14px;
+
+            svg {
+                color: $DETAILS_GREEN;
+            }
+        }
+    }
+}
