@@ -108,8 +108,35 @@
             text-align: center;
         }
 
+        .sec-jobs {
+            &__content {
+                width: 100%;
+                position: relative;
+                height: 800px;
+
+                &__bg {
+                    position: absolute;
+                    background-color: $WHITE_THEME;
+                    width: 100vw;
+                    height: 100%;
+                    left: -10px;
+
+                    &__itens {
+                        width: calc(100% - 20px);
+                        margin: 0 auto;
+                        position: relative;
+                    }
+                }
+            }
+        }
+
         .title-posts {
             width: 100%;
+        }
+
+        .title-green {
+            color: $DETAILS_GREEN;
+            text-align: center;
         }
 
         .last {

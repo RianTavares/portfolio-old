@@ -31,7 +31,23 @@ const language = [
             }
         },
         "section3": {
-            "title": "EXPERIÊNCIA"
+            "title": "EXPERIÊNCIA",
+            "job1": {
+                "photo":"",
+                "details":"Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis."
+            },
+            "job2": {
+                "photo":"",
+                "details":"Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis."
+            },
+            "job3": {
+                "photo":"",
+                "details":"Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis."
+            },
+            "job4": {
+                "photo":"",
+                "details":"Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis."
+            }
         },
         "section4": {
             "title": "EDUCAÇÃO"

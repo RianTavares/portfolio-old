@@ -3,10 +3,11 @@ import BannerTop from '../components/Banner';
 import Footer from '../components/Footer';
 import Social from '../components/Social';
 import Posts from '../components/Posts';
+import Jobs from '../components/Jobs';
 import PostImg1 from '../assets/imgs/rm-mini.jpg'
 import l from '../components/LenguageSwitcher/lenguage';
 import eu from '../assets/imgs/rian-tavares.png';
-
+import edglobo from '../assets/imgs/globo.png';
 
 function App() {
 
@@ -38,7 +39,7 @@ function App() {
           </div>
           <Social />
         </section>
-        <section className="section sec-posts last"> 
+        <section className="section sec-posts"> 
           <h1 className="section__title title-posts">{l[selectedLenguage].section2.title}</h1>
           <Posts 
             img={PostImg1} 
@@ -64,6 +65,31 @@ function App() {
             pbutton={l[selectedLenguage].section2.button}
             purl={l[selectedLenguage].section2.pub1.url}
           />
+        </section>
+        <section className="section sec-jobs last">
+          <div className="sec-jobs__content">
+            <div className="sec-jobs__content__bg">
+              <h1 className="section__title title-green">{l[selectedLenguage].section3.title}</h1>
+              <div className="sec-jobs__content__bg__itens">
+                <Jobs
+                  photo={edglobo}
+                  details={l[selectedLenguage].section3.job1.details}
+                />
+                <Jobs
+                  photo={edglobo}
+                  details={l[selectedLenguage].section3.job1.details}
+                />
+                <Jobs
+                  photo={edglobo}
+                  details={l[selectedLenguage].section3.job1.details}
+                />
+                <Jobs
+                  photo={edglobo}
+                  details={l[selectedLenguage].section3.job1.details}
+                />
+              </div>
+            </div>
+          </div>
         </section>
       </section>
       <Footer />

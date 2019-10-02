@@ -1,0 +1,22 @@
+.job-item {
+    display: flex;
+    flex-direction: row;
+    
+    &__img {
+        background: radial-gradient(circle closest-side,#f00 0%,#f00 98%,rgba(0,0,0,0) 100%);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 190px;
+        height: 120px;
+        float: left;
+        margin: 10px;
+    }
+
+    &__text {
+        width: 100%;
+
+        p {
+            color: $TEXT_GRAY;
+        }
+    }
+}
