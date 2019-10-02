@@ -38,8 +38,8 @@ function App() {
           </div>
           <Social />
         </section>
-        <section className="section"> 
-          <h1 className="section__title">{l[selectedLenguage].section2.title}</h1>
+        <section className="section sec-posts last"> 
+          <h1 className="section__title title-posts">{l[selectedLenguage].section2.title}</h1>
           <Posts 
             img={PostImg1} 
             about={"RM Mini 3"} 
