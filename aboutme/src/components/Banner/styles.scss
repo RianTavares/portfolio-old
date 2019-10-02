@@ -4,13 +4,26 @@ header {
     .job {
         position: absolute;
         color: #DFDFDF;
-        font-size: 4.5vw;
-        left: 10px;
-        bottom: 18%;
-        font-family: 'Ubuntu-Mono-Regular';
+        font-size: 20px;
+        left: 33px;
+        bottom: 42px;
+        font-family: 'Ubuntu-Mono-Bold';
 
         @media #{$BREAKPOINT-TABLET} {
-            bottom: 15%;
+            font-size: 36px;
+            bottom: 67px;
+            left: 57px;
+        }
+
+        @media #{$BREAKPOINT-TABLET-LAND} {
+            font-size: 59px;
+            bottom: 47px;
+            left: 87px;
+        }
+
+        @media #{$BREAKPOINT-DESK} {
+            bottom: 42px;
+            left: 87px;
         }
     }
 

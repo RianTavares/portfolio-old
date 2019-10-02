@@ -17,8 +17,9 @@ const language = [
             "title": "PUBLICAÇÕES NA WEB",
             "button": "Leia Mais",
             "pub1": {
-                "pubTitle": "Sua casa smart",
-                "pubText": "Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim."
+                "pubTitle": "Conheça aparelho para deixar sua casa smart",
+                "pubText": "O RM Mini 3 é um minicontrolador infravermelho da fabricante chinesa Broadlink, focada em soluções de casa inteligente. O modelo promete ser uma solução barata para quem busca automação residencial...",
+                "url": "https://www.techtudo.com.br/noticias/2019/06/broadlink-rm-mini-3-vale-a-pena-conheca-aparelho-para-deixar-a-casa-smart.ghtml"
             },
             "pub2": {
                 "pubTitle": "Redmi Xiaomi",

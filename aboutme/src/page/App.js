@@ -1,13 +1,12 @@
 import React, {useState, useEffect} from "react";
 import BannerTop from '../components/Banner';
 import Footer from '../components/Footer';
+import Social from '../components/Social';
+import Posts from '../components/Posts';
+import PostImg1 from '../assets/imgs/rm-mini.jpg'
 import l from '../components/LenguageSwitcher/lenguage';
 import eu from '../assets/imgs/rian-tavares.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
 
 function App() {
 
@@ -16,7 +15,7 @@ function App() {
   useEffect(()=>{
     const localStorageVar = localStorage.getItem('lenguage_rt') ? localStorage.getItem('lenguage_rt') : 0;
     setLenguage(localStorageVar);
-  })
+  },[])
 
   return (
     <div className="App">
@@ -30,27 +29,41 @@ function App() {
       </section>
       <section className="page-content">
         <section className="section">
-          <h1 className="section__title">{l[selectedLenguage].section1.title}</h1>
+          <h1 className="section__title whoami">{l[selectedLenguage].section1.title}</h1>
           <div className="section__desk">
             <div className="section__desk__img">
-              <img src={eu} />
+              <img src={eu} alt={"Rian Tavares"} />
             </div>
-            <div className="section__desk__text">{l[selectedLenguage].section1.aboutme}</div>
+            <p className="section__desk__text">{l[selectedLenguage].section1.aboutme}</p>
           </div>
-          <div className="social">
-            <a href="https://twitter.com/rian_tavares" target="_blank" rel="noopener noreferrer" alt="Twitter Rian Tavares">
-              <FontAwesomeIcon icon={faTwitter} size="2x" />
-            </a>
-            <a href="https://www.linkedin.com/in/riantavares/" target="_blank" rel="noopener noreferrer" alt="Linkedin Rian Tavares">
-              <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
-            </a>
-            <a href="https://github.com/RianTavares" target="_blank" rel="noopener noreferrer" alt="Github Rian Tavares">
-              <FontAwesomeIcon icon={faGithub} size="2x" />
-            </a>
-            <a href="https://www.instagram.com/riantba/" target="_blank" rel="noopener noreferrer" alt="Instagram Rian Tavares">
-              <FontAwesomeIcon icon={faInstagram} size="2x" />
-            </a>
-          </div>
+          <Social />
+        </section>
+        <section className="section"> 
+          <h1 className="section__title">{l[selectedLenguage].section2.title}</h1>
+          <Posts 
+            img={PostImg1} 
+            about={"RM Mini 3"} 
+            ptitle={l[selectedLenguage].section2.pub1.pubTitle}
+            ptext={l[selectedLenguage].section2.pub1.pubText}
+            pbutton={l[selectedLenguage].section2.button}
+            purl={l[selectedLenguage].section2.pub1.url}
+          />
+          <Posts 
+            img={PostImg1} 
+            about={"RM Mini 3"} 
+            ptitle={l[selectedLenguage].section2.pub1.pubTitle}
+            ptext={l[selectedLenguage].section2.pub1.pubText}
+            pbutton={l[selectedLenguage].section2.button}
+            purl={l[selectedLenguage].section2.pub1.url}
+          />
+          <Posts 
+            img={PostImg1} 
+            about={"RM Mini 3"} 
+            ptitle={l[selectedLenguage].section2.pub1.pubTitle}
+            ptext={l[selectedLenguage].section2.pub1.pubText}
+            pbutton={l[selectedLenguage].section2.button}
+            purl={l[selectedLenguage].section2.pub1.url}
+          />
         </section>
       </section>
       <Footer />

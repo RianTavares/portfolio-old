@@ -1,8 +1,20 @@
 .typed-name {
     position: absolute;
     color: $WHITE_THEME;
-    font-size: 5.5vw;
+    font-size: 23px;
     left: 10px;
-    bottom: 25%;
-    font-family: 'Ubuntu-Mono-Regular';
+    bottom: 60px;
+    font-family: 'Ubuntu-Mono-Bold';
+
+    @media #{$BREAKPOINT-TABLET} {
+        font-size: 45px;
+        bottom: 100px;
+    }
+
+    @media #{$BREAKPOINT-TABLET-LAND} {
+        font-size: 75px;
+    }
+
+    @media #{$BREAKPOINT-DESK} {
+    }
 }
