@@ -29,7 +29,7 @@ function App() {
         <BannerTop />
       </section>
       <section className="page-content">
-        <section className="section">
+        <section className="section pattern-margin first">
           <h1 className="section__title whoami">{l[selectedLenguage].section1.title}</h1>
           <div className="section__desk">
             <div className="section__desk__img">
@@ -40,37 +40,40 @@ function App() {
           <Social />
         </section>
         <section className="section sec-posts"> 
-          <h1 className="section__title title-posts">{l[selectedLenguage].section2.title}</h1>
-          <Posts 
-            img={PostImg1} 
-            about={"RM Mini 3"} 
-            ptitle={l[selectedLenguage].section2.pub1.pubTitle}
-            ptext={l[selectedLenguage].section2.pub1.pubText}
-            pbutton={l[selectedLenguage].section2.button}
-            purl={l[selectedLenguage].section2.pub1.url}
-          />
-          <Posts 
-            img={PostImg1} 
-            about={"RM Mini 3"} 
-            ptitle={l[selectedLenguage].section2.pub1.pubTitle}
-            ptext={l[selectedLenguage].section2.pub1.pubText}
-            pbutton={l[selectedLenguage].section2.button}
-            purl={l[selectedLenguage].section2.pub1.url}
-          />
-          <Posts 
-            img={PostImg1} 
-            about={"RM Mini 3"} 
-            ptitle={l[selectedLenguage].section2.pub1.pubTitle}
-            ptext={l[selectedLenguage].section2.pub1.pubText}
-            pbutton={l[selectedLenguage].section2.button}
-            purl={l[selectedLenguage].section2.pub1.url}
-          />
+        <div className="sec-posts__bg">
+            <h1 className="section__title title-posts">{l[selectedLenguage].section2.title}</h1>
+            <p className="pattern-margin">{l[selectedLenguage].section2.description}</p>
+            <Posts 
+              img={PostImg1} 
+              about={"RM Mini 3"} 
+              ptitle={l[selectedLenguage].section2.pub1.pubTitle}
+              ptext={l[selectedLenguage].section2.pub1.pubText}
+              pbutton={l[selectedLenguage].section2.button}
+              purl={l[selectedLenguage].section2.pub1.url}
+            />
+            <Posts 
+              img={PostImg1} 
+              about={"RM Mini 3"} 
+              ptitle={l[selectedLenguage].section2.pub1.pubTitle}
+              ptext={l[selectedLenguage].section2.pub1.pubText}
+              pbutton={l[selectedLenguage].section2.button}
+              purl={l[selectedLenguage].section2.pub1.url}
+            />
+            <Posts 
+              img={PostImg1} 
+              about={"RM Mini 3"} 
+              ptitle={l[selectedLenguage].section2.pub1.pubTitle}
+              ptext={l[selectedLenguage].section2.pub1.pubText}
+              pbutton={l[selectedLenguage].section2.button}
+              purl={l[selectedLenguage].section2.pub1.url}
+            />
+          </div>
         </section>
         <section className="section sec-jobs last">
           <div className="sec-jobs__content">
             <div className="sec-jobs__content__bg">
               <h1 className="section__title title-green">{l[selectedLenguage].section3.title}</h1>
-              <div className="sec-jobs__content__bg__itens">
+              <div className="sec-jobs__content__bg__itens pattern-margin">
                 <Jobs
                   photo={edglobo}
                   details={l[selectedLenguage].section3.job1.details}

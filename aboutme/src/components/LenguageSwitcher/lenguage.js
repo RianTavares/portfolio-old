@@ -15,6 +15,7 @@ const language = [
         },
         "section2": {
             "title": "PUBLICAÇÕES NA WEB",
+            "description": "Confira abaixo alguns posts que escrevi para portais de tecnologia",
             "button": "Leia Mais",
             "pub1": {
                 "pubTitle": "Conheça aparelho para deixar sua casa smart",

@@ -22,10 +22,8 @@
         }
         
         img {
-            position: absolute;
             width: 100vw;
             max-height: 190px;
-            left: -10px;
 
             @media #{$BREAKPOINT-TABLET} {
                 position: relative;
@@ -40,31 +38,34 @@
         }
     }
 
-    &__title {
-        color: $WHITE_THEME;
+    &__container {
 
-    }
+        &__title {
+            color: $WHITE_THEME;
 
-    p {
-        color: $WHITE_THEME;
-        text-align: justify;
-        margin-top: 0;
-    }
+        }
 
-    button {
-        background-color: $BASE_GREEN;
-        color: $BACKGROUND;
-        font-family: 'Ubuntu-Mono-Bold';
-        font-size: 16px;
-        width: 115px;
-        height: 40px;
-        border: 0;
-        border-bottom-right-radius: 20px;
-        border-top-left-radius: 20px;
-        outline: 0 auto -webkit-focus-ring-color;
-    }
+        p {
+            color: $WHITE_THEME;
+            text-align: justify;
+            margin-top: 0;
+        }
 
-    button:hover {
-        background-color: $DETAILS_GREEN;
+        button {
+            background-color: $BASE_GREEN;
+            color: $TEXT_GRAY;
+            font-family: 'Ubuntu-Mono-Bold';
+            font-size: 16px;
+            width: 115px;
+            height: 40px;
+            border: 0;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            outline: 0 auto -webkit-focus-ring-color;
+        }
+
+        button:hover {
+            background-color: $DETAILS_GREEN;
+        }
     }
 }
