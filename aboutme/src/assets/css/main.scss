@@ -18,6 +18,10 @@ h1 {
     font-family: 'Ubuntu-Mono-Bold';
     font-size: 25px;
     margin: 80px 0 50px 0;
+
+    @media #{$BREAKPOINT-TABLET} {
+      font-size: 38px;
+  }
 }
 
 h2 {
@@ -26,7 +30,23 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  color: $WHITE_THEME;
+  font-family: 'Segoe-UI-Italic';
+  font-size: 13px;
+  
+}
+
 p {
+  font-family: 'Segoe-UI-Regular';
+  font-size: 18px;
+  line-height: 25px;
+}
+
+li {
   font-family: 'Segoe-UI-Regular';
   font-size: 18px;
   line-height: 25px;

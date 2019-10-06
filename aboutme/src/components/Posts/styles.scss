@@ -40,6 +40,15 @@
 
     &__container {
 
+        width: calc(100% - 20px);
+        margin: 0 auto;
+
+        @media #{$BREAKPOINT-TABLET} {
+        max-width: unset;
+        width: unset;
+        margin: unset;
+        }
+
         &__title {
             color: $WHITE_THEME;
 

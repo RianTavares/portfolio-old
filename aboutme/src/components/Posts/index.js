@@ -1,4 +1,4 @@
-import React, {useState ,useEffect} from 'react';
+import React from 'react';
 
 
 const Posts = (props) => {
@@ -8,7 +8,7 @@ const Posts = (props) => {
             <div className="post__img">
                 <img src={props.img} alt={props.about} />
             </div>
-            <div className="post__container pattern-margin">
+            <div className="post__container">
                 <h2 className="post__container__title">{props.ptitle}</h2>
                 <p className="post__container__text">{props.ptext}</p>
                 <a href={props.purl} target="_blank" rel="noopener noreferrer">

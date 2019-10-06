@@ -54,7 +54,27 @@ const language = [
             "title": "EDUCAÇÃO"
         },
         "section5": {
-            "title": "HABILIDADES"
+            "title": "HABILIDADES",
+            "skill1": {
+                "skill": "Cacilds",
+                "level": "hardcore",
+                "label": "Avançado"
+            },
+            "skill2": {
+                "skill": "Transar",
+                "level": "hardcore",
+                "label": "Avançado"
+            },
+            "skill3": {
+                "skill": "Cuidar",
+                "level": "medium",
+                "label": "Intermediario"
+            },
+            "skill4": {
+                "skill": "Dirigir",
+                "level": "basic",
+                "label": "Iniciante"
+            }
         },
         "section6": {
             "title": "PORTFOLIO"

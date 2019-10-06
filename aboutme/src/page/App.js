@@ -4,7 +4,8 @@ import Footer from '../components/Footer';
 import Social from '../components/Social';
 import Posts from '../components/Posts';
 import Jobs from '../components/Jobs';
-import PostImg1 from '../assets/imgs/rm-mini.jpg'
+import Skills from '../components/Skills';
+import PostImg1 from '../assets/imgs/rm-mini.jpg';
 import l from '../components/LenguageSwitcher/lenguage';
 import eu from '../assets/imgs/rian-tavares.png';
 import edglobo from '../assets/imgs/globo.png';
@@ -69,7 +70,7 @@ function App() {
             />
           </div>
         </section>
-        <section className="section sec-jobs last">
+        <section className="section sec-jobs">
           <div className="sec-jobs__content">
             <div className="sec-jobs__content__bg">
               <h1 className="section__title title-green">{l[selectedLenguage].section3.title}</h1>
@@ -91,6 +92,44 @@ function App() {
                   details={l[selectedLenguage].section3.job1.details}
                 />
               </div>
+            </div>
+          </div>
+        </section>
+        <section className="section sec-schools sec-skills pattern-margin last">
+          <div className="sec-schools__container ">
+            <div className="sec-schools__education">
+              <h1 className="section__title">EDUCAÇÃO</h1>
+              <ul>
+                <li className="first-li">educacao one</li>
+                <li>educacao two</li>
+                <li>educacao three</li>
+                <li>educacao for</li>
+              </ul>
+            </div>
+
+            <div className="sec-skills__list">
+              <h1 className="sec-skills__list__title">HABILIDADES</h1>
+              <Skills
+                skill={l[selectedLenguage].section5.skill1.skill}
+                level={l[selectedLenguage].section5.skill1.level}
+                label={l[selectedLenguage].section5.skill1.label}
+              />
+              <Skills
+                skill={l[selectedLenguage].section5.skill2.skill}
+                level={l[selectedLenguage].section5.skill2.level}
+                label={l[selectedLenguage].section5.skill2.label}
+              />
+              <Skills
+                skill={l[selectedLenguage].section5.skill3.skill}
+                level={l[selectedLenguage].section5.skill3.level}
+                label={l[selectedLenguage].section5.skill3.label}
+              />
+              <Skills
+                skill={l[selectedLenguage].section5.skill4.skill}
+                level={l[selectedLenguage].section5.skill4.level}
+                label={l[selectedLenguage].section5.skill4.label}
+              />
+                
             </div>
           </div>
         </section>
