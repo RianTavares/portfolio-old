@@ -96,7 +96,7 @@
 
         .sec-posts {
             margin-top: 50px;
-            background-color: $TEXT_GRAY;
+            background-color: $DETAIL_GRAY;
             width: 100vw;
 
             @media #{$BREAKPOINT-TABLET} {
@@ -192,6 +192,19 @@
                     @media #{$BREAKPOINT-TABLET} {
                         padding: unset;
                     }
+                }
+            }
+        }
+
+        .sec-portfolio {
+            &__container {
+                width: 100vw;
+                background-color: $WHITE_THEME;
+                height: 100%;
+
+                &__title {
+                    text-align: center;
+                    color: $DETAILS_GREEN;
                 }
             }
         }

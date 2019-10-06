@@ -5,6 +5,7 @@ import Social from '../components/Social';
 import Posts from '../components/Posts';
 import Jobs from '../components/Jobs';
 import Skills from '../components/Skills';
+import Portfolio from '../components/Portfolio';
 import PostImg1 from '../assets/imgs/rm-mini.jpg';
 import l from '../components/LenguageSwitcher/lenguage';
 import eu from '../assets/imgs/rian-tavares.png';
@@ -129,8 +130,16 @@ function App() {
                 level={l[selectedLenguage].section5.skill4.level}
                 label={l[selectedLenguage].section5.skill4.label}
               />
-                
             </div>
+          </div>
+        
+        </section>
+        <section className="section sec-portfolio">
+          <div className="sec-portfolio__container">
+            <h1 className="sec-portfolio__container__title">{l[selectedLenguage].section6.title}</h1>
+
+            <Portfolio />
+            
           </div>
         </section>
       </section>

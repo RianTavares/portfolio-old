@@ -77,7 +77,22 @@ const language = [
             }
         },
         "section6": {
-            "title": "PORTFOLIO"
+            "title": "PORTFÓLIO",
+            "portfolio1": {
+                "title": "Rodobravo Tranportes",
+                "text": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+                "button": "Veja no Github"
+            },
+            "portfolio2": {
+                "title": "Rodobravo Tranportes",
+                "text": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+                "button": "Veja no Github"
+            },
+            "portfolio3": {
+                "title": "Rodobravo Tranportes",
+                "text": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+                "button": "Veja no Github"
+            }
         },
         "footer": {
             "textStart": "Desenvolvido com",
