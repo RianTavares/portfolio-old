@@ -26,6 +26,10 @@
             width: 80px;
             height: 0;
             border-color: $DETAIL_GRAY;
+
+            @media #{$BREAKPOINT-TABLET-LAND} {
+                width: 120px;
+            }
         }
     }
 

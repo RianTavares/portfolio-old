@@ -185,6 +185,10 @@
 
         .sec-skills {
             &__list {
+                @media #{$BREAKPOINT-TABLET} {
+                    width: 50%;
+                }
+
                 &__title {
                     color: $WHITE_THEME;
                     padding: 80px 0 50px 0;
