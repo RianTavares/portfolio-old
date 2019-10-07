@@ -33,7 +33,7 @@
 
         }
         &__button {
-            width: 180px;
+            width: 200px;
             height: 40px;
             border-width: 2px;
             border-color: $BASE_GREEN;
@@ -48,6 +48,12 @@
             text-align: center;
             display: flex;
             margin: 20px;
+            outline: none;
+        }
+
+        &__button:hover {
+            border-color: $DETAILS_GREEN;
+            color: $DETAILS_GREEN;
         }
     }
 }
