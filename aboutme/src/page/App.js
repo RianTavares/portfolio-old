@@ -96,7 +96,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="section sec-schools sec-skills pattern-margin last">
+        <section className="section sec-schools sec-skills pattern-margin">
           <div className="sec-schools__container ">
             <div className="sec-schools__education">
               <h1 className="section__title">EDUCAÇÃO</h1>
@@ -134,12 +134,35 @@ function App() {
           </div>
         
         </section>
-        <section className="section sec-portfolio">
+        <section className="section sec-portfolio last">
           <div className="sec-portfolio__container">
             <h1 className="sec-portfolio__container__title">{l[selectedLenguage].section6.title}</h1>
 
-            <Portfolio />
-            
+            <Portfolio
+              ptitle={l[selectedLenguage].section6.portfolio1.title}
+              ptext={l[selectedLenguage].section6.portfolio1.text}
+              purl={l[selectedLenguage].section6.portfolio1.purl}
+              pbutton={l[selectedLenguage].section6.portfolio1.button}
+              fotoOrder={l[selectedLenguage].section6.portfolio1.fotoOrder}
+              textOrder={l[selectedLenguage].section6.portfolio1.textOrder}
+            />
+            <Portfolio
+              ptitle={l[selectedLenguage].section6.portfolio2.title}
+              ptext={l[selectedLenguage].section6.portfolio2.text}
+              purl={l[selectedLenguage].section6.portfolio2.purl}
+              pbutton={l[selectedLenguage].section6.portfolio2.button}
+              fotoOrder={l[selectedLenguage].section6.portfolio2.fotoOrder}
+              textOrder={l[selectedLenguage].section6.portfolio2.textOrder}
+            />
+            <Portfolio
+              ptitle={l[selectedLenguage].section6.portfolio3.title}
+              ptext={l[selectedLenguage].section6.portfolio3.text}
+              purl={l[selectedLenguage].section6.portfolio3.purl}
+              pbutton={l[selectedLenguage].section6.portfolio3.button}
+              fotoOrder={l[selectedLenguage].section6.portfolio3.fotoOrder}
+              textOrder={l[selectedLenguage].section6.portfolio3.textOrder}
+            />
+             
           </div>
         </section>
       </section>

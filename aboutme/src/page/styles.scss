@@ -39,9 +39,7 @@
 
     .page-content {
         .section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex-col;
 
             @media #{$BREAKPOINT-TABLET} {
                 position: relative;
@@ -52,10 +50,7 @@
             }
             
             &__desk {
-
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @include flex-col;
 
                 @media #{$BREAKPOINT-TABLET} {
                     flex-direction: row;

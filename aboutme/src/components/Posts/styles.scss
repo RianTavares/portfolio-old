@@ -1,7 +1,5 @@
 .post {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-col;
     margin-bottom: 100px;
 
     @media #{$BREAKPOINT-TABLET} {

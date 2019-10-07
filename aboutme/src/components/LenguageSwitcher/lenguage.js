@@ -14,7 +14,7 @@ const language = [
             "aboutme": "Eu sou Rian, Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.",        
         },
         "section2": {
-            "title": "PUBLICAÇÕES NA WEB",
+            "title": "POSTS NA WEB",
             "description": "Confira abaixo alguns posts que escrevi para portais de tecnologia",
             "button": "Leia Mais",
             "pub1": {
@@ -80,18 +80,27 @@ const language = [
             "title": "PORTFÓLIO",
             "portfolio1": {
                 "title": "Rodobravo Tranportes",
-                "text": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
-                "button": "Veja no Github"
+                "text": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+                "url": "https://github.com/RianTavares/riantavares.github.io",
+                "button": "Veja no Github",
+                "fotoOrder": "1",
+                "textOrder": "2"
             },
             "portfolio2": {
                 "title": "Rodobravo Tranportes",
-                "text": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
-                "button": "Veja no Github"
+                "text": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+                "url": "https://github.com/RianTavares/riantavares.github.io",
+                "button": "Veja no Github",
+                "fotoOrder": "2",
+                "textOrder": "1"
             },
             "portfolio3": {
                 "title": "Rodobravo Tranportes",
-                "text": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
-                "button": "Veja no Github"
+                "text": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+                "url": "https://github.com/RianTavares/riantavares.github.io",
+                "button": "Veja no Github",
+                "fotoOrder": "1",
+                "textOrder": "2"
             }
         },
         "footer": {
