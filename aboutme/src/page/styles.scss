@@ -124,13 +124,14 @@
                 background-color: $WHITE_THEME;
                 width: 100vw;
                 height: 100%;
+                padding-bottom: 90px;
             }
         }
 
         .sec-schools {
 
             &__container {
-
+                padding-bottom: 90px;
                 width: 100%;
 
                 @media #{$BREAKPOINT-TABLET} {
@@ -155,9 +156,13 @@
                 list-style-type: none;
 
                 li {
-
                     margin-bottom: -45px;
                     color: $WHITE_THEME;
+                    
+                    span {
+                        position: relative;
+                        top: -14px;
+                    }
                 }
               }
               
@@ -193,9 +198,14 @@
 
         .sec-portfolio {
             &__container {
+                padding-bottom: 90px;
                 width: 100vw;
-                background-color: $WHITE_THEME;
                 height: 100%;
+                background-color: $WHITE_THEME;
+
+                @media #{$BREAKPOINT-TABLET} {
+                    padding-bottom: 180px;
+                }
 
                 &__title {
                     text-align: center;

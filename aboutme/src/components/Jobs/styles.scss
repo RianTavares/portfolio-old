@@ -1,6 +1,7 @@
 .job-item {
     display: flex;
     flex-direction: row;
+    align-items: center;
     
     &__img {
         background: radial-gradient(circle closest-side,#f00 0%,#f00 98%,rgba(0,0,0,0) 100%);
@@ -9,11 +10,13 @@
         width: 190px;
         height: 120px;
         float: left;
-        margin: 10px 10px 10px 0;
+        margin-right: 10px;
+        margin-bottom: 10px;
     }
 
     &__text {
         width: 100%;
+        text-align: justify;
 
         p {
             color: $TEXT_GRAY;

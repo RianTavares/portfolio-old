@@ -9,8 +9,7 @@ const Jobs = (props) => {
     return(
         <>
             <div className="job-item">
-                <div className="job-item__img" style={sectionStyle}> 
-                </div>
+                <div className="job-item__img" style={sectionStyle}></div>
                 <div className="job-item__text">
                     <p>{props.details}</p>
                 </div>

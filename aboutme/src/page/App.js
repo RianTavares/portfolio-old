@@ -101,10 +101,10 @@ function App() {
             <div className="sec-schools__education">
               <h1 className="section__title">EDUCAÇÃO</h1>
               <ul>
-                <li className="first-li">educacao one</li>
-                <li>educacao two</li>
-                <li>educacao three</li>
-                <li>educacao for</li>
+                <li className="first-li"><span>educacao one</span></li>
+                <li><span>educacao two</span></li>
+                <li><span>educacao three</span></li>
+                <li><span>educacao for</span></li>
               </ul>
             </div>
 
@@ -134,7 +134,7 @@ function App() {
           </div>
         
         </section>
-        <section className="section sec-portfolio last">
+        <section className="section sec-portfolio">
           <div className="sec-portfolio__container">
             <h1 className="sec-portfolio__container__title">{l[selectedLenguage].section6.title}</h1>
 

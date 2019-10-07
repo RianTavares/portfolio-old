@@ -1,18 +1,45 @@
-.pattern-margin {
-    width: calc(100% - 20px);
-    margin: 0 auto;
+/*
+|--------------------------------------------------------------------------
+| MIXINS
+|--------------------------------------------------------------------------
+*/
 
-    @media #{$BREAKPOINT-TABLET} {
-      max-width: 1000px;
-      width: calc(100% - 30px);
-      margin: 0 auto;
+@mixin margin-page {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+
+  @media #{$BREAKPOINT-TABLET} {
+    max-width: 1000px;
+    width: calc(100% - 30px);
+    margin: 0 auto;
   }
 }
+  
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin container-bottom {
+  padding-bottom: 90px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| GLOBAL CSS
+|--------------------------------------------------------------------------
+*/
 
 body {
     margin: 0px;
     background-color: $BACKGROUND;
 }
+
+.pattern-margin {
+  @include margin-page;
+}
+
 
 h1 {
     font-family: 'Ubuntu-Mono-Bold';
@@ -53,61 +80,57 @@ li {
 }
 
 .fade-in {
-    animation: fadeIn ease 2s;
-    -webkit-animation: fadeIn ease 2s;
-    -moz-animation: fadeIn ease 2s;
-    -o-animation: fadeIn ease 2s;
-    -ms-animation: fadeIn ease 2s;
-  }
-  
-  
-  @keyframes fadeIn{
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-@mixin flex-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
 }
+  
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+  
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+  
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+  
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+  
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
+
