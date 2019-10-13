@@ -2,16 +2,16 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 40px;
     
     &__img {
         background: radial-gradient(circle closest-side,#f00 0%,#f00 98%,rgba(0,0,0,0) 100%);
         background-size: contain;
         background-repeat: no-repeat;
-        width: 190px;
-        height: 120px;
+        width: 140px;
+        height: 98px;
         float: left;
         margin-right: 10px;
-        margin-bottom: 10px;
     }
 
     &__text {
@@ -20,6 +20,21 @@
 
         p {
             color: $TEXT_GRAY;
+            margin: 0;
+        }
+
+        p:first-child {
+            font-size: 16px;
+            font-style: normal;
+            margin: 0;
+            font-family: 'Ubuntu-Mono-Bold';
+        }
+    
+        p:last-child {
+            font-size: 16px;
+            font-style: normal;
+            margin: 0;
+            font-family: 'Ubuntu-Mono-Bold';
         }
     }
 }

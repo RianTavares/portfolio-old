@@ -20,8 +20,7 @@ const Portfolio = (props) => {
                     matches ? (
                         <section className="portfolio pattern-margin">
                             <div className="portfolio__img" style={imgOrder}>
-                                {/* <img src={props.img} alt={props.about} /> */}
-                                <div className="portfolio__img__teste"></div>
+                                <img src={props.pimg} alt={props.about} />
                             </div>
                             <div className="portfolio__container" style={textOrder}>
                                 <h2 className="portfolio__container__title">{props.ptitle}</h2>
@@ -34,8 +33,7 @@ const Portfolio = (props) => {
                     ) : (
                         <section className="portfolio pattern-margin">
                             <div className="portfolio__img">
-                                {/* <img src={props.img} alt={props.about} /> */}
-                                <div className="portfolio__img__teste"></div>
+                                <img src={props.pimg} alt={props.about} />
                             </div>
                             <div className="portfolio__container">
                                 <h2 className="portfolio__container__title">{props.ptitle}</h2>
