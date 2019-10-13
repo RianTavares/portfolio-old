@@ -58,20 +58,47 @@
 
                 &__img {
                     width: 250px;
+
+                    @media #{$BREAKPOINT-TABLET} {
+                        width: 50%;
+                    }
         
                     img {
                         width: 100%;
                         margin-left: 10px;
                     }
                 }
-        
-                &__text {
-                    color: $WHITE_THEME;
-                    margin-top: 30px;
-                    text-align: justify;
+
+                &__container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
 
                     @media #{$BREAKPOINT-TABLET} {
-                        width: 400px;
+                        width: 50%;
+                    }
+
+                    &__text {
+                        color: $WHITE_THEME;
+                        margin-top: 0;
+                        text-align: justify;
+    
+                        @media #{$BREAKPOINT-TABLET} {
+                            width: 100%;
+                        }
+                    }
+
+                    &__text:first-child {
+                        margin-top: 30px;
+                    }
+
+                    &__text:last-child {
+                        margin-bottom: 0px;
+                    }
+
+                    .phrase {
+                        font-style: italic;
+                        font-size: 16px;
                     }
                 }
             }
@@ -80,10 +107,10 @@
 
         .whoami {
             margin: 60px 0 10px 0;
+            color: $WHITE_THEME;
+            text-align: center;
 
             @media #{$BREAKPOINT-TABLET} {
-                position: absolute;
-                padding-left: 220px;
                 font-size: 38px;
                 margin-top: 0;
             }
@@ -220,7 +247,6 @@
 
         .title-posts {
             width: 100%;
-            margin: 80px 0 15px 0;
         }
 
         .title-green {

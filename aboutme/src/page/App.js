@@ -1,4 +1,8 @@
+//react components
 import React, {useState, useEffect} from "react";
+import Media from 'react-media';
+
+//Project components
 import BannerTop from '../components/Banner';
 import Footer from '../components/Footer';
 import Social from '../components/Social';
@@ -6,10 +10,21 @@ import Posts from '../components/Posts';
 import Jobs from '../components/Jobs';
 import Skills from '../components/Skills';
 import Portfolio from '../components/Portfolio';
-import PostImg1 from '../assets/imgs/rm-mini.jpg';
+
+//imgs
+import postImg1 from '../assets/imgs/rm-mini.jpg';
+import postImg2 from '../assets/imgs/lampada-espia.jpg';
+import me from '../assets/imgs/rian-tavares.png';
+import infoglobo from '../assets/imgs/infoglobo.png';
+import ibm from '../assets/imgs/IBM.png';
+import bosch from '../assets/imgs/bosch.png';
+import portex from '../assets/imgs/port-ex.png';
+
+//Texts object
 import l from '../components/LenguageSwitcher/lenguage';
-import eu from '../assets/imgs/rian-tavares.png';
-import edglobo from '../assets/imgs/globo.png';
+
+
+
 
 function App() {
 
@@ -31,22 +46,51 @@ function App() {
         <BannerTop />
       </section>
       <section className="page-content">
-        <section className="section pattern-margin first">
-          <h1 className="section__title whoami">{l[selectedLenguage].section1.title}</h1>
-          <div className="section__desk">
-            <div className="section__desk__img">
-              <img src={eu} alt={"Rian Tavares"} />
+
+      <Media query="(min-width: 975px)">
+        {matches =>
+          matches ? (
+            <section className="section pattern-margin first">
+              <div className="section__desk">
+                <div className="section__desk__img">
+                  <img src={me} alt={"Rian Tavares"} />
+                </div>
+                <div className="section__desk__container">
+                  <h1 className="whoami">{l[selectedLenguage].section1.title}</h1>
+                  <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph1}</p>
+                  <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph2}</p>
+                  <p className="section__desk__container__text phrase">{l[selectedLenguage].section1.phrase}</p>
+                  <p className="section__desk__container__text">{l[selectedLenguage].section1.followme}</p>
+                  <Social />
+                </div> 
             </div>
-            <p className="section__desk__text">{l[selectedLenguage].section1.aboutme}</p>
-          </div>
-          <Social />
-        </section>
+          </section>
+          ) : (
+            <section className="section pattern-margin first">
+              <h1 className="section__title whoami">{l[selectedLenguage].section1.title}</h1>
+              <div className="section__desk">
+                <div className="section__desk__img">
+                  <img src={me} alt={"Rian Tavares"} />
+                </div>
+                <div className="section__desk__container">
+                  <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph1}</p>
+                  <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph2}</p>
+                  <p className="section__desk__container__text phrase">{l[selectedLenguage].section1.phrase}</p>
+                  <p className="section__desk__container__text">{l[selectedLenguage].section1.followme}</p>
+                  <Social />
+                </div> 
+            </div>
+          </section>
+          )
+        }
+      </Media>
+        
         <section className="section sec-posts"> 
         <div className="sec-posts__bg">
             <h1 className="section__title title-posts">{l[selectedLenguage].section2.title}</h1>
             <p className="pattern-margin">{l[selectedLenguage].section2.description}</p>
             <Posts 
-              img={PostImg1} 
+              img={postImg1} 
               about={"RM Mini 3"} 
               ptitle={l[selectedLenguage].section2.pub1.pubTitle}
               ptext={l[selectedLenguage].section2.pub1.pubText}
@@ -54,15 +98,15 @@ function App() {
               purl={l[selectedLenguage].section2.pub1.url}
             />
             <Posts 
-              img={PostImg1} 
-              about={"RM Mini 3"} 
-              ptitle={l[selectedLenguage].section2.pub1.pubTitle}
-              ptext={l[selectedLenguage].section2.pub1.pubText}
+              img={postImg2} 
+              about={"Lâmpada Espiã Yoose"} 
+              ptitle={l[selectedLenguage].section2.pub2.pubTitle}
+              ptext={l[selectedLenguage].section2.pub2.pubText}
               pbutton={l[selectedLenguage].section2.button}
-              purl={l[selectedLenguage].section2.pub1.url}
+              purl={l[selectedLenguage].section2.pub2.url}
             />
             <Posts 
-              img={PostImg1} 
+              img={postImg1} 
               about={"RM Mini 3"} 
               ptitle={l[selectedLenguage].section2.pub1.pubTitle}
               ptext={l[selectedLenguage].section2.pub1.pubText}
@@ -77,20 +121,28 @@ function App() {
               <h1 className="section__title title-green">{l[selectedLenguage].section3.title}</h1>
               <div className="sec-jobs__content__bg__itens pattern-margin">
                 <Jobs
-                  photo={edglobo}
+                  photo={infoglobo}
+                  time={l[selectedLenguage].section3.job1.time}
                   details={l[selectedLenguage].section3.job1.details}
+                  location={l[selectedLenguage].section3.job1.location}
                 />
                 <Jobs
-                  photo={edglobo}
-                  details={l[selectedLenguage].section3.job1.details}
+                  photo={ibm}
+                  time={l[selectedLenguage].section3.job2.time}
+                  details={l[selectedLenguage].section3.job2.details}
+                  location={l[selectedLenguage].section3.job2.location}
                 />
                 <Jobs
-                  photo={edglobo}
-                  details={l[selectedLenguage].section3.job1.details}
+                  photo={infoglobo}
+                  time={l[selectedLenguage].section3.job3.time}
+                  details={l[selectedLenguage].section3.job3.details}
+                  location={l[selectedLenguage].section3.job3.location}
                 />
                 <Jobs
-                  photo={edglobo}
-                  details={l[selectedLenguage].section3.job1.details}
+                  photo={bosch}
+                  time={l[selectedLenguage].section3.job4.time}
+                  details={l[selectedLenguage].section3.job4.details}
+                  location={l[selectedLenguage].section3.job4.location}
                 />
               </div>
             </div>
@@ -139,6 +191,7 @@ function App() {
             <h1 className="sec-portfolio__container__title">{l[selectedLenguage].section6.title}</h1>
 
             <Portfolio
+              pimg={portex}
               ptitle={l[selectedLenguage].section6.portfolio1.title}
               ptext={l[selectedLenguage].section6.portfolio1.text}
               purl={l[selectedLenguage].section6.portfolio1.purl}
@@ -147,6 +200,7 @@ function App() {
               textOrder={l[selectedLenguage].section6.portfolio1.textOrder}
             />
             <Portfolio
+              pimg={portex}
               ptitle={l[selectedLenguage].section6.portfolio2.title}
               ptext={l[selectedLenguage].section6.portfolio2.text}
               purl={l[selectedLenguage].section6.portfolio2.purl}
@@ -155,6 +209,7 @@ function App() {
               textOrder={l[selectedLenguage].section6.portfolio2.textOrder}
             />
             <Portfolio
+              pimg={portex}
               ptitle={l[selectedLenguage].section6.portfolio3.title}
               ptext={l[selectedLenguage].section6.portfolio3.text}
               purl={l[selectedLenguage].section6.portfolio3.purl}

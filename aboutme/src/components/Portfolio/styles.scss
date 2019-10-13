@@ -9,12 +9,13 @@
     }
 
     &__img {
-        &__teste {
-            width: 200px;
-            height: 200px;
-            background: black;
-        }
+        img {
+            max-width: 300px;
 
+            @media #{$BREAKPOINT-TABLET} {
+                max-width: 400px;
+             }
+        }
     }
 
     &__container {
@@ -39,6 +40,7 @@
             border-color: $BASE_GREEN;
             color: $BASE_GREEN;
             border-radius: 10px;
+            border-style: solid;
             font-family: 'Segoe-UI-Regular';
             background-color: transparent;
             text-transform: uppercase;

@@ -2,11 +2,15 @@ import React from 'react';
 
 
 const Posts = (props) => {
+
+    const sectionStyle = {
+        backgroundImage: `url(${props.img})`
+    }
+
     return(
     <>
         <section className="post">
-            <div className="post__img">
-                <img src={props.img} alt={props.about} />
+            <div className="post__img" style={sectionStyle}>
             </div>
             <div className="post__container">
                 <h2 className="post__container__title">{props.ptitle}</h2>
