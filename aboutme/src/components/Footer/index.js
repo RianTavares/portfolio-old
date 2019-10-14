@@ -14,7 +14,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer>
+            <footer className="App__footer">
                 <Social />
                 <div className="social__copyright">{l[selectedLenguage].footer.textStart} <FontAwesomeIcon icon={faHeart} size="1x" /> {l[selectedLenguage].footer.textEnd}</div>
             </footer>

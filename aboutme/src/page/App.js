@@ -22,6 +22,7 @@ import portex from '../assets/imgs/port-ex.png';
 
 //Texts object
 import l from '../components/LenguageSwitcher/lenguage';
+import Menu from "../components/Menu";
 
 
 
@@ -43,6 +44,7 @@ function App() {
           <button id="england" onClick={() => { setLenguage(1); localStorage.setItem('lenguage_rt', 1)}}></button>
           <button id="germany" onClick={() => { setLenguage(2); localStorage.setItem('lenguage_rt', 2)}}></button>
         </div>
+        <Menu />
         <BannerTop />
       </section>
       <section className="page-content">
