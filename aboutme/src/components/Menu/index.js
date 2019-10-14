@@ -1,12 +1,12 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
 import Social from '../Social';
-import { Link } from 'react-router-dom';
 
 function HideOnScroll(props) {
+    
   const { children, window } = props;
   const trigger = useScrollTrigger({ target: window ? window() : undefined });
 
@@ -18,6 +18,13 @@ function HideOnScroll(props) {
 }
 
 export default function HideAppBar(props) {
+
+    const [selectedLenguage, setLenguage] = useState(0);
+
+    useEffect(()=>{
+        const localStorageVar = localStorage.getItem('lenguage_rt') ? localStorage.getItem('lenguage_rt') : 0;
+        setLenguage(localStorageVar);
+    },[])
 
     const buttonWasClicked = () => { 
         const body = document.body;
@@ -43,12 +50,12 @@ export default function HideAppBar(props) {
 
     const keepScrolling = () => {
         const body = document.body;
-      
+        
         if(body.classList.contains('foto-open')) {
-          body.classList.remove('foto-open');
-          body.style.top = 0;
+            body.classList.remove('foto-open');
+            body.style.top = 0;
         }
-      }
+    }
 
   return (
     <React.Fragment>
@@ -59,6 +66,12 @@ export default function HideAppBar(props) {
                 <button id="button-menu" className="menu-item__menu" type="button" onClick={buttonWasClicked}>
                     menu
                 </button>
+            </div>
+
+            <div className="menu-item-lenguage">
+                <button id="brazil" onClick={() => { setLenguage(0); localStorage.setItem('lenguage_rt', 0); window.location.reload();}}></button>
+                <button id="england" onClick={() => { setLenguage(1); localStorage.setItem('lenguage_rt', 1); window.location.reload();}}></button>
+                <button id="germany" onClick={() => { setLenguage(2); localStorage.setItem('lenguage_rt', 2); window.location.reload();}}></button>
             </div>
           </Toolbar>
         </AppBar>

@@ -63,6 +63,8 @@
 
             a {
                 margin: 20px 0 15px 20px;
+                font-family: 'Segoe-UI-Regular';
+                color: $DETAILS_GREEN;
             }
         }
     }
@@ -94,4 +96,35 @@
 
 .MuiAppBar-colorPrimary {
     background-color: $BASE_GREEN !important;
+}
+
+.menu-item-lenguage {
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+
+    * {
+        margin: 0 5px 0 0;
+        width: 32px;
+        height: 19px;
+        background: transparent;
+        border: 0;    
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #brazil {
+        background-image: url($BRAZIL);
+    }
+
+    #england {
+        background-image: url($ENGLAND);
+    }
+
+    #germany {
+        background-image: url($GERMANY);
+    }
 }

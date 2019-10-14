@@ -39,11 +39,11 @@ function App() {
   return (
     <div className="App">
       <section className="App__header">
-        <div className="App__header__lenguage">
+        {/* <div className="App__header__lenguage">
           <button id="brazil" onClick={() => { setLenguage(0); localStorage.setItem('lenguage_rt', 0)}}></button>
           <button id="england" onClick={() => { setLenguage(1); localStorage.setItem('lenguage_rt', 1)}}></button>
           <button id="germany" onClick={() => { setLenguage(2); localStorage.setItem('lenguage_rt', 2)}}></button>
-        </div>
+        </div> */}
         <Menu />
         <BannerTop />
       </section>

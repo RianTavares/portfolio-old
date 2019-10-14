@@ -4,37 +4,6 @@
     
     &__header {
         position: relative;
-
-        &__lenguage {
-            position: absolute;
-            z-index: 1;
-            right: 10px;
-            width: 100px;
-            display: flex;
-            justify-content: space-between;
-
-            * {
-                margin-top: 15px;
-                width: 32px;
-                height: 19px;
-                background: transparent;
-                border: 0;    
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            #brazil {
-                background-image: url($BRAZIL);
-            }
-
-            #england {
-                background-image: url($ENGLAND);
-            }
-
-            #germany {
-                background-image: url($GERMANY);
-            }
-        }
     }
 
     .page-content {
