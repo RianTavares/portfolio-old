@@ -66,6 +66,10 @@
                 font-family: 'Segoe-UI-Regular';
                 color: $DETAILS_GREEN;
             }
+
+            a:first-child {
+                margin-top: 40px;
+            }
         }
     }
 

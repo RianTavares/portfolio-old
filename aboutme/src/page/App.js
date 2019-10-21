@@ -87,7 +87,7 @@ function App() {
         }
       </Media>
         
-        <section className="section sec-posts"> 
+        <section id="posts" className="section sec-posts"> 
         <div className="sec-posts__bg">
             <h1 className="section__title title-posts">{l[selectedLenguage].section2.title}</h1>
             <p className="pattern-margin">{l[selectedLenguage].section2.description}</p>
@@ -117,7 +117,7 @@ function App() {
             />
           </div>
         </section>
-        <section className="section sec-jobs">
+        <section id="jobs" className="section sec-jobs">
           <div className="sec-jobs__content">
             <div className="sec-jobs__content__bg">
               <h1 className="section__title title-green">{l[selectedLenguage].section3.title}</h1>
@@ -150,7 +150,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="section sec-schools sec-skills pattern-margin">
+        <section id="education" className="section sec-schools sec-skills pattern-margin">
           <div className="sec-schools__container ">
             <div className="sec-schools__education">
               <h1 className="section__title">EDUCAÇÃO</h1>
@@ -188,7 +188,7 @@ function App() {
           </div>
         
         </section>
-        <section className="section sec-portfolio">
+        <section id="portfolio" className="section sec-portfolio">
           <div className="sec-portfolio__container">
             <h1 className="sec-portfolio__container__title">{l[selectedLenguage].section6.title}</h1>
 
