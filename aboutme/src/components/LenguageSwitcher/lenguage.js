@@ -94,7 +94,7 @@ const language = [
             "title": "PORTFÓLIO",
             "portfolio1": {
                 "title": "Rodobravo Tranportes",
-                "text": "Projeto desenvolvido em ReactJS. Pensando em uma restruturação de website para a empresa Rodobravo, fiz todo o desenho do template e o desenvolvimento.",
+                "text": "A Rodobravo estava em processo de reformulação de seus negócios e me confiou a tarefa de criar uma nova apresentação da empresa ao mercado e seus clientes. Este projeto trouxe um embasamento visual focado na identidade do cliente e no que há de novo no mundo do desenvolvimento web para proporcionar a melhor experiência possível aos usuários, tornando assim a comunicação da empresa clara e assertiva com seus clientes.",
                 "url": "https://github.com/RianTavares/riantavares.github.io",
                 "button": "Veja no Github",
                 "fotoOrder": "1",
