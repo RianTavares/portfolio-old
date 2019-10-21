@@ -39,7 +39,7 @@
     -webkit-transition: all .2s linear;
     transition: all .2s linear;
     z-index: 5;
-    left: -100vw;
+    left: -100%;
     top: 50px;
     position: fixed;
     width: 100%;
@@ -96,7 +96,7 @@
 
 .open-nav-transform {
     -webkit-transform: translateX(100vw);
-    transform: translateX(100vw);
+    transform: translateX(100%);
 }
 
 .MuiAppBar-colorPrimary {

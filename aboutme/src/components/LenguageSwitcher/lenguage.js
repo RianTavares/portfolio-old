@@ -94,7 +94,7 @@ const language = [
             "title": "PORTFÓLIO",
             "portfolio1": {
                 "title": "Rodobravo Tranportes",
-                "text": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+                "text": "Projeto desenvolvido em ReactJS. Pensando em uma restruturação de website para a empresa Rodobravo, fiz todo o desenho do template e o desenvolvimento.",
                 "url": "https://github.com/RianTavares/riantavares.github.io",
                 "button": "Veja no Github",
                 "fotoOrder": "1",

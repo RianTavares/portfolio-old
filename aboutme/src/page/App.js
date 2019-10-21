@@ -19,6 +19,7 @@ import infoglobo from '../assets/imgs/infoglobo.png';
 import ibm from '../assets/imgs/IBM.png';
 import bosch from '../assets/imgs/bosch.png';
 import portex from '../assets/imgs/port-ex.png';
+import rodobravo from '../assets/imgs/rodobravo.png'
 
 //Texts object
 import l from '../components/LenguageSwitcher/lenguage';
@@ -193,7 +194,7 @@ function App() {
             <h1 className="sec-portfolio__container__title">{l[selectedLenguage].section6.title}</h1>
 
             <Portfolio
-              pimg={portex}
+              pimg={rodobravo}
               ptitle={l[selectedLenguage].section6.portfolio1.title}
               ptext={l[selectedLenguage].section6.portfolio1.text}
               purl={l[selectedLenguage].section6.portfolio1.purl}

@@ -88,7 +88,7 @@
         .sec-posts {
             margin-top: 50px;
             background-color: $DETAIL_GRAY;
-            width: 100vw;
+            width: 100%;
 
             @media #{$BREAKPOINT-TABLET} {
                 margin: 80px auto 0 auto;
@@ -118,7 +118,7 @@
         .sec-jobs {
             &__content {
                 background-color: $WHITE_THEME;
-                width: 100vw;
+                width: 100%;
                 height: 100%;
                 padding-bottom: 90px;
             }
@@ -199,7 +199,7 @@
         .sec-portfolio {
             &__container {
                 padding-bottom: 90px;
-                width: 100vw;
+                width: 100%;
                 height: 100%;
                 background-color: $WHITE_THEME;
 
