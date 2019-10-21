@@ -52,7 +52,7 @@ function App() {
       <Media query="(min-width: 975px)">
         {matches =>
           matches ? (
-            <section className="section pattern-margin first">
+            <section id="aboutme" className="section pattern-margin first">
               <div className="section__desk">
                 <div className="section__desk__img">
                   <img src={me} alt={"Rian Tavares"} />
@@ -68,7 +68,7 @@ function App() {
             </div>
           </section>
           ) : (
-            <section className="section pattern-margin first">
+            <section id="aboutme" className="section pattern-margin first">
               <h1 className="section__title whoami">{l[selectedLenguage].section1.title}</h1>
               <div className="section__desk">
                 <div className="section__desk__img">
@@ -150,8 +150,8 @@ function App() {
             </div>
           </div>
         </section>
-        <section id="education" className="section sec-schools sec-skills pattern-margin">
-          <div className="sec-schools__container ">
+        <section className="section sec-schools sec-skills pattern-margin">
+          <div id="education" className="sec-schools__container ">
             <div className="sec-schools__education">
               <h1 className="section__title">EDUCAÇÃO</h1>
               <ul>
@@ -162,7 +162,7 @@ function App() {
               </ul>
             </div>
 
-            <div className="sec-skills__list">
+            <div id="skills" className="sec-skills__list">
               <h1 className="sec-skills__list__title">HABILIDADES</h1>
               <Skills
                 skill={l[selectedLenguage].section5.skill1.skill}

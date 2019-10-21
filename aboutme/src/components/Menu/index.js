@@ -4,6 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
 import Social from '../Social';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function HideOnScroll(props) {
     
@@ -49,12 +50,14 @@ export default function HideAppBar(props) {
     }
 
     const keepScrolling = () => {
-        const body = document.body;
-        
-        if(body.classList.contains('foto-open')) {
-            body.classList.remove('foto-open');
-            body.style.top = 0;
-        }
+          const body = document.body;
+          const button = document.querySelector('#button-menu');
+          const slideBar = document.querySelector('#menu-slide-bar');
+          
+          button.classList.remove('open');
+          body.classList.remove('menu-open');
+          slideBar.classList.remove('open-nav-transform');
+          body.style.top = 0;
     }
 
   return (
@@ -81,11 +84,12 @@ export default function HideAppBar(props) {
     <div className="menu-slide-bar" id="menu-slide-bar">
         <nav className="menu-slide-bar__nav">
             <div className="menu-slide-bar__nav__items">
-               <a>Quem Sou Eu</a>
-               <a>Posts</a>
-               <a>Experiências</a>
-               <a>Educação</a>
-               <a>Habilidade</a>
+               <Link to="#aboutme" onClick={keepScrolling}>Quem Sou Eu</Link>
+               <Link to="#posts" onClick={keepScrolling}>Posts</Link>
+               <Link to="#jobs" onClick={keepScrolling}>Experiências</Link>
+               <Link to="#education" onClick={keepScrolling}>Educação</Link>
+               <Link to="#skills" onClick={keepScrolling}>Habilidades</Link>
+               <Link to="#portfolio" onClick={keepScrolling}>Portfólio</Link>
             </div>
 
         </nav>
