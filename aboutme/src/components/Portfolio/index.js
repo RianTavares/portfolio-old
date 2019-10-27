@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Portfolio = (props) => {
-
+    console.log(props.purl);
+    
     const imgOrder = {
         order: `${props.fotoOrder}`
     }

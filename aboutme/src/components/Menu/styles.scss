@@ -120,6 +120,10 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+    
+    button {
+        cursor: pointer;
+    }
 
     #brazil {
         background-image: url($BRAZIL);

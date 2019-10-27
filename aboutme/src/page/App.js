@@ -13,13 +13,15 @@ import Portfolio from '../components/Portfolio';
 
 //imgs
 import postImg1 from '../assets/imgs/rm-mini.jpg';
-import postImg2 from '../assets/imgs/lampada-espia.jpg';
+import postImg2 from '../assets/imgs/corsica.jpg';
+import postImg3 from '../assets/imgs/lampada-espia.jpg';
 import me from '../assets/imgs/rian-tavares.png';
 import infoglobo from '../assets/imgs/infoglobo.png';
 import ibm from '../assets/imgs/IBM.png';
 import bosch from '../assets/imgs/bosch.png';
-import portex from '../assets/imgs/port-ex.png';
-import rodobravo from '../assets/imgs/rodobravo.png'
+import rodobravo from '../assets/imgs/rodobravo.png';
+import marvel from '../assets/imgs/marvel-catalog.png';
+import aboutmyself from '../assets/imgs/aboutme.png';
 
 //Texts object
 import l from '../components/LenguageSwitcher/lenguage';
@@ -40,11 +42,6 @@ function App() {
   return (
     <div className="App">
       <section className="App__header">
-        {/* <div className="App__header__lenguage">
-          <button id="brazil" onClick={() => { setLenguage(0); localStorage.setItem('lenguage_rt', 0)}}></button>
-          <button id="england" onClick={() => { setLenguage(1); localStorage.setItem('lenguage_rt', 1)}}></button>
-          <button id="germany" onClick={() => { setLenguage(2); localStorage.setItem('lenguage_rt', 2)}}></button>
-        </div> */}
         <Menu />
         <BannerTop />
       </section>
@@ -102,19 +99,19 @@ function App() {
             />
             <Posts 
               img={postImg2} 
-              about={"Lâmpada Espiã Yoose"} 
+              about={"Trip to Corsica"} 
               ptitle={l[selectedLenguage].section2.pub2.pubTitle}
               ptext={l[selectedLenguage].section2.pub2.pubText}
               pbutton={l[selectedLenguage].section2.button}
               purl={l[selectedLenguage].section2.pub2.url}
             />
             <Posts 
-              img={postImg1} 
-              about={"RM Mini 3"} 
-              ptitle={l[selectedLenguage].section2.pub1.pubTitle}
-              ptext={l[selectedLenguage].section2.pub1.pubText}
+              img={postImg3} 
+              about={"Lâmpada Espiã Yoose"} 
+              ptitle={l[selectedLenguage].section2.pub3.pubTitle}
+              ptext={l[selectedLenguage].section2.pub3.pubText}
               pbutton={l[selectedLenguage].section2.button}
-              purl={l[selectedLenguage].section2.pub1.url}
+              purl={l[selectedLenguage].section2.pub3.url}
             />
           </div>
         </section>
@@ -156,10 +153,10 @@ function App() {
             <div className="sec-schools__education">
               <h1 className="section__title">EDUCAÇÃO</h1>
               <ul>
-                <li className="first-li"><span>educacao one</span></li>
-                <li><span>educacao two</span></li>
-                <li><span>educacao three</span></li>
-                <li><span>educacao for</span></li>
+                <li className="first-li"><span><span className="education-time">2019 - Hoje</span>Estácio - Sistemas de Informação</span></li>
+                <li><span><span className="education-time">2013 - 2018</span>CEFET/RJ - Ciência da Computação</span></li>
+                <li><span><span className="education-time">09.2015 - 03.2016</span>Uni Ulm, Alemanha - Computação</span></li>
+                <li><span><span className="education-time">2010 - 2013</span>IFRJ - Ensino Médio</span></li>
               </ul>
             </div>
 
@@ -197,25 +194,25 @@ function App() {
               pimg={rodobravo}
               ptitle={l[selectedLenguage].section6.portfolio1.title}
               ptext={l[selectedLenguage].section6.portfolio1.text}
-              purl={l[selectedLenguage].section6.portfolio1.purl}
+              purl={l[selectedLenguage].section6.portfolio1.url}
               pbutton={l[selectedLenguage].section6.portfolio1.button}
               fotoOrder={l[selectedLenguage].section6.portfolio1.fotoOrder}
               textOrder={l[selectedLenguage].section6.portfolio1.textOrder}
             />
             <Portfolio
-              pimg={portex}
+              pimg={marvel}
               ptitle={l[selectedLenguage].section6.portfolio2.title}
               ptext={l[selectedLenguage].section6.portfolio2.text}
-              purl={l[selectedLenguage].section6.portfolio2.purl}
+              purl={l[selectedLenguage].section6.portfolio2.url}
               pbutton={l[selectedLenguage].section6.portfolio2.button}
               fotoOrder={l[selectedLenguage].section6.portfolio2.fotoOrder}
               textOrder={l[selectedLenguage].section6.portfolio2.textOrder}
             />
             <Portfolio
-              pimg={portex}
+              pimg={aboutmyself}
               ptitle={l[selectedLenguage].section6.portfolio3.title}
               ptext={l[selectedLenguage].section6.portfolio3.text}
-              purl={l[selectedLenguage].section6.portfolio3.purl}
+              purl={l[selectedLenguage].section6.portfolio3.url}
               pbutton={l[selectedLenguage].section6.portfolio3.button}
               fotoOrder={l[selectedLenguage].section6.portfolio3.fotoOrder}
               textOrder={l[selectedLenguage].section6.portfolio3.textOrder}

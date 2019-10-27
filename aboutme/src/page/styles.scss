@@ -158,6 +158,14 @@
                     span {
                         position: relative;
                         top: -14px;
+                        
+                        .education-time {
+                            position: absolute;
+                            top: -21px;
+                            font-family: 'Ubuntu-Mono-Bold';
+                            color: #64C8B2;
+                            font-size: 16px;
+                        } 
                     }
                 }
               }
