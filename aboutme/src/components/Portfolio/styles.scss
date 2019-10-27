@@ -1,0 +1,67 @@
+.portfolio {
+    @include flex-col;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media #{$BREAKPOINT-TABLET-LAND} {
+       flex-direction: row;
+       justify-content: space-between
+    }
+
+    &__img {
+        img {
+            max-width: 300px;
+
+            @media #{$BREAKPOINT-TABLET} {
+                max-width: 400px;
+             }
+        }
+    }
+
+    &__container {
+        @include flex-col;
+
+        &__title {
+            color: $TEXT_GRAY;
+        }
+        &__text {
+            text-align: justify;
+            color: $TEXT_GRAY;
+
+            @media #{$BREAKPOINT-TABLET} {
+                max-width: 750px;
+             }
+
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        &__button {
+            width: 200px;
+            height: 40px;
+            border-width: 2px;
+            border-color: $BASE_GREEN;
+            color: $BASE_GREEN;
+            border-radius: 10px;
+            border-style: solid;
+            font-family: 'Segoe-UI-Regular';
+            background-color: transparent;
+            text-transform: uppercase;
+            justify-content: space-around;
+            font-size: 15px;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            margin: 20px;
+            outline: none;
+        }
+
+        &__button:hover {
+            border-color: $DETAILS_GREEN;
+            color: $DETAILS_GREEN;
+        }
+    }
+}

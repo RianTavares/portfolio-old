@@ -1,0 +1,42 @@
+/*
+|--------------------------------------------------------------------------
+| COLORS
+|--------------------------------------------------------------------------
+*/
+
+$BACKGROUND: #868585;
+$TEXT_GRAY: #4B4748;
+$DETAIL_GRAY: #767273;
+$FOOTER: #151313;
+$WHITE_THEME: #DFDFDF;
+$BASE_GREEN: #64C8B2;
+$DETAILS_GREEN: #26AC8E;
+
+
+/*
+|--------------------------------------------------------------------------
+| IMAGES
+|--------------------------------------------------------------------------
+*/
+
+$BANNER_TOP: '../../assets/imgs/banner-top-rian-tavares.jpg';
+$BANNER_TOP_DESK: '../../assets/imgs/banner-top-rian-tavares-desk.jpg';
+$BRAZIL: '../../assets/imgs/portuguese.png';
+$ENGLAND: '../../assets/imgs/english.png';
+$GERMANY: '../../assets/imgs/deutsch.png';
+$ITEM_LIST: '../assets/imgs/school-item-2.png';
+$ITEM_LIST_FIRST: '../assets/imgs/school-item-1.png';
+
+
+/*
+|--------------------------------------------------------------------------
+| BREAKPOINTS
+|--------------------------------------------------------------------------
+*/
+
+// Usage example:  @media #{$media-tablet}
+
+$BREAKPOINT-DESK: 		        "only screen and (min-width: 1280px)";
+$BREAKPOINT-TABLET-LAND: 	    "only screen and (min-width: 975px)";
+$BREAKPOINT-TABLET: 		    "only screen and (min-width: 600px)";
+$BREAKPOINT-MOBILE-LAND: 		"only screen and (min-width: 480px)";

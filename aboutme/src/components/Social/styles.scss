@@ -1,0 +1,14 @@
+.social {
+    width: 220px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        color: $BASE_GREEN;
+    }
+
+    a:hover {
+        color: $DETAILS_GREEN;
+    }
+}

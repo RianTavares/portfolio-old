@@ -1,0 +1,62 @@
+.post {
+    @include flex-col;
+    margin-bottom: 100px;
+
+    @media #{$BREAKPOINT-TABLET} {
+        width: 195px;
+    }
+
+    @media #{$BREAKPOINT-TABLET-LAND} {
+        width: 300px;
+    }
+    
+    &__img {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        @media #{$BREAKPOINT-TABLET} {
+            height: 170px;
+        }
+    }
+
+    &__container {
+        @include margin-page;
+
+        @media #{$BREAKPOINT-TABLET} {
+        max-width: unset;
+        width: unset;
+        margin: unset;
+        }
+
+        &__title {
+            color: $WHITE_THEME;
+
+        }
+
+        p {
+            color: $WHITE_THEME;
+            text-align: justify;
+            margin-top: 0;
+        }
+
+        button {
+            background-color: $BASE_GREEN;
+            color: $TEXT_GRAY;
+            font-family: 'Ubuntu-Mono-Bold';
+            font-size: 16px;
+            width: 115px;
+            height: 40px;
+            border: none;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            outline: none;
+        }
+
+        button:hover {
+            background-color: $DETAILS_GREEN;
+        }
+    }
+}
