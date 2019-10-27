@@ -1,15 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.7beb4d76.chunk.css",
-    "main.js": "/static/js/main.03d2bad8.chunk.js",
-    "main.js.map": "/static/js/main.03d2bad8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d1a98e32.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d1a98e32.js.map",
-    "static/js/2.4bed25e4.chunk.js": "/static/js/2.4bed25e4.chunk.js",
-    "static/js/2.4bed25e4.chunk.js.map": "/static/js/2.4bed25e4.chunk.js.map",
+    "main.css": "/static/css/main.cd4e729e.chunk.css",
+    "main.js": "/static/js/main.ad567d33.chunk.js",
+    "main.js.map": "/static/js/main.ad567d33.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.11f483ff.js",
+    "runtime-main.js.map": "/static/js/runtime-main.11f483ff.js.map",
+    "static/js/2.f38c91f4.chunk.js": "/static/js/2.f38c91f4.chunk.js",
+    "static/js/2.f38c91f4.chunk.js.map": "/static/js/2.f38c91f4.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.145f586cc65037a30063bc4703b191e1.js": "/precache-manifest.145f586cc65037a30063bc4703b191e1.js",
+    "precache-manifest.12cde948374dbb25ffdd8bd09522da29.js": "/precache-manifest.12cde948374dbb25ffdd8bd09522da29.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.7beb4d76.chunk.css.map": "/static/css/main.7beb4d76.chunk.css.map"
+    "static/css/main.cd4e729e.chunk.css.map": "/static/css/main.cd4e729e.chunk.css.map",
+    "static/media/IBM.png": "/static/media/IBM.c7867bfb.png",
+    "static/media/App.scss": "/static/media/school-item-1.6b955356.png",
+    "static/media/aboutme.png": "/static/media/aboutme.6ea66a9f.png",
+    "static/media/bosch.png": "/static/media/bosch.85230b79.png",
+    "static/media/corsica.jpg": "/static/media/corsica.4828e58d.jpg",
+    "static/media/infoglobo.png": "/static/media/infoglobo.25c90439.png",
+    "static/media/lampada-espia.jpg": "/static/media/lampada-espia.99236482.jpg",
+    "static/media/marvel-catalog.png": "/static/media/marvel-catalog.8f279ddd.png",
+    "static/media/rian-tavares.png": "/static/media/rian-tavares.41d6f44c.png",
+    "static/media/rm-mini.jpg": "/static/media/rm-mini.f1bd80fa.jpg",
+    "static/media/rodobravo.png": "/static/media/rodobravo.3ac8aff1.png"
   }
 }
