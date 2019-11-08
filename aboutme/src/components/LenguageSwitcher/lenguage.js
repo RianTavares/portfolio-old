@@ -40,22 +40,22 @@ const language = [
             "title": "EXPERIÊNCIA",
             "job1": {
                 "time":"12.2018 - Hoje",
-                "details":"Hoje como desenvolver web atuo principalmente como Front-end tanto na entrega de novos portais como o Beauty Tudo, fluxo de pagamento do cliente, vitrine de ofertas, como também na geração de soluções para processos e sistemas internos.",
+                "details":"Hoje como desenvolver web atuo principalmente como Front-end. Participei da entrega de um novo portal chamado Beauty Tudo (revistamarieclaire.globo.com/Beauty-Tudo), do novo site Marie Claire e no momento faço parte do time responsável pelo fluxo de pagamento do cliente, vitrine de ofertas, etc. Em diversos momentos atuo também na geração de soluções para processos e sistemas internos. As tecnologias que trabalho principalmente são ReactJs e NodeJs",
                 "location":"Rio de Janeiro, Brasil"
             },
             "job2": {
                 "time":"06.2017 - 12.2018",
-                "details":'Como estagiário da equipe denominada "Efficiency Team", atuei principalmente como fullstack de aplicações web para uso interno de equipes do Brasil, Atlanta e Canadá.',
+                "details":'Como estagiário da equipe denominada "Efficiency Team", atuei principalmente como fullstack de aplicações web para uso interno de equipes do Brasil, Atlanta e Canadá. Lá Trabalhei principalmente com VueJs e NodeJs',
                 "location":"Rio de Janeiro, Brasil"            
             },
             "job3": {
                 "time":"02.2017 - 06.2017",
-                "details":"Como estagiário na central de comunicações dos maiores portais de notícias do Brasil, atuei principalmente como fullstack dos portais O Globo e Extra.",
+                "details":"Como estagiário na central de comunicações dos maiores portais de notícias do Brasil, atuei principalmente como fullstack dos portais O Globo (oglobo.globo.com) e Extra (extra.com.br)",
                 "location":"Rio de Janeiro, Brasil"            
             },
             "job4": {
                 "time":"03.2018 - 07.2016",
-                "details":"Atuei como estagiário na manutenção do software de gerenciamento interno, tester de novas funcionalidades e na otimização de processos internos.",
+                "details":"Atuei como estagiário na manutenção do software de gerenciamento interno, tester de novas funcionalidades e na otimização de processos internos",
                 "location":"Boxberg, Alemanha"           
             }
         },
@@ -95,7 +95,7 @@ const language = [
             "portfolio1": {
                 "title": "Rodobravo Tranportes",
                 "text": "A Rodobravo estava em processo de reformulação de seus negócios e me confiou a tarefa de criar uma nova apresentação da empresa ao mercado e seus clientes. Este projeto trouxe um embasamento visual focado na identidade do cliente e no que há de novo no mundo do desenvolvimento web para proporcionar a melhor experiência possível aos usuários, tornando assim a comunicação da empresa clara e assertiva com seus clientes.",
-                "url": "https://github.com/RianTavares/riantavares.github.io",
+                "url": "https://github.com/RianTavares/rodobravotransportes",
                 "button": "Veja no Github",
                 "fotoOrder": "1",
                 "textOrder": "2"
@@ -103,7 +103,7 @@ const language = [
             "portfolio2": {
                 "title": "Marvel Catalog",
                 "text": "Este projeto nasceu com intuito de estudo e treinamento e está sendo desenvolvido em ReactJS no front-end e NodeJs no back-end, e também consumindo dados de uma api da Marvel para desenvolvedores. Com auxílio de meu colega de profissão Márcio Sardou, estamos desenvolvendo uma página de HQ's da Marvel, onde o usuário possa paginar para visualizar mais itens, buscar pelo nome desejado e também ler maiores detalhes sobre qualquer HQ da página.",
-                "url": "https://github.com/RianTavares/riantavares.github.io",
+                "url": "https://github.com/RianTavares/marvel-catalog",
                 "button": "Veja no Github",
                 "fotoOrder": "2",
                 "textOrder": "1"
