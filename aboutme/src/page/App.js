@@ -85,7 +85,7 @@ function App() {
         }
       </Media>
         
-        <section id="posts" className="section sec-posts"> 
+        {/* <section id="posts" className="section sec-posts"> 
         <div className="sec-posts__bg">
             <h1 className="section__title title-posts">{l[selectedLenguage].section2.title}</h1>
             <p className="pattern-margin">{l[selectedLenguage].section2.description}</p>
@@ -114,7 +114,7 @@ function App() {
               purl={l[selectedLenguage].section2.pub3.url}
             />
           </div>
-        </section>
+        </section> */}
         <section id="jobs" className="section sec-jobs">
           <div className="sec-jobs__content">
             <div className="sec-jobs__content__bg">
