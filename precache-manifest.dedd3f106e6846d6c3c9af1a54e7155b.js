@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f59912701091bb14b955ef870dd3cec2",
+    "revision": "445fe6f773d370b89191f2126267e0f5",
     "url": "/index.html"
   },
   {
-    "revision": "fe4ebe8373c609281628",
-    "url": "/static/css/main.cd4e729e.chunk.css"
+    "revision": "ea7f8eefbabecd42b53b",
+    "url": "/static/css/main.ed2296c4.chunk.css"
   },
   {
-    "revision": "a8164ac10825fdb7f140",
-    "url": "/static/js/2.f38c91f4.chunk.js"
+    "revision": "5ce9b78f2081c9c7333a",
+    "url": "/static/js/2.92ace1f5.chunk.js"
   },
   {
-    "revision": "fe4ebe8373c609281628",
-    "url": "/static/js/main.ad567d33.chunk.js"
+    "revision": "ea7f8eefbabecd42b53b",
+    "url": "/static/js/main.1b352a46.chunk.js"
   },
   {
     "revision": "f8778270583dddd6b450",
@@ -24,10 +24,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/IBM.c7867bfb.png"
   },
   {
-    "revision": "54d8280b223c7dce5fd0a6bd09e7d1b7",
-    "url": "/static/media/SegoeUI.54d8280b.svg"
-  },
-  {
     "revision": "81a9e5833dd6c15bc35750d13843d892",
     "url": "/static/media/SegoeUI.81a9e583.woff"
   },
@@ -36,8 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/SegoeUI.8b1d8cb8.eot"
   },
   {
+    "revision": "a32d0486927b760ae5667807ade7a4f1",
+    "url": "/static/media/SegoeUI.a32d0486.svg"
+  },
+  {
     "revision": "b11d89f7486350e68ba954d7dd0de478",
     "url": "/static/media/SegoeUI.b11d89f7.woff2"
+  },
+  {
+    "revision": "13fa5debcfab0fa72974e7fb441c4684",
+    "url": "/static/media/UbuntuMono-Bold.13fa5deb.svg"
   },
   {
     "revision": "17963602054f84acd8396d4bb1580980",
@@ -52,10 +56,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/UbuntuMono-Bold.4b16b07a.eot"
   },
   {
-    "revision": "58208e96c6c264c7ecb1a1e860f62444",
-    "url": "/static/media/UbuntuMono-Bold.58208e96.svg"
-  },
-  {
     "revision": "6beb9ce4408d6016673b1a087fbdbb1f",
     "url": "/static/media/UbuntuMono-Bold.6beb9ce4.woff2"
   },
@@ -64,8 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/UbuntuMono-Regular.0a3c8aae.woff"
   },
   {
-    "revision": "5593616b9abdd10ac3da4d04b52a38c3",
-    "url": "/static/media/UbuntuMono-Regular.5593616b.svg"
+    "revision": "298091c01dfefd2c7ef2c17a82cac8d4",
+    "url": "/static/media/UbuntuMono-Regular.298091c0.svg"
   },
   {
     "revision": "74fdc84acb95b45639384671c3f0112a",

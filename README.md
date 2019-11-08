@@ -1,1 +1,0 @@
-Layout: [https://xd.adobe.com/spec/a7569edd-e900-4421-5823-a855722d4666-d167/](https://xd.adobe.com/spec/a7569edd-e900-4421-5823-a855722d4666-d167/)
