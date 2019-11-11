@@ -154,7 +154,7 @@ function App() {
               <h1 className="section__title">EDUCAÇÃO</h1>
               <ul>
                 <li className="first-li"><span><span className="education-time">2019 - Hoje</span>Estácio - Sistemas de Informação</span></li>
-                <li><span><span className="education-time">2013 - 2018</span>CEFET/RJ - Ciência da Computação</span></li>
+                <li><span><span className="education-time">2013 - 2018</span>CEFET - Ciência da Computação</span></li>
                 <li><span><span className="education-time">09.2015 - 03.2016</span>Uni Ulm, Alemanha - Computação</span></li>
                 <li><span><span className="education-time">2010 - 2013</span>IFRJ - Ensino Médio</span></li>
               </ul>
