@@ -21,6 +21,8 @@
         p {
             color: $TEXT_GRAY;
             margin: 0;
+            max-width: 100%;
+            word-break: break-word;
         }
 
         p:first-child {
