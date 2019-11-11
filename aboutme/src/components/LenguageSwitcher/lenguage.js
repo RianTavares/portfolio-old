@@ -102,7 +102,7 @@ const language = [
             },
             "portfolio2": {
                 "title": "Marvel Catalog",
-                "text": "Este projeto nasceu com intuito de estudo e treinamento e está sendo desenvolvido em ReactJS no front-end e NodeJs no back-end, e também consumindo dados de uma api da Marvel para desenvolvedores. Com auxílio de meu colega de profissão Márcio Sardou, estamos desenvolvendo uma página de HQ's da Marvel, onde o usuário possa paginar para visualizar mais itens, buscar pelo nome desejado e também ler maiores detalhes sobre qualquer HQ da página.",
+                "text": "Este projeto nasceu com intuito de estudo e treinamento e foi desenvolvido em ReactJS no front-end e NodeJs no back-end. Ele consiste em uma página web que lista revistas em quadrinhos (comics) da Marvel e para tal utilizamos uma api da Marvel para desenvolvedores. Com auxílio de meu colega de profissão Márcio Sardou, desenvolvemos funcionalidades como paginação para visualizar mais itens, busca pelo nome desejado e também maiores detalhes sobre qualquer comic da página.",
                 "url": "https://github.com/RianTavares/marvel-catalog",
                 "button": "Veja no Github",
                 "fotoOrder": "2",
@@ -110,7 +110,7 @@ const language = [
             },
             "portfolio3": {
                 "title": "About Me",
-                "text": "Esse é o nome de batismo deste projeto. Ele surgiu de um grande desejo meu de criar um currículo web onde eu possa descrever melhor meus trabalhos e projetos pessoais, agrupar as informações sobre mim, postar conteúdos legais que tenho grande prazer em criar como os posts sobre tecnologia e vídeos que produzo e também o mais legal, disponibilizar tudo isso nas línguas que mais tenho domínio que são o português, que é minha língua materna, o inglês e o alemão.",
+                "text": "Esse projeto surgiu de um grande desejo meu de criar um currículo web onde eu possa descrever melhor meus trabalhos e projetos pessoais, agrupar as informações sobre mim, postar conteúdos legais que tenho grande prazer em criar como os posts sobre tecnologia e vídeos que produzo, disponibilizar meus contatos e quem sabe conhecer mais amantes de tecnologia e desenvolver grandes projetos em parceria.",
                 "url": "https://github.com/RianTavares/riantavares.github.io",
                 "button": "Veja no Github",
                 "fotoOrder": "1",
