@@ -40,7 +40,7 @@ const language = [
             "title": "EXPERIÊNCIA",
             "job1": {
                 "time":"12.2018 - Hoje",
-                "details":"Hoje como desenvolver web atuo principalmente como Front-end. Participei da entrega de um novo portal chamado Beauty Tudo (revistamarieclaire.globo.com/Beauty-Tudo), do novo site Marie Claire e no momento faço parte do time responsável pelo fluxo de pagamento do cliente, vitrine de ofertas, etc. Em diversos momentos atuo também na geração de soluções para processos e sistemas internos. As tecnologias que trabalho principalmente são ReactJs e NodeJs",
+                "details":"Hoje como desenvolver web atuo principalmente como Front-end. Participei da entrega de um novo portal chamado Beauty Tudo (revistamarieclaire.globo.com/Beauty-Tudo), do novo site Marie Claire e no momento faço parte do time responsável pelo fluxo de pagamento do cliente, vitrine de ofertas, entre outras funcionalidades de todos os produtos da Editora Globo. Em diversos momentos atuo também na geração de soluções para processos e sistemas internos. As tecnologias que trabalho principalmente são ReactJs e NodeJs",
                 "location":"Rio de Janeiro, Brasil"
             },
             "job2": {
