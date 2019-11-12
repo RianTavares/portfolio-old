@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "471afd843bbf89e49c4bba46d0826c41",
+    "revision": "c4c359eb56027a51afd8ee1a8e307e17",
     "url": "/index.html"
   },
   {
-    "revision": "f02a01ea167479761fbb",
-    "url": "/static/css/main.a3801925.chunk.css"
+    "revision": "a6ce2df78031159e0114",
+    "url": "/static/css/main.c11f8d03.chunk.css"
   },
   {
-    "revision": "5ce9b78f2081c9c7333a",
-    "url": "/static/js/2.92ace1f5.chunk.js"
+    "revision": "4b003bad18a15ee395e0",
+    "url": "/static/js/2.3dbd126f.chunk.js"
   },
   {
-    "revision": "f02a01ea167479761fbb",
-    "url": "/static/js/main.59a8c9b6.chunk.js"
+    "revision": "a6ce2df78031159e0114",
+    "url": "/static/js/main.3ea31b53.chunk.js"
   },
   {
     "revision": "f8778270583dddd6b450",
@@ -24,6 +24,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/IBM.c7867bfb.png"
   },
   {
+    "revision": "54d8280b223c7dce5fd0a6bd09e7d1b7",
+    "url": "/static/media/SegoeUI.54d8280b.svg"
+  },
+  {
     "revision": "81a9e5833dd6c15bc35750d13843d892",
     "url": "/static/media/SegoeUI.81a9e583.woff"
   },
@@ -32,16 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/SegoeUI.8b1d8cb8.eot"
   },
   {
-    "revision": "a32d0486927b760ae5667807ade7a4f1",
-    "url": "/static/media/SegoeUI.a32d0486.svg"
-  },
-  {
     "revision": "b11d89f7486350e68ba954d7dd0de478",
     "url": "/static/media/SegoeUI.b11d89f7.woff2"
-  },
-  {
-    "revision": "13fa5debcfab0fa72974e7fb441c4684",
-    "url": "/static/media/UbuntuMono-Bold.13fa5deb.svg"
   },
   {
     "revision": "17963602054f84acd8396d4bb1580980",
@@ -56,6 +52,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/UbuntuMono-Bold.4b16b07a.eot"
   },
   {
+    "revision": "58208e96c6c264c7ecb1a1e860f62444",
+    "url": "/static/media/UbuntuMono-Bold.58208e96.svg"
+  },
+  {
     "revision": "6beb9ce4408d6016673b1a087fbdbb1f",
     "url": "/static/media/UbuntuMono-Bold.6beb9ce4.woff2"
   },
@@ -64,8 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/UbuntuMono-Regular.0a3c8aae.woff"
   },
   {
-    "revision": "298091c01dfefd2c7ef2c17a82cac8d4",
-    "url": "/static/media/UbuntuMono-Regular.298091c0.svg"
+    "revision": "5593616b9abdd10ac3da4d04b52a38c3",
+    "url": "/static/media/UbuntuMono-Regular.5593616b.svg"
   },
   {
     "revision": "74fdc84acb95b45639384671c3f0112a",
@@ -114,6 +114,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8f279ddd4ef5f629f79712e90aa9e468",
     "url": "/static/media/marvel-catalog.8f279ddd.png"
+  },
+  {
+    "revision": "5e098ea622e23b55ab2d9611887c161c",
+    "url": "/static/media/qr-code.5e098ea6.svg"
   },
   {
     "revision": "41d6f44c5388cedbac747df1bb065023",

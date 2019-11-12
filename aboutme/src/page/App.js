@@ -10,6 +10,7 @@ import Posts from '../components/Posts';
 import Jobs from '../components/Jobs';
 import Skills from '../components/Skills';
 import Portfolio from '../components/Portfolio';
+import Resume from '../components/Resume';
 
 //imgs
 import postImg1 from '../assets/imgs/rm-mini.jpg';
@@ -186,6 +187,10 @@ function App() {
           </div>
         
         </section>
+        <Resume 
+          title={l[selectedLenguage].resume.title}
+          subtitle={l[selectedLenguage].resume.subtitle}
+        />
         <section id="portfolio" className="section sec-portfolio">
           <div className="sec-portfolio__container">
             <h1 className="sec-portfolio__container__title">{l[selectedLenguage].section6.title}</h1>

@@ -120,6 +120,10 @@ const language = [
         "footer": {
             "textStart": "Desenvolvido com",
             "textEnd": "por mim"
+        },
+        "resume": {
+            "title" : "Faça Download do meu currículo",
+            "subtitle": "Escaneando o QR code com a câmera do celular"
         }
                
         
