@@ -159,6 +159,11 @@
                     span {
                         position: relative;
                         top: -14px;
+                        font-size: small;
+
+                        @media #{$BREAKPOINT-TABLET} {
+                            font-size: initial;
+                        }
                         
                         .education-time {
                             width: 180px;

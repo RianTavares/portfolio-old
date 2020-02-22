@@ -12,7 +12,7 @@ const Skills = (props) => {
                     <div className="item-skill__level__item"></div>
                     <div className="item-skill__level__item"></div>
                     <div className="break"></div>
-                    <h3>{props.label}</h3>
+                    <h3 className={`item-skill__${props.level}`}>{props.label}</h3>
                 </div>
             </div>
         </>

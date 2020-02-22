@@ -154,10 +154,10 @@ function App() {
             <div className="sec-schools__education">
               <h1 className="section__title">{l[selectedLenguage].section4.title}</h1>
               <ul>
-                <li className="first-li"><span><span className="education-time">2019 - Hoje</span>Estácio - SI</span></li>
-                <li><span><span className="education-time">2013 - 2018</span>CEFET - Computação</span></li>
-                <li><span><span className="education-time">09.2015 - 03.2016</span>Uni Ulm - Computação</span></li>
-                <li><span><span className="education-time">2010 - 2013</span>IFRJ - Ensino Médio</span></li>
+                <li className="first-li"><span><span className="education-time">{l[selectedLenguage].section4.item1.time}</span>{l[selectedLenguage].section4.item1.place}</span></li>
+                <li><span><span className="education-time">{l[selectedLenguage].section4.item2.time}</span>{l[selectedLenguage].section4.item2.place}</span></li>
+                <li><span><span className="education-time">{l[selectedLenguage].section4.item3.time}</span>{l[selectedLenguage].section4.item3.place}</span></li>
+                <li><span><span className="education-time">{l[selectedLenguage].section4.item4.time}</span>{l[selectedLenguage].section4.item4.place}</span></li>
               </ul>
             </div>
 

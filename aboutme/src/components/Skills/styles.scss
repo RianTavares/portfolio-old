@@ -38,7 +38,6 @@
     }
 
     .basic {
-    
         .item-skill__level__item:first-child {
             border-color: $BASE_GREEN;
         }
@@ -59,6 +58,28 @@
     .hardcore {
         .item-skill__level__item {
             border-color: $BASE_GREEN;
+        }
+    }
+    
+    &__basic {
+        text-align: left;
+        padding-left: 5px;
+
+        @media #{$BREAKPOINT-TABLET} {
+            padding-right: 10px;
+        }
+    }
+    
+    &__medium {
+        text-align: center;
+    }
+    
+    &__hardcore {
+        text-align: right;
+        padding-right: 5px;
+
+        @media #{$BREAKPOINT-TABLET} {
+            padding-right: 10px;
         }
     }
 

@@ -5,6 +5,8 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
 import Social from '../Social';
 import { HashLink as Link } from 'react-router-hash-link';
+import l from '../../components/LenguageSwitcher/lenguage';
+
 
 function HideOnScroll(props) {
     
@@ -71,11 +73,11 @@ export default function HideAppBar(props) {
                 </button>
             </div>
             {/* Troca de língua retirada para a próxima entrega */}
-            {/* <div className="menu-item-lenguage">
+            <div className="menu-item-lenguage">
                 <button id="brazil" onClick={() => { setLenguage(0); localStorage.setItem('lenguage_rt', 0); window.location.reload();}}></button>
                 <button id="england" onClick={() => { setLenguage(1); localStorage.setItem('lenguage_rt', 1); window.location.reload();}}></button>
-                <button id="germany" onClick={() => { setLenguage(2); localStorage.setItem('lenguage_rt', 2); window.location.reload();}}></button>
-            </div> */}
+                {/* <button id="germany" onClick={() => { setLenguage(2); localStorage.setItem('lenguage_rt', 2); window.location.reload();}}></button> */}
+            </div>
           </Toolbar>
         </AppBar>
       </HideOnScroll>
@@ -84,12 +86,12 @@ export default function HideAppBar(props) {
     <div className="menu-slide-bar" id="menu-slide-bar">
         <nav className="menu-slide-bar__nav">
             <div className="menu-slide-bar__nav__items">
-               <Link to="#aboutme" onClick={keepScrolling}>Quem Sou Eu</Link>
-               <Link to="#posts" onClick={keepScrolling}>Posts</Link>
-               <Link to="#jobs" onClick={keepScrolling}>Experiências</Link>
-               <Link to="#education" onClick={keepScrolling}>Educação</Link>
-               <Link to="#skills" onClick={keepScrolling}>Habilidades</Link>
-               <Link to="#portfolio" onClick={keepScrolling}>Portfólio</Link>
+               <Link to="#aboutme" onClick={keepScrolling}>{l[selectedLenguage].menu.item1}</Link>
+               {/* <Link to="#posts" onClick={keepScrolling}>Posts</Link> */}
+               <Link to="#jobs" onClick={keepScrolling}>{l[selectedLenguage].menu.item3}</Link>
+               <Link to="#education" onClick={keepScrolling}>{l[selectedLenguage].menu.item4}</Link>
+               <Link to="#skills" onClick={keepScrolling}>{l[selectedLenguage].menu.item5}</Link>
+               <Link to="#portfolio" onClick={keepScrolling}>{l[selectedLenguage].menu.item6}</Link>
             </div>
 
         </nav>
