@@ -152,7 +152,7 @@ function App() {
         <section className="section sec-schools sec-skills pattern-margin">
           <div id="education" className="sec-schools__container ">
             <div className="sec-schools__education">
-              <h1 className="section__title">EDUCAÇÃO</h1>
+              <h1 className="section__title">{l[selectedLenguage].section4.title}</h1>
               <ul>
                 <li className="first-li"><span><span className="education-time">2019 - Hoje</span>Estácio - SI</span></li>
                 <li><span><span className="education-time">2013 - 2018</span>CEFET - Computação</span></li>
@@ -162,7 +162,7 @@ function App() {
             </div>
 
             <div id="skills" className="sec-skills__list">
-              <h1 className="sec-skills__list__title">HABILIDADES</h1>
+              <h1 className="sec-skills__list__title">{l[selectedLenguage].section5.title}</h1>
               <Skills
                 skill={l[selectedLenguage].section5.skill1.skill}
                 level={l[selectedLenguage].section5.skill1.level}
