@@ -96,7 +96,7 @@ const language = [
                 "label": "Intermediário"
             },
             "skill4": {
-                "skill": "Python",
+                "skill": "React Native",
                 "level": "basic",
                 "label": "Iniciante"
             },
@@ -110,7 +110,7 @@ const language = [
             "title": "PORTFÓLIO",
             "portfolio1": {
                 "title": "Rodobravo Tranportes",
-                "text": "A Rodobravo estava em processo de reformulação de seus negócios e me confiou a tarefa de criar uma nova apresentação da empresa ao mercado e seus clientes. Este projeto trouxe um embasamento visual focado na identidade do cliente e no que há de novo no mundo do desenvolvimento web para proporcionar a melhor experiência possível aos usuários, tornando assim a comunicação da empresa clara e assertiva com seus clientes.",
+                "text": "A Rodobravo estava em processo de reformulação de seus negócios e me confiou a tarefa de criar uma nova apresentação da empresa ao mercado e seus clientes. Este projeto trouxe um embasamento visual focado na identidade da Rodobravo e no que há de novo no mundo do desenvolvimento web para proporcionar a melhor experiência possível aos usuários, tornando assim a comunicação da empresa clara e assertiva com seus clientes.",
                 "url": "https://github.com/RianTavares/rodobravotransportes",
                 "button": "Veja no Github",
                 "fotoOrder": "1",
@@ -152,12 +152,12 @@ const language = [
             "item3": "Work Experiences",
             "item4": "Education",
             "item5": "Skills",
-            "item6": "Portfólio",
+            "item6": "Portfolio",
         },
         "section1":{
             "title": "WHO AM I?",
-            "paragraph1": "Hi, I'm Rian. I am a web developer born and raised in Rio de Janeiro. And also lived in Germany, did you know? During a year as a student of DAAD and CAPES I learned German, studied computer science at Ulm Universität and even worked at a large German technology company",
-            "paragraph2": "Well, I'm an enthusiast when it comes to creating new solutions and very optimistic. I love computing and have the dream of making the difference and help people through my knowledge. I am currently focused on studying JavaScript ecosystem technologies.",
+            "paragraph1": "Hi, I'm Rian. I am a web developer born and raised in Rio de Janeiro. And I also lived in Germany, did you know? During a year as a student of DAAD and CAPES I learned German, studied computer science at Ulm Universität and even worked at a large German technology company.",
+            "paragraph2": "Well, I'm very optimistic and an enthusiast when it comes to creating new solutions. I love computing and have the dream of making the difference and helping people through my knowledge. I am currently focused on studying JavaScript ecosystem technologies.",
             "phrase": '"And thinking differently is the only thing in us that I believe must always remain the same."',
             "followme": "You can find me on the social networks below."
         },
@@ -190,7 +190,7 @@ const language = [
             },
             "job2": {
                 "time":"06.2017 - 12.2018",
-                "details":'As an intern in the team called "Efficiency Team", I worked mainly as a fullstack of web applications for internal use by teams from Brazil, Atlanta and Canada. There I worked mainly with VueJs and NodeJs',
+                "details":'As an intern in the team called "Efficiency Team", I worked mainly as a fullstack of web applications for internal use by teams from Brazil, USA and Canada. There I worked mainly with VueJs and NodeJs',
                 "location":"Rio de Janeiro, Brasil"            
             },
             "job3": {
@@ -200,7 +200,7 @@ const language = [
             },
             "job4": {
                 "time":"03.2018 - 07.2016",
-                "details":"I worked as an intern in the maintenance of internal management software, tester of new features and in the optimization of internal processes",
+                "details":"I worked as an intern in the maintenance of internal management software, testing of new features and in the optimization of internal processes",
                 "location":"Boxberg, Alemanha"           
             }
         },
@@ -256,7 +256,7 @@ const language = [
             "title": "PORTFOLIO",
             "portfolio1": {
                 "title": "Rodobravo Tranportes",
-                "text": "Rodobravo was in the process of reformulating its business and entrusted me with the task of creating a new presentation of the company to the market and its customers. This project brought a visual basis focused on the Rodobravo's identity and what is new in the world of web development to provide the best possible experience for users, thus making the company's communication clear and assertive with its customers.",
+                "text": "Rodobravo was in the process of reformulating its business and entrusted me with the task of creating a new presentation of the company to the market and its customers. This project brought a visual basis focused on Rodobravo's identity and what is new in the world of web development to provide the best possible experience for users, thus making the company's communication clear and assertive.",
                 "url": "https://github.com/RianTavares/rodobravotransportes",
                 "button": "See on Github",
                 "fotoOrder": "1",
