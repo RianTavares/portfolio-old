@@ -60,7 +60,7 @@ const language = [
             }
         },
         "section4": {
-            "title": "EDUCATION",
+            "title": "EDUCAÇÃO",
             "item1": {
                 "time": "2019 - Hoje",
                 "place": "Estácio -  Sistemas da Informação" 
