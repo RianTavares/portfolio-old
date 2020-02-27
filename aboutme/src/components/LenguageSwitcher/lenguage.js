@@ -184,24 +184,24 @@ const language = [
         "section3": {
             "title": "WORK EXPERIENCES",
             "job1": {
-                "time":"12.2018 - Hoje",
+                "time":"12.2018 - Present",
                 "details":"Currently as a web developer I work mainly as a Front-end. I participated in the delivery of a new portal called Beauty Tudo (revistamarieclaire.globo.com/Beauty-Tudo), of the new Marie Claire website and I am currently part of the team responsible for the customer's payment flow, showcase of offers, among other features of all Editora Globo products. At many times I also work on generating solutions for internal processes and systems. The technologies I work with mainly are ReactJs and NodeJs",
-                "location":"Rio de Janeiro, Brasil"
+                "location":"Rio de Janeiro, Brazil"
             },
             "job2": {
                 "time":"06.2017 - 12.2018",
                 "details":'As an intern in the team called "Efficiency Team", I worked mainly as a fullstack of web applications for internal use by teams from Brazil, USA and Canada. There I worked mainly with VueJs and NodeJs',
-                "location":"Rio de Janeiro, Brasil"            
+                "location":"Rio de Janeiro, Brazil"            
             },
             "job3": {
                 "time":"02.2017 - 06.2017",
                 "details":"As an intern at the communications center of the largest news portals in Brazil, I worked mainly as a fullstack for the O Globo (oglobo.globo.com) and Extra (extra.com.br) portals",
-                "location":"Rio de Janeiro, Brasil"            
+                "location":"Rio de Janeiro, Brazil"            
             },
             "job4": {
                 "time":"03.2018 - 07.2016",
                 "details":"I worked as an intern in the maintenance of internal management software, testing of new features and in the optimization of internal processes",
-                "location":"Boxberg, Alemanha"           
+                "location":"Boxberg, Germany"           
             }
         },
         "section4": {
