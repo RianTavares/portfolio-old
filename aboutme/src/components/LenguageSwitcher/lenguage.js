@@ -54,7 +54,7 @@ const language = [
                 "location":"Rio de Janeiro, Brasil"            
             },
             "job4": {
-                "time":"03.2018 - 07.2016",
+                "time":"03.2016 - 07.2016",
                 "details":"Atuei como estagiário na manutenção do software de gerenciamento interno, tester de novas funcionalidades e na otimização de processos internos",
                 "location":"Boxberg, Alemanha"           
             }
@@ -199,7 +199,7 @@ const language = [
                 "location":"Rio de Janeiro, Brazil"            
             },
             "job4": {
-                "time":"03.2018 - 07.2016",
+                "time":"03.2016 - 07.2016",
                 "details":"I worked as an intern in the maintenance of internal management software, testing of new features and in the optimization of internal processes",
                 "location":"Boxberg, Germany"           
             }
