@@ -123,6 +123,12 @@ function App() {
               <div className="sec-jobs__content__bg__itens pattern-margin">
                 <Jobs
                   photo={infoglobo}
+                  time={l[selectedLenguage].section3.job0.time}
+                  details={l[selectedLenguage].section3.job0.details}
+                  location={l[selectedLenguage].section3.job0.location}
+                />
+                <Jobs
+                  photo={infoglobo}
                   time={l[selectedLenguage].section3.job1.time}
                   details={l[selectedLenguage].section3.job1.details}
                   location={l[selectedLenguage].section3.job1.location}
