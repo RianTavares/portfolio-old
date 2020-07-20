@@ -1,34 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.6de548b1.chunk.css",
-    "main.js": "/static/js/main.807091b3.chunk.js",
-    "main.js.map": "/static/js/main.807091b3.chunk.js.map",
+    "main.css": "/static/css/main.e8028eca.chunk.css",
+    "main.js": "/static/js/main.eb40790c.chunk.js",
+    "main.js.map": "/static/js/main.eb40790c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8968fdbc.js",
     "runtime-main.js.map": "/static/js/runtime-main.8968fdbc.js.map",
-    "static/js/2.3686d85a.chunk.js": "/static/js/2.3686d85a.chunk.js",
-    "static/js/2.3686d85a.chunk.js.map": "/static/js/2.3686d85a.chunk.js.map",
+    "static/js/2.82293946.chunk.js": "/static/js/2.82293946.chunk.js",
+    "static/js/2.82293946.chunk.js.map": "/static/js/2.82293946.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8a290c9f4e168b1beafb4107cf0c6882.js": "/precache-manifest.8a290c9f4e168b1beafb4107cf0c6882.js",
+    "precache-manifest.98f78b5873741624024aa142c6c06274.js": "/precache-manifest.98f78b5873741624024aa142c6c06274.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.6de548b1.chunk.css.map": "/static/css/main.6de548b1.chunk.css.map",
-    "static/js/2.3686d85a.chunk.js.LICENSE.txt": "/static/js/2.3686d85a.chunk.js.LICENSE.txt",
+    "static/css/main.e8028eca.chunk.css.map": "/static/css/main.e8028eca.chunk.css.map",
+    "static/js/2.82293946.chunk.js.LICENSE.txt": "/static/js/2.82293946.chunk.js.LICENSE.txt",
     "static/media/IBM.png": "/static/media/IBM.c7867bfb.png",
     "static/media/App.scss": "/static/media/school-item-1.6b955356.png",
     "static/media/aboutme.png": "/static/media/aboutme.6ea66a9f.png",
     "static/media/bosch.png": "/static/media/bosch.85230b79.png",
-    "static/media/corsica.jpg": "/static/media/corsica.4828e58d.jpg",
     "static/media/infoglobo.png": "/static/media/infoglobo.25c90439.png",
-    "static/media/lampada-espia.jpg": "/static/media/lampada-espia.99236482.jpg",
     "static/media/marvel-catalog.png": "/static/media/marvel-catalog.8f279ddd.png",
     "static/media/qr-code.svg": "/static/media/qr-code.5e098ea6.svg",
     "static/media/rian-tavares.png": "/static/media/rian-tavares.41d6f44c.png",
-    "static/media/rm-mini.jpg": "/static/media/rm-mini.f1bd80fa.jpg",
     "static/media/rodobravo.png": "/static/media/rodobravo.3ac8aff1.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8968fdbc.js",
-    "static/js/2.3686d85a.chunk.js",
-    "static/css/main.6de548b1.chunk.css",
-    "static/js/main.807091b3.chunk.js"
+    "static/js/2.82293946.chunk.js",
+    "static/css/main.e8028eca.chunk.css",
+    "static/js/main.eb40790c.chunk.js"
   ]
 }

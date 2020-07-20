@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f83eff8111ede4d4ffe55efb2dc8b111",
+    "revision": "832a807b57d4a91b1889854752eba928",
     "url": "/index.html"
   },
   {
-    "revision": "9f6e473d09cd5a942272",
-    "url": "/static/css/main.6de548b1.chunk.css"
+    "revision": "09ab3d8a7165ce8febb8",
+    "url": "/static/css/main.e8028eca.chunk.css"
   },
   {
-    "revision": "9c4211ce359a53b566b3",
-    "url": "/static/js/2.3686d85a.chunk.js"
+    "revision": "5ef321d0239cfa6e7619",
+    "url": "/static/js/2.82293946.chunk.js"
   },
   {
     "revision": "0cbe6f1fc23f29ab354d824c5540ebe9",
-    "url": "/static/js/2.3686d85a.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.82293946.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9f6e473d09cd5a942272",
-    "url": "/static/js/main.807091b3.chunk.js"
+    "revision": "09ab3d8a7165ce8febb8",
+    "url": "/static/js/main.eb40790c.chunk.js"
   },
   {
     "revision": "7db277c2b1e08f99fb0d",
@@ -100,20 +100,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/bosch.85230b79.png"
   },
   {
-    "revision": "4828e58d0bb240af708f579c16a08ee2",
-    "url": "/static/media/corsica.4828e58d.jpg"
-  },
-  {
     "revision": "8f5be2546366afd7833655f1a864ceb4",
     "url": "/static/media/deutsch.8f5be254.png"
   },
   {
     "revision": "25c9043967f4fde95ec5161b20916933",
     "url": "/static/media/infoglobo.25c90439.png"
-  },
-  {
-    "revision": "99236482615e8c0892101d6c95e29cf0",
-    "url": "/static/media/lampada-espia.99236482.jpg"
   },
   {
     "revision": "8f279ddd4ef5f629f79712e90aa9e468",
@@ -126,10 +118,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "41d6f44c5388cedbac747df1bb065023",
     "url": "/static/media/rian-tavares.41d6f44c.png"
-  },
-  {
-    "revision": "f1bd80fa808f2e8604e64e425ff26448",
-    "url": "/static/media/rm-mini.f1bd80fa.jpg"
   },
   {
     "revision": "3ac8aff18e2e04eccfb194ca58c25e7d",
