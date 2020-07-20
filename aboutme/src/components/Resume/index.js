@@ -11,7 +11,7 @@ const Resume = (props) => {
                     <h3>{props.subtitle}</h3>
                 </div>
                 <div className="resume__body__img">
-                    <img src={qrcode} />
+                    <img src={qrcode} alt="Rian Resume QRcode"/>
                 </div>
             </div>  
         </section>   

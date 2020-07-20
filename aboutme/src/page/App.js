@@ -6,16 +6,12 @@ import Media from 'react-media';
 import BannerTop from '../components/Banner';
 import Footer from '../components/Footer';
 import Social from '../components/Social';
-import Posts from '../components/Posts';
 import Jobs from '../components/Jobs';
 import Skills from '../components/Skills';
 import Portfolio from '../components/Portfolio';
 import Resume from '../components/Resume';
 
 //imgs
-import postImg1 from '../assets/imgs/rm-mini.jpg';
-import postImg2 from '../assets/imgs/corsica.jpg';
-import postImg3 from '../assets/imgs/lampada-espia.jpg';
 import me from '../assets/imgs/rian-tavares.png';
 import infoglobo from '../assets/imgs/infoglobo.png';
 import ibm from '../assets/imgs/IBM.png';

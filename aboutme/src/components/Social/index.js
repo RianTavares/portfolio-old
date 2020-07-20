@@ -4,6 +4,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Social = () => {
 
@@ -21,6 +22,9 @@ const Social = () => {
                 </a>
                 <a href="https://www.instagram.com/riantavareson/" target="_blank" rel="noopener noreferrer" alt="Instagram Rian Tavares">
                     <FontAwesomeIcon icon={faInstagram} size="2x" />
+                </a>
+                <a href="https://www.youtube.com/c/SpeakUpTech" target="_blank" rel="noopener noreferrer" alt="Youtube Rian Tavares">
+                    <FontAwesomeIcon icon={faYoutube} size="2x" />
                 </a>
             </div>
         </>
