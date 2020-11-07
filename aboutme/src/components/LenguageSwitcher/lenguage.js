@@ -67,7 +67,7 @@ const language = [
     "section4": {
       "title": "EDUCAÇÃO",
       "item1": {
-        "time": "2019 - Hoje",
+        "time": "2019 - 2020",
         "place": "Estácio -  Sistemas da Informação"
       },
       "item2": {
@@ -102,8 +102,8 @@ const language = [
       },
       "skill4": {
         "skill": "React Native",
-        "level": "basic",
-        "label": "Iniciante"
+        "level": "medium",
+        "label": "Intermediário"
       },
       "skill5": {
         "skill": "NoSQL",
@@ -119,9 +119,18 @@ const language = [
           text: "Uma aplicação que gostei muito de desenvolver e que está aberta a contribuições lá no meu github. Eu construí meu próprio Pokedex com React Js, consumindo dados de uma API GraphQL usando Apollo. O App também possui um servidor simples com Node para servir a aplicação no Heroku. É um projeto com objetivo de estudo e espero receber pull requests para fazer algumas melhorias e aprender com vocês.",
           url: "https://github.com/RianTavares/pokedex",
           button: "Veja no Github",
+          fotoOrder: "2",
+          textOrder: "1",
+          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/pokedex.png"
+        },
+        {
+          title: "Be The Hero - 2020",
+          text: `Um sistema completo, desenvolvido com o propósito de estudo parte da Semana Omnistack ofertada pelo curso RocketSeat. Neste projeto desenvolvi um gerenciador de "ONGS" e "Casos", onde cada ONG cadastrada pode incluir, vizualizar e deletar casos que necessitam de ajuda financeira. Este sistema conta também com um servidor para possibilitar que os dados persistam em um banco de dados e através de rotas no modelo REST servir esses dados tanto para o gerenciador quanto para o aplicativo mobile, que foi desenvolvido para que os usuários finais possam vizualizar casos e selecionar algum para compartilhar ou ajudar financeiramente.`,
+          url: "https://github.com/RianTavares/be-the-hero-front",
+          button: "Veja no Github",
           fotoOrder: "1",
           textOrder: "2",
-          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/pokedex.png"
+          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/be-the-hero.png"
         },
         {
           title: "Marvel Catalog - 2019",
@@ -144,7 +153,7 @@ const language = [
         {
           title: "Rodobravo Tranportes - 2018",
           text: "A Rodobravo estava em processo de reformulação de seus negócios e me confiou a tarefa de criar uma nova apresentação da empresa ao mercado e seus clientes. Este projeto trouxe um embasamento visual focado na identidade da Rodobravo e no que há de novo no mundo do desenvolvimento web para proporcionar a melhor experiência possível aos usuários, tornando assim a comunicação da empresa clara e assertiva com seus clientes.",
-          url: "https://github.com/RianTavares/rodobravotransportes",
+          url: "https://github.com/RianTavares/rodobravo-website",
           button: "Veja no Github",
           fotoOrder: "2",
           textOrder: "1",
@@ -158,7 +167,7 @@ const language = [
     },
     "resume": {
       "title": "Faça Download do meu currículo",
-      "subtitle": "Escaneando o QR code com a câmera do celular"
+      "subtitle": "Escaneando o QR code com a câmera do celular ou apenas clicando nele"
     }
 
 
@@ -231,7 +240,7 @@ const language = [
     "section4": {
       "title": "EDUCATION",
       "item1": {
-        "time": "2019 - Present",
+        "time": "2019 - 2020",
         "place": "Estácio -  Information Systems B.S."
       },
       "item2": {
@@ -267,8 +276,8 @@ const language = [
       },
       "skill4": {
         "skill": "React Native",
-        "level": "basic",
-        "label": "Beginner"
+        "level": "medium",
+        "label": "Intermediate"
       },
       "skill5": {
         "skill": "NoSQL",
@@ -278,39 +287,24 @@ const language = [
     },
     "section6": {
       "title": "PORTFOLIO",
-      "portfolio1": {
-        "title": "Rodobravo Tranportes",
-        "text": "Rodobravo was in the process of reformulating its business and entrusted me with the task of creating a new presentation of the company to the market and its customers. This project brought a visual basis focused on Rodobravo's identity and what is new in the world of web development to provide the best possible experience for users, thus making the company's communication clear and assertive.",
-        "url": "https://github.com/RianTavares/rodobravotransportes",
-        "button": "See on Github",
-        "fotoOrder": "1",
-        "textOrder": "2"
-      },
-      "portfolio2": {
-        "title": "Marvel Catalog",
-        "text": "This project was born for the purpose of study and training and was developed in ReactJS on the front-end and NodeJs on the back-end. It consists of a web page that lists Marvel comics and for that we use a Marvel api for developers. With the help of my colleague Márcio Sardou, we developed features such as pagination to view more items, search for the desired name and also more details about any comic on the page.",
-        "url": "https://github.com/RianTavares/marvel-catalog",
-        "button": "See on Github",
-        "fotoOrder": "2",
-        "textOrder": "1"
-      },
-      "portfolio3": {
-        "title": "About Me",
-        "text": "This project arose from a great desire of mine to create a web curriculum where I can better describe my work and personal projects, group information about myself, post cool content that I have great pleasure in creating as the posts about technology and videos I produce, make available my contacts and who knows to know more technology lovers and develop great projects in partnership.",
-        "url": "https://github.com/RianTavares/riantavares.github.io",
-        "button": "See on Github",
-        "fotoOrder": "1",
-        "textOrder": "2"
-      },
       projects: [
         {
           title: "Pokédex by Rian - 2020",
           text: "An application that I really enjoyed developing and that is open to contributions at my Github. I built my own Pokedex with React Js, consuming data from a GraphQL API using Apollo client. It's also has a simple server with Node to run the app at Heroku. This a project with the study purpose and I look forward to receiving pull requests to make some improvements and learn with you.",
           url: "https://github.com/RianTavares/pokedex",
           button: "See on Github",
+          fotoOrder: "2",
+          textOrder: "1",
+          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/pokedex.png"
+        },
+        {
+          title: "Be The Hero - 2020",
+          text: `A full system, developed for the purpose of study part of the Omnistack Week offered by the RocketSeat. In this project, I developed a manager for "ONGs" and "Cases", where each registered ONG can include, visualize and delete cases that need financial assistance. This system also has a server to enable data to persist in a database and through routes in the REST model to serve this data for both the manager and the mobile application, which was developed to offer the cases to the user so they can view the cases and select one to share or help financially.`,
+          url: "https://github.com/RianTavares/be-the-hero-front",
+          button: "Veja no Github",
           fotoOrder: "1",
           textOrder: "2",
-          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/pokedex.png"
+          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/be-the-hero.png"
         },
         {
           title: "Marvel Catalog - 2019",
@@ -333,7 +327,7 @@ const language = [
         {
           title: "Rodobravo Tranportes - 2018",
           text: "Rodobravo was in the process of reformulating its business and entrusted me with the task of creating a new presentation of the company to the market and its customers. This project brought a visual basis focused on Rodobravo's identity and what is new in the world of web development to provide the best possible experience for users, thus making the company's communication clear and assertive.",
-          url: "https://github.com/RianTavares/rodobravotransportes",
+          url: "https://github.com/RianTavares/rodobravo-website",
           button: "See on Github",
           fotoOrder: "2",
           textOrder: "1",
@@ -347,7 +341,7 @@ const language = [
     },
     "resume": {
       "title": "Download my resume",
-      "subtitle": "Scanning the QR code with the cell phone camera"
+      "subtitle": "Scanning the QR code with the cell phone camera or just clicking on it"
     }
 
 
