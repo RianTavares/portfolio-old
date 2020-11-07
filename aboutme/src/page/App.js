@@ -1,5 +1,5 @@
 //react components
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Media from 'react-media';
 
 //Project components
@@ -31,10 +31,10 @@ function App() {
 
   const [selectedLenguage, setLenguage] = useState(0);
 
-  useEffect(()=>{
+  useEffect(() => {
     const localStorageVar = localStorage.getItem('lenguage_rt') ? localStorage.getItem('lenguage_rt') : 0;
     setLenguage(localStorageVar);
-  },[])
+  }, [])
 
   return (
     <div className="App">
@@ -44,44 +44,44 @@ function App() {
       </section>
       <section className="page-content">
 
-      <Media query="(min-width: 975px)">
-        {matches =>
-          matches ? (
-            <section id="aboutme" className="section pattern-margin first">
-              <div className="section__desk">
-                <div className="section__desk__img">
-                  <img src={me} alt={"Rian Tavares"} />
+        <Media query="(min-width: 975px)">
+          {matches =>
+            matches ? (
+              <section id="aboutme" className="section pattern-margin first">
+                <div className="section__desk">
+                  <div className="section__desk__img">
+                    <img src={me} alt={"Rian Tavares"} />
+                  </div>
+                  <div className="section__desk__container">
+                    <h1 className="whoami">{l[selectedLenguage].section1.title}</h1>
+                    <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph1}</p>
+                    <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph2}</p>
+                    <p className="section__desk__container__text phrase">{l[selectedLenguage].section1.phrase}</p>
+                    <p className="section__desk__container__text">{l[selectedLenguage].section1.followme}</p>
+                    <Social />
+                  </div>
                 </div>
-                <div className="section__desk__container">
-                  <h1 className="whoami">{l[selectedLenguage].section1.title}</h1>
-                  <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph1}</p>
-                  <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph2}</p>
-                  <p className="section__desk__container__text phrase">{l[selectedLenguage].section1.phrase}</p>
-                  <p className="section__desk__container__text">{l[selectedLenguage].section1.followme}</p>
-                  <Social />
-                </div> 
-            </div>
-          </section>
-          ) : (
-            <section id="aboutme" className="section pattern-margin first">
-              <h1 className="section__title whoami">{l[selectedLenguage].section1.title}</h1>
-              <div className="section__desk">
-                <div className="section__desk__img">
-                  <img src={me} alt={"Rian Tavares"} />
-                </div>
-                <div className="section__desk__container">
-                  <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph1}</p>
-                  <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph2}</p>
-                  <p className="section__desk__container__text phrase">{l[selectedLenguage].section1.phrase}</p>
-                  <p className="section__desk__container__text">{l[selectedLenguage].section1.followme}</p>
-                  <Social />
-                </div> 
-            </div>
-          </section>
-          )
-        }
-      </Media>
-        
+              </section>
+            ) : (
+                <section id="aboutme" className="section pattern-margin first">
+                  <h1 className="section__title whoami">{l[selectedLenguage].section1.title}</h1>
+                  <div className="section__desk">
+                    <div className="section__desk__img">
+                      <img src={me} alt={"Rian Tavares"} />
+                    </div>
+                    <div className="section__desk__container">
+                      <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph1}</p>
+                      <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph2}</p>
+                      <p className="section__desk__container__text phrase">{l[selectedLenguage].section1.phrase}</p>
+                      <p className="section__desk__container__text">{l[selectedLenguage].section1.followme}</p>
+                      <Social />
+                    </div>
+                  </div>
+                </section>
+              )
+          }
+        </Media>
+
         {/* <section id="posts" className="section sec-posts"> 
         <div className="sec-posts__bg">
             <h1 className="section__title title-posts">{l[selectedLenguage].section2.title}</h1>
@@ -187,9 +187,9 @@ function App() {
               />
             </div>
           </div>
-        
+
         </section>
-        <Resume 
+        <Resume
           title={l[selectedLenguage].resume.title}
           subtitle={l[selectedLenguage].resume.subtitle}
         />
@@ -197,34 +197,22 @@ function App() {
           <div className="sec-portfolio__container">
             <h1 className="sec-portfolio__container__title">{l[selectedLenguage].section6.title}</h1>
 
-            <Portfolio
-              pimg={rodobravo}
-              ptitle={l[selectedLenguage].section6.portfolio1.title}
-              ptext={l[selectedLenguage].section6.portfolio1.text}
-              purl={l[selectedLenguage].section6.portfolio1.url}
-              pbutton={l[selectedLenguage].section6.portfolio1.button}
-              fotoOrder={l[selectedLenguage].section6.portfolio1.fotoOrder}
-              textOrder={l[selectedLenguage].section6.portfolio1.textOrder}
-            />
-            <Portfolio
-              pimg={marvel}
-              ptitle={l[selectedLenguage].section6.portfolio2.title}
-              ptext={l[selectedLenguage].section6.portfolio2.text}
-              purl={l[selectedLenguage].section6.portfolio2.url}
-              pbutton={l[selectedLenguage].section6.portfolio2.button}
-              fotoOrder={l[selectedLenguage].section6.portfolio2.fotoOrder}
-              textOrder={l[selectedLenguage].section6.portfolio2.textOrder}
-            />
-            <Portfolio
-              pimg={aboutmyself}
-              ptitle={l[selectedLenguage].section6.portfolio3.title}
-              ptext={l[selectedLenguage].section6.portfolio3.text}
-              purl={l[selectedLenguage].section6.portfolio3.url}
-              pbutton={l[selectedLenguage].section6.portfolio3.button}
-              fotoOrder={l[selectedLenguage].section6.portfolio3.fotoOrder}
-              textOrder={l[selectedLenguage].section6.portfolio3.textOrder}
-            />
-             
+            {l[selectedLenguage].section6.projects.map(project => {
+               const { title, text, url, button, fotoOrder, textOrder, img } = project;
+               
+              return (
+                <Portfolio
+                  pimg={img}
+                  ptitle={title}
+                  ptext={text}
+                  purl={url}
+                  pbutton={button}
+                  fotoOrder={fotoOrder}
+                  textOrder={textOrder}
+                />
+              )
+            })}
+
           </div>
         </section>
       </section>
