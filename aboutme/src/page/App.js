@@ -16,9 +16,7 @@ import me from '../assets/imgs/rian-tavares.png';
 import infoglobo from '../assets/imgs/infoglobo.png';
 import ibm from '../assets/imgs/IBM.png';
 import bosch from '../assets/imgs/bosch.png';
-import rodobravo from '../assets/imgs/rodobravo.png';
-import marvel from '../assets/imgs/marvel-catalog.png';
-import aboutmyself from '../assets/imgs/aboutme.png';
+
 
 //Texts object
 import l from '../components/LenguageSwitcher/lenguage';
