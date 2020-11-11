@@ -1,28 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.e8028eca.chunk.css",
-    "main.js": "/static/js/main.98e9abd9.chunk.js",
-    "main.js.map": "/static/js/main.98e9abd9.chunk.js.map",
+    "main.css": "/static/css/main.097de12c.chunk.css",
+    "main.js": "/static/js/main.d033c488.chunk.js",
+    "main.js.map": "/static/js/main.d033c488.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8968fdbc.js",
     "runtime-main.js.map": "/static/js/runtime-main.8968fdbc.js.map",
-    "static/js/2.1b2cbd01.chunk.js": "/static/js/2.1b2cbd01.chunk.js",
-    "static/js/2.1b2cbd01.chunk.js.map": "/static/js/2.1b2cbd01.chunk.js.map",
+    "static/css/2.27fdde94.chunk.css": "/static/css/2.27fdde94.chunk.css",
+    "static/js/2.0e17e99e.chunk.js": "/static/js/2.0e17e99e.chunk.js",
+    "static/js/2.0e17e99e.chunk.js.map": "/static/js/2.0e17e99e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a16c80918dafc1a78fcf245bff60bb50.js": "/precache-manifest.a16c80918dafc1a78fcf245bff60bb50.js",
+    "precache-manifest.706827aff0ccce48b5937818b09f224c.js": "/precache-manifest.706827aff0ccce48b5937818b09f224c.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.e8028eca.chunk.css.map": "/static/css/main.e8028eca.chunk.css.map",
-    "static/js/2.1b2cbd01.chunk.js.LICENSE.txt": "/static/js/2.1b2cbd01.chunk.js.LICENSE.txt",
+    "static/css/2.27fdde94.chunk.css.map": "/static/css/2.27fdde94.chunk.css.map",
+    "static/css/main.097de12c.chunk.css.map": "/static/css/main.097de12c.chunk.css.map",
+    "static/js/2.0e17e99e.chunk.js.LICENSE.txt": "/static/js/2.0e17e99e.chunk.js.LICENSE.txt",
     "static/media/IBM.png": "/static/media/IBM.c7867bfb.png",
     "static/media/App.scss": "/static/media/school-item-1.6b955356.png",
     "static/media/bosch.png": "/static/media/bosch.85230b79.png",
     "static/media/infoglobo.png": "/static/media/infoglobo.25c90439.png",
-    "static/media/qr-code.svg": "/static/media/qr-code.5e098ea6.svg",
-    "static/media/rian-tavares.png": "/static/media/rian-tavares.41d6f44c.png"
+    "static/media/qr-code.svg": "/static/media/qr-code.5e098ea6.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8968fdbc.js",
-    "static/js/2.1b2cbd01.chunk.js",
-    "static/css/main.e8028eca.chunk.css",
-    "static/js/main.98e9abd9.chunk.js"
+    "static/css/2.27fdde94.chunk.css",
+    "static/js/2.0e17e99e.chunk.js",
+    "static/css/main.097de12c.chunk.css",
+    "static/js/main.d033c488.chunk.js"
   ]
 }

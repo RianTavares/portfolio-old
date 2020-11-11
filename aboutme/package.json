@@ -12,6 +12,7 @@
     "node-sass": "^4.13.1",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
+    "react-lazy-load-image-component": "^1.5.0",
     "react-media": "^1.10.0",
     "react-router-dom": "^5.1.2",
     "react-router-hash-link": "^1.2.2",

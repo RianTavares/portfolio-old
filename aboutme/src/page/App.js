@@ -1,6 +1,7 @@
 //react components
 import React, { useState, useEffect } from "react";
 import Media from 'react-media';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 //Project components
 import BannerTop from '../components/Banner';
@@ -12,7 +13,6 @@ import Portfolio from '../components/Portfolio';
 import Resume from '../components/Resume';
 
 //imgs
-import me from '../assets/imgs/rian-tavares.png';
 import infoglobo from '../assets/imgs/infoglobo.png';
 import ibm from '../assets/imgs/IBM.png';
 import bosch from '../assets/imgs/bosch.png';
@@ -21,6 +21,8 @@ import bosch from '../assets/imgs/bosch.png';
 //Texts object
 import l from '../components/LenguageSwitcher/lenguage';
 import Menu from "../components/Menu";
+
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 
@@ -48,7 +50,7 @@ function App() {
               <section id="aboutme" className="section pattern-margin first">
                 <div className="section__desk">
                   <div className="section__desk__img">
-                    <img src={me} alt={"Rian Tavares"} />
+                    <LazyLoadImage effect="blur" src="https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/rian-tavares.png" alt={"Rian Tavares"} />
                   </div>
                   <div className="section__desk__container">
                     <h1 className="whoami">{l[selectedLenguage].section1.title}</h1>
@@ -65,7 +67,7 @@ function App() {
                   <h1 className="section__title whoami">{l[selectedLenguage].section1.title}</h1>
                   <div className="section__desk">
                     <div className="section__desk__img">
-                      <img src={me} alt={"Rian Tavares"} />
+                      <LazyLoadImage effect="blur" src="https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/rian-tavares.png" alt={"Rian Tavares"} />
                     </div>
                     <div className="section__desk__container">
                       <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph1}</p>
@@ -196,8 +198,8 @@ function App() {
             <h1 className="sec-portfolio__container__title">{l[selectedLenguage].section6.title}</h1>
 
             {l[selectedLenguage].section6.projects.map(project => {
-               const { title, text, url, button, fotoOrder, textOrder, img } = project;
-               
+              const { title, text, url, button, fotoOrder, textOrder, img } = project;
+
               return (
                 <Portfolio
                   pimg={img}
