@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5416b6069c75a85527a63b586be72b8c",
+    "revision": "49c9b2e89af5c25729717e683ac2b8ef",
     "url": "/index.html"
   },
   {
-    "revision": "c9db5be61da069a09d94",
-    "url": "/static/css/main.e8028eca.chunk.css"
+    "revision": "4693d7aac7544ccb0748",
+    "url": "/static/css/2.27fdde94.chunk.css"
   },
   {
-    "revision": "a8b19a8b603469530b1c",
-    "url": "/static/js/2.1b2cbd01.chunk.js"
+    "revision": "7bec219904909f045263",
+    "url": "/static/css/main.097de12c.chunk.css"
+  },
+  {
+    "revision": "4693d7aac7544ccb0748",
+    "url": "/static/js/2.3a4001e6.chunk.js"
   },
   {
     "revision": "0cbe6f1fc23f29ab354d824c5540ebe9",
-    "url": "/static/js/2.1b2cbd01.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.3a4001e6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c9db5be61da069a09d94",
-    "url": "/static/js/main.0273c8c9.chunk.js"
+    "revision": "7bec219904909f045263",
+    "url": "/static/js/main.3f0f1021.chunk.js"
   },
   {
     "revision": "7db277c2b1e08f99fb0d",
     "url": "/static/js/runtime-main.8968fdbc.js"
-  },
-  {
-    "revision": "c7867bfbadcb17e653b2f080f2b26eac",
-    "url": "/static/media/IBM.c7867bfb.png"
   },
   {
     "revision": "81a9e5833dd6c15bc35750d13843d892",
@@ -84,32 +84,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/UbuntuMono-Regular.f01b525b.eot"
   },
   {
-    "revision": "b29805571611a932043f84eff8e94897",
-    "url": "/static/media/banner-top-rian-tavares-desk.b2980557.jpg"
+    "revision": "da8783cbe326b6a883fbad9501b4eca9",
+    "url": "/static/media/banner-top-rian-tavares-desk.da8783cb.jpg"
   },
   {
-    "revision": "da42d9cfedcf87edfc7ca8d19e4ee757",
-    "url": "/static/media/banner-top-rian-tavares.da42d9cf.jpg"
-  },
-  {
-    "revision": "85230b79b218cb6c84d2be9c85e74ff2",
-    "url": "/static/media/bosch.85230b79.png"
+    "revision": "f5ad743d533c1b8b36c1ebfd89c29fed",
+    "url": "/static/media/banner-top-rian-tavares.f5ad743d.jpg"
   },
   {
     "revision": "8f5be2546366afd7833655f1a864ceb4",
     "url": "/static/media/deutsch.8f5be254.png"
   },
   {
-    "revision": "25c9043967f4fde95ec5161b20916933",
-    "url": "/static/media/infoglobo.25c90439.png"
-  },
-  {
     "revision": "5e098ea622e23b55ab2d9611887c161c",
     "url": "/static/media/qr-code.5e098ea6.svg"
-  },
-  {
-    "revision": "41d6f44c5388cedbac747df1bb065023",
-    "url": "/static/media/rian-tavares.41d6f44c.png"
   },
   {
     "revision": "6b955356b7989eb55698df499133394d",

@@ -12,12 +12,6 @@ import Skills from '../components/Skills';
 import Portfolio from '../components/Portfolio';
 import Resume from '../components/Resume';
 
-//imgs
-import infoglobo from '../assets/imgs/infoglobo.png';
-import ibm from '../assets/imgs/IBM.png';
-import bosch from '../assets/imgs/bosch.png';
-
-
 //Texts object
 import l from '../components/LenguageSwitcher/lenguage';
 import Menu from "../components/Menu";
@@ -117,36 +111,19 @@ function App() {
             <div className="sec-jobs__content__bg">
               <h1 className="section__title title-green">{l[selectedLenguage].section3.title}</h1>
               <div className="sec-jobs__content__bg__itens pattern-margin">
-                <Jobs
-                  photo={infoglobo}
-                  time={l[selectedLenguage].section3.job0.time}
-                  details={l[selectedLenguage].section3.job0.details}
-                  location={l[selectedLenguage].section3.job0.location}
-                />
-                <Jobs
-                  photo={infoglobo}
-                  time={l[selectedLenguage].section3.job1.time}
-                  details={l[selectedLenguage].section3.job1.details}
-                  location={l[selectedLenguage].section3.job1.location}
-                />
-                <Jobs
-                  photo={ibm}
-                  time={l[selectedLenguage].section3.job2.time}
-                  details={l[selectedLenguage].section3.job2.details}
-                  location={l[selectedLenguage].section3.job2.location}
-                />
-                <Jobs
-                  photo={infoglobo}
-                  time={l[selectedLenguage].section3.job3.time}
-                  details={l[selectedLenguage].section3.job3.details}
-                  location={l[selectedLenguage].section3.job3.location}
-                />
-                <Jobs
-                  photo={bosch}
-                  time={l[selectedLenguage].section3.job4.time}
-                  details={l[selectedLenguage].section3.job4.details}
-                  location={l[selectedLenguage].section3.job4.location}
-                />
+
+                {l[selectedLenguage].section3.jobs.map(job => {
+                  const { time, details, location, img } = job;
+
+                  return (
+                    <Jobs
+                      photo={img}
+                      time={time}
+                      details={details}
+                      location={location}
+                    />
+                  )
+                })}
               </div>
             </div>
           </div>
