@@ -133,35 +133,34 @@ function App() {
             <div className="sec-schools__education">
               <h1 className="section__title">{l[selectedLenguage].section4.title}</h1>
               <ul>
-                <li className="first-li"><span><span className="education-time">{l[selectedLenguage].section4.item1.time}</span>{l[selectedLenguage].section4.item1.place}</span></li>
-                <li><span><span className="education-time">{l[selectedLenguage].section4.item2.time}</span>{l[selectedLenguage].section4.item2.place}</span></li>
-                <li><span><span className="education-time">{l[selectedLenguage].section4.item3.time}</span>{l[selectedLenguage].section4.item3.place}</span></li>
-                <li><span><span className="education-time">{l[selectedLenguage].section4.item4.time}</span>{l[selectedLenguage].section4.item4.place}</span></li>
+                {l[selectedLenguage].section4.establishments.map((school, index) => {
+                  const { time, place } = school;
+                  if (index === 0) {
+                    return (
+                      <li className="first-li"><span><span className="education-time">{time}</span>{place}</span></li>
+
+                    )
+                  }
+                  return (
+                    <li><span><span className="education-time">{time}</span>{place}</span></li>
+                  )
+                })}
               </ul>
             </div>
 
             <div id="skills" className="sec-skills__list">
               <h1 className="sec-skills__list__title">{l[selectedLenguage].section5.title}</h1>
-              <Skills
-                skill={l[selectedLenguage].section5.skill1.skill}
-                level={l[selectedLenguage].section5.skill1.level}
-                label={l[selectedLenguage].section5.skill1.label}
-              />
-              <Skills
-                skill={l[selectedLenguage].section5.skill2.skill}
-                level={l[selectedLenguage].section5.skill2.level}
-                label={l[selectedLenguage].section5.skill2.label}
-              />
-              <Skills
-                skill={l[selectedLenguage].section5.skill3.skill}
-                level={l[selectedLenguage].section5.skill3.level}
-                label={l[selectedLenguage].section5.skill3.label}
-              />
-              <Skills
-                skill={l[selectedLenguage].section5.skill4.skill}
-                level={l[selectedLenguage].section5.skill4.level}
-                label={l[selectedLenguage].section5.skill4.label}
-              />
+              {l[selectedLenguage].section5.skills.map(skillElem => {
+                const { skill, level, label } = skillElem;
+
+                return (
+                  <Skills
+                    skill={skill}
+                    level={level}
+                    label={label}
+                  />
+                )
+              })}
             </div>
           </div>
 
