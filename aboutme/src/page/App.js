@@ -174,7 +174,7 @@ function App() {
             <h1 className="sec-portfolio__container__title">{l[selectedLenguage].section6.title}</h1>
 
             {l[selectedLenguage].section6.projects.map(project => {
-              const { title, text, url, button, fotoOrder, textOrder, img } = project;
+              const { title, text, url, button, fotoOrder, textOrder, img, isPrivate } = project;
 
               return (
                 <Portfolio
@@ -185,6 +185,7 @@ function App() {
                   pbutton={button}
                   fotoOrder={fotoOrder}
                   textOrder={textOrder}
+                  private={isPrivate}
                 />
               )
             })}

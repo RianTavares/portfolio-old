@@ -21,6 +21,12 @@
     &__container {
         @include flex-col;
 
+        &--private {
+            font-style: italic;
+            text-align: center;
+            color: $DETAILS_GREEN;
+        }
+
         &__title {
             color: $TEXT_GRAY;
         }
@@ -31,7 +37,6 @@
             @media #{$BREAKPOINT-TABLET} {
                 max-width: 750px;
              }
-
         }
 
         a {

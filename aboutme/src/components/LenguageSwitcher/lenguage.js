@@ -102,13 +102,34 @@ const language = [
       "title": "PORTFÓLIO",
       projects: [
         {
+          title: "Moedinha - 2021",
+          text: "Este projeto foi desenvolvido para a empresa Moedinha. Consiste em uma tela principal institucional e inúmeras telas para usuário cadastrado (dashboard), além do fluxo de casdastro. Todas responsivas seguindo o conceito de Mobile First e Pixel Perfect. O Front-End foi inteiramente desenvolvido em React Js, usando React Redux para controle de estados globais e SASS.",
+          url: "",
+          button: "Este projeto é privado e não possui repositório aberto a comunidade.",
+          fotoOrder: "2",
+          textOrder: "1",
+          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/328c963c0fb34dd6b0f821a600eb5caf4e7fea99/aboutme/src/assets/imgs/moedinha.png",
+          isPrivate: true
+        },
+        {
+          title: "App Força Máxima school - 2021",
+          text: "Aplicativo desenvolvido em React Native com foco na comunidade de responsáveis e alunos, do Colégio Força Máxima. Nele é possível acessar informações individuais, materiais extras, avisos e conteúdos exclusivos. O Aplicativo está disponível no Google Play e App Store.",
+          url: "",
+          button: "Este projeto é privado e não possui repositório aberto a comunidade.",
+          fotoOrder: "1",
+          textOrder: "2",
+          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/2dfc6e9994927b0befdab9c37fc4e7a102106117/aboutme/src/assets/imgs/colegia-forca-maxima-app.png",       
+          isPrivate: true
+        },
+        {
           title: "Pokédex by Rian - 2020",
           text: "Uma aplicação que gostei muito de desenvolver e que está aberta a contribuições lá no meu github. Eu construí meu próprio Pokedex com React Js, consumindo dados de uma API GraphQL usando Apollo. O App também possui um servidor simples com Node para servir a aplicação no Heroku. É um projeto com objetivo de estudo e espero receber pull requests para fazer algumas melhorias e aprender com vocês.",
           url: "https://github.com/RianTavares/pokedex",
           button: "Veja no Github",
           fotoOrder: "2",
           textOrder: "1",
-          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/pokedex.png"
+          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/pokedex.png",       
+          isPrivate: false
         },
         {
           title: "Be The Hero - 2020",
@@ -117,7 +138,8 @@ const language = [
           button: "Veja no Github",
           fotoOrder: "1",
           textOrder: "2",
-          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/be-the-hero.png"
+          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/be-the-hero.png",       
+          isPrivate: false
         },
         {
           title: "Marvel Catalog - 2019",
@@ -126,7 +148,8 @@ const language = [
           button: "Veja no Github",
           fotoOrder: "2",
           textOrder: "1",
-          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/marvel-catalog.png"
+          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/marvel-catalog.png",       
+          isPrivate: false
         },
         {
           title: "About Me - 2019",
@@ -135,7 +158,8 @@ const language = [
           button: "Veja no Github",
           fotoOrder: "1",
           textOrder: "2",
-          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/aboutme.png"
+          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/aboutme.png",       
+          isPrivate: false
         },
         {
           title: "Rodobravo Tranportes - 2018",
@@ -144,7 +168,8 @@ const language = [
           button: "Veja no Github",
           fotoOrder: "2",
           textOrder: "1",
-          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/rodobravo.png"
+          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/rodobravo.png",
+          isPrivate: false
         }
       ]
     },
@@ -323,6 +348,26 @@ const language = [
     "section6": {
       "title": "PORTFOLIO",
       projects: [
+        {
+          title: "Moedinha - 2021",
+          text: "This project was developed for the Moedinha company. Basically, I built an institutional main screen and screens for registered users (dashboard), in addition to the registration flow. All that responsive following the concept of Mobile First and Pixel Perfect. The Front-End was entirely developed in React Js, using React Redux for global state control and SASS.",
+          url: "",
+          button: "This project is private and does not have a repository open to the community.",
+          fotoOrder: "2",
+          textOrder: "1",
+          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/328c963c0fb34dd6b0f821a600eb5caf4e7fea99/aboutme/src/assets/imgs/moedinha.png",
+          isPrivate: true
+        },
+        {
+          title: "App Colégio Força Máxima - 2021",
+          text: "Application developed in React Native with a focus on the community of parents and students of the Força Máxima school. With the app is possible to access individual information, extra materials, notices, and exclusive content. The App is available on Google Play and App Store.",
+          url: "",
+          button: "This project is private and does not have a repository open to the community.",
+          fotoOrder: "1",
+          textOrder: "2",
+          img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/2dfc6e9994927b0befdab9c37fc4e7a102106117/aboutme/src/assets/imgs/colegia-forca-maxima-app.png",       
+          isPrivate: true
+        },
         {
           title: "Pokédex by Rian - 2020",
           text: "An application that I really enjoyed developing and that is open to contributions at my Github. I built my own Pokedex with React Js, consuming data from a GraphQL API using Apollo client. It's also has a simple server with Node to run the app at Heroku. This a project with the study purpose and I look forward to receiving pull requests to make some improvements and learn with you.",
