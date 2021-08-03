@@ -112,7 +112,7 @@ const language = [
           isPrivate: true
         },
         {
-          title: "App Força Máxima school - 2021",
+          title: "App Colégio Força Máxima - 2021",
           text: "Aplicativo desenvolvido em React Native com foco na comunidade de responsáveis e alunos, do Colégio Força Máxima. Nele é possível acessar informações individuais, materiais extras, avisos e conteúdos exclusivos. O Aplicativo está disponível no Google Play e App Store.",
           url: "",
           button: "Este projeto é privado e não possui repositório aberto a comunidade.",
@@ -359,7 +359,7 @@ const language = [
           isPrivate: true
         },
         {
-          title: "App Colégio Força Máxima - 2021",
+          title: "App Força Máxima school - 2021",
           text: "Application developed in React Native with a focus on the community of parents and students of the Força Máxima school. With the app is possible to access individual information, extra materials, notices, and exclusive content. The App is available on Google Play and App Store.",
           url: "",
           button: "This project is private and does not have a repository open to the community.",
