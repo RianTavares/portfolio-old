@@ -112,11 +112,12 @@ function App() {
               <h1 className="section__title title-green">{l[selectedLenguage].section3.title}</h1>
               <div className="sec-jobs__content__bg__itens pattern-margin">
 
-                {l[selectedLenguage].section3.jobs.map(job => {
-                  const { time, details, location, img } = job;
+                {l[selectedLenguage].section3.jobs.map((job) => {
+                  const { time, details, location, img, id } = job;
 
                   return (
                     <Jobs
+                      keyNumber={id}
                       photo={img}
                       time={time}
                       details={details}
