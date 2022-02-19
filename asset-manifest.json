@@ -1,27 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.56656c29.chunk.css",
-    "main.js": "/static/js/main.9e38ac40.chunk.js",
-    "main.js.map": "/static/js/main.9e38ac40.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8968fdbc.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8968fdbc.js.map",
-    "static/css/2.27fdde94.chunk.css": "/static/css/2.27fdde94.chunk.css",
-    "static/js/2.3a4001e6.chunk.js": "/static/js/2.3a4001e6.chunk.js",
-    "static/js/2.3a4001e6.chunk.js.map": "/static/js/2.3a4001e6.chunk.js.map",
+    "main.css": "/static/css/main.91c6d068.css",
+    "main.js": "/static/js/main.80259ea3.js",
+    "static/media/UbuntuMono-Regular.svg": "/static/media/UbuntuMono-Regular.9daf371f891981385844.svg",
+    "static/media/UbuntuMono-Bold.svg": "/static/media/UbuntuMono-Bold.f4467f1bbcea94212839.svg",
+    "static/media/UbuntuMono-Regular.eot": "/static/media/UbuntuMono-Regular.0a9675d43939690980cf.eot",
+    "static/media/UbuntuMono-Regular.ttf": "/static/media/UbuntuMono-Regular.a1f4b89359a4ac854538.ttf",
+    "static/media/UbuntuMono-Bold.eot": "/static/media/UbuntuMono-Bold.7e64aab3d0772865bc35.eot",
+    "static/media/UbuntuMono-Bold.ttf": "/static/media/UbuntuMono-Bold.938976cb0f3e5667c26c.ttf",
+    "static/media/banner-top-rian-tavares-desk.jpg": "/static/media/banner-top-rian-tavares-desk.9623fc5b6e43ca6850b3.jpg",
+    "static/media/UbuntuMono-Regular.woff": "/static/media/UbuntuMono-Regular.1b36b67c5a2869076128.woff",
+    "static/media/UbuntuMono-Bold.woff": "/static/media/UbuntuMono-Bold.aab530489315e0225637.woff",
+    "static/media/SegoeUI.svg": "/static/media/SegoeUI.b70923321ad5733044f4.svg",
+    "static/media/UbuntuMono-Regular.woff2": "/static/media/UbuntuMono-Regular.9135661735f7194bb65b.woff2",
+    "static/media/UbuntuMono-Bold.woff2": "/static/media/UbuntuMono-Bold.52883f447e4798a191c5.woff2",
+    "static/media/banner-top-rian-tavares.jpg": "/static/media/banner-top-rian-tavares.a01e500fbe895f72efae.jpg",
+    "static/media/qr-code.svg": "/static/media/qr-code.020032ccd535cf421700972c89bb6125.svg",
+    "static/media/SegoeUI.eot": "/static/media/SegoeUI.9ae15d5d66af79dc858f.eot",
+    "static/media/deutsch.png": "/static/media/deutsch.a543a891c337cecd306c.png",
+    "static/media/SegoeUI.woff": "/static/media/SegoeUI.a4819e3f73e54b1cb6ba.woff",
+    "static/media/SegoeUI.woff2": "/static/media/SegoeUI.f8dafb9fb5e1e9e8ab0b.woff2",
+    "static/media/school-item-1.png": "/static/media/school-item-1.480e47346762f1c21352.png",
     "index.html": "/index.html",
-    "precache-manifest.dbec1de738e91482751bf1844dbcc13b.js": "/precache-manifest.dbec1de738e91482751bf1844dbcc13b.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.27fdde94.chunk.css.map": "/static/css/2.27fdde94.chunk.css.map",
-    "static/css/main.56656c29.chunk.css.map": "/static/css/main.56656c29.chunk.css.map",
-    "static/js/2.3a4001e6.chunk.js.LICENSE.txt": "/static/js/2.3a4001e6.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/static/media/school-item-1.6b955356.png",
-    "static/media/qr-code.svg": "/static/media/qr-code.5e098ea6.svg"
+    "main.91c6d068.css.map": "/static/css/main.91c6d068.css.map",
+    "main.80259ea3.js.map": "/static/js/main.80259ea3.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.8968fdbc.js",
-    "static/css/2.27fdde94.chunk.css",
-    "static/js/2.3a4001e6.chunk.js",
-    "static/css/main.56656c29.chunk.css",
-    "static/js/main.9e38ac40.chunk.js"
+    "static/css/main.91c6d068.css",
+    "static/js/main.80259ea3.js"
   ]
 }

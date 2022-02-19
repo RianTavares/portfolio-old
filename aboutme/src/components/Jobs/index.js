@@ -6,7 +6,7 @@ const Jobs = (props) => {
     }
 
     return(
-        <>
+        <React.Fragment key={props.keyNumber}>
             <div className="job-item">
                 <div className="job-item__img" style={sectionStyle}></div>
                 <div className="job-item__text">
@@ -15,7 +15,7 @@ const Jobs = (props) => {
                     <p>{props.location}</p>
                 </div>
             </div>
-        </>
+        </React.Fragment>
     )
 }
 export default Jobs;

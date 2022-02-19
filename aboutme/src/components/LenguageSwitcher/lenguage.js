@@ -40,36 +40,42 @@ const language = [
       "title": "EXPERIÊNCIA",
       jobs: [
         {
+          id: "1",
           time: "12.2020 - Hoje",
           details: "Atualmente faço parte do time de CIO, e atuo no desenvolvimento de ferramentes internas e na atualização de sistemas Mainframe para tecnologias mais atuais.",
           location: "Rio de Janeiro, Brasil",
           img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/IBM.png"
         },
         {
+          id: "2",
           time: "03.2020 - 12.2020",
           details: "Como desenvolvedor FullStack pleno no time de consumidor contribui também na criação de entidades, rotas, validação de dados e integração ao front-end. Atuei fortemente na otimização de processos, na atualização do gerenciador de vitrines, criado por nós utilizando ReactJs, e na experiência de barreira das matérias. O gerenciador de vitrines que atuei já serve todo o conteúdo de revistas e jornais digitais.",
           location: "Rio de Janeiro, Brasil",
           img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/infoglobo.png"
         },
         {
+          id: "3",
           time: "12.2018 - 03.2020",
           details: "Como desenvolver web atuei principalmente como Front-end. Participei da entrega de um novo portal chamado Beauty Tudo (revistamarieclaire.globo.com/Beauty-Tudo), do novo site Marie Claire e fiz parte do time responsável pelo fluxo de pagamento do cliente, vitrine de ofertas, entre outras funcionalidades de todos os produtos da Editora Globo. Em diversos momentos atuei também na geração de soluções para processos e sistemas internos. As tecnologias que trabalhei principalmente foram ReactJs e NodeJs",
           location: "Rio de Janeiro, Brasil",
           img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/infoglobo.png"
         },
         {
+          id: "4",
           time: "06.2017 - 12.2018",
           details: 'Como estagiário da equipe denominada "Efficiency Team", atuei principalmente como fullstack de aplicações web para uso interno de equipes do Brasil, Atlanta e Canadá. Lá Trabalhei principalmente com VueJs e NodeJs',
           location: "Rio de Janeiro, Brasil",
           img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/IBM.png"
         },
         {
+          id: "5",
           time: "02.2017 - 06.2017",
           details: "Como estagiário na central de comunicações dos maiores portais de notícias do Brasil, atuei principalmente como fullstack dos portais O Globo (oglobo.globo.com) e Extra (extra.com.br)",
           location: "Rio de Janeiro, Brasil",
           img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/infoglobo.png"
         },
         {
+          id: "6",
           time: "03.2016 - 07.2016",
           details: "Atuei como estagiário na manutenção do software de gerenciamento interno, tester de novas funcionalidades e na otimização de processos internos",
           location: "Boxberg, Alemanha",
@@ -255,36 +261,42 @@ const language = [
       "title": "WORK EXPERIENCES",
       jobs: [
         {
+          id: "10",
           time: "12.2020 - Present",
           details: "I am currently part of the CIO team, and I work in the development of internal tools and in the update of Mainframe systems to the most current technologies.",
           location: "Rio de Janeiro, Brazil",
           img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/IBM.png"
         },
         {
+          id: "11",
           time: "03.2020 - 12.2020",
           details: "As a FullStack Engineer in the consumer team, I also contribute to the creation of entities, routes, data validation and integration to the front-end. I worked strongly in the optimization of processes, in the update of the showcase manager, created by us using ReactJs, and in the Paywall experience of our products. The showcase manager that we built already serves all of our digital magazine and news portal content.",
           location: "Rio de Janeiro, Brazil",
           img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/infoglobo.png"
         },
         {
+          id: "12",
           time: "12.2018 - 03.2020",
           details: "As a Junior web developer I worked mainly as a Front-end. I participated in the delivery of a new portal called Beauty Tudo (revistamarieclaire.globo.com/Beauty-Tudo), of the new Marie Claire website and I am currently part of the team responsible for the customer's payment flow, showcase of offers, among other features of all Editora Globo products. At many times I also work on generating solutions for internal processes and systems. The technologies I work with mainly are ReactJs and NodeJs",
           location: "Rio de Janeiro, Brazil",
           img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/infoglobo.png"
         },
         {
+          id: "13",
           time: "06.2017 - 12.2018",
           details: 'As an intern in the team called "Efficiency Team", I worked mainly as a fullstack of web applications for internal use by teams from Brazil, USA and Canada. There I worked mainly with VueJs and NodeJs',
           location: "Rio de Janeiro, Brazil",
           img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/IBM.png"
         },
         {
+          id: "14",
           time: "02.2017 - 06.2017",
           details: "As an intern at the communications center of the largest news portals in Brazil, I worked mainly as a fullstack for the O Globo (oglobo.globo.com) and Extra (extra.com.br) portals",
           location: "Rio de Janeiro, Brazil",
           img: "https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/infoglobo.png"
         },
         {
+          id: "15",
           time: "03.2016 - 07.2016",
           details: "I worked as an intern in the maintenance of internal management software, testing of new features and in the optimization of internal processes",
           location: "Boxberg, Germany",
