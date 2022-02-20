@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Media from 'react-media';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import axios from 'axios';
 
 //Project components
 import BannerTop from '../components/Banner';
@@ -24,10 +25,20 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 function App() {
 
   const [selectedLenguage, setLenguage] = useState(0);
+  const [portfolioData, setPortfolioData] = useState(null);
+
+  const callPortfolio = (locale) => {
+    axios.get(`https://content-manager-rt.herokuapp.com/portfolios?_locale=${locale}&_sort=id`)
+      .then((response)=> {
+        setPortfolioData(response.data)
+      });
+  }
 
   useEffect(() => {
     const localStorageVar = localStorage.getItem('lenguage_rt') ? localStorage.getItem('lenguage_rt') : 0;
+    const locale = localStorage.getItem('riantavares@locale') ? localStorage.getItem('riantavares@locale') : 'pt-BR';
     setLenguage(localStorageVar);
+    callPortfolio(locale);
   }, [])
 
   return (
@@ -174,14 +185,15 @@ function App() {
           <div className="sec-portfolio__container">
             <h1 className="sec-portfolio__container__title">{l[selectedLenguage].section6.title}</h1>
 
-            {l[selectedLenguage].section6.projects.map(project => {
-              const { title, text, url, button, fotoOrder, textOrder, img, isPrivate } = project;
+            {portfolioData && portfolioData.slice(0).reverse().map(project => {
+              const { title, description, url, button, fotoOrder, textOrder, image, isPrivate, id } = project;
 
               return (
                 <Portfolio
-                  pimg={img}
+                  key={id}
+                  pimg={image.url}
                   ptitle={title}
-                  ptext={text}
+                  ptext={description}
                   purl={url}
                   pbutton={button}
                   fotoOrder={fotoOrder}
