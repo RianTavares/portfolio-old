@@ -51,7 +51,7 @@ function App() {
   useEffect(() => {
     checkLocale();
     const localStorageVar = localStorage.getItem('lenguage_rt');
-    const requestLocale = localStorage.getItem('riantavares@locale') ? localStorage.getItem('riantavares@locale') : 'en';
+    const requestLocale = localStorageVar === '0' ? 'pt-BR' : 'en';
     setLenguage(localStorageVar);
     callPortfolio(requestLocale);
   }, [])
