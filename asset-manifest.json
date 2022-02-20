@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.91c6d068.css",
-    "main.js": "/static/js/main.a72171c6.js",
+    "main.js": "/static/js/main.cae099ba.js",
     "static/media/UbuntuMono-Regular.svg": "/static/media/UbuntuMono-Regular.9daf371f891981385844.svg",
     "static/media/UbuntuMono-Bold.svg": "/static/media/UbuntuMono-Bold.f4467f1bbcea94212839.svg",
     "static/media/UbuntuMono-Regular.eot": "/static/media/UbuntuMono-Regular.0a9675d43939690980cf.eot",
@@ -23,10 +23,10 @@
     "static/media/school-item-1.png": "/static/media/school-item-1.480e47346762f1c21352.png",
     "index.html": "/index.html",
     "main.91c6d068.css.map": "/static/css/main.91c6d068.css.map",
-    "main.a72171c6.js.map": "/static/js/main.a72171c6.js.map"
+    "main.cae099ba.js.map": "/static/js/main.cae099ba.js.map"
   },
   "entrypoints": [
     "static/css/main.91c6d068.css",
-    "static/js/main.a72171c6.js"
+    "static/js/main.cae099ba.js"
   ]
 }
