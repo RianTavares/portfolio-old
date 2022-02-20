@@ -23,7 +23,6 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 function App() {
-
   const [selectedLenguage, setLenguage] = useState(0);
   const [portfolioData, setPortfolioData] = useState(null);
 
@@ -34,11 +33,28 @@ function App() {
       });
   }
 
+  const checkLocale = () => {
+    const browserLocale = navigator.language;
+    const storageLocale = localStorage.getItem('lenguage_rt');
+    console.log(storageLocale);
+    if (!storageLocale && browserLocale) {
+      if(browserLocale === 'en') localStorage.setItem('lenguage_rt', 1);
+      if(browserLocale === 'pt-BR') localStorage.setItem('lenguage_rt', 0);
+      else {
+        localStorage.setItem('lenguage_rt', 1);
+      }
+    }
+    if (!storageLocale && !browserLocale) {
+      localStorage.setItem('lenguage_rt', 1);
+    }
+  }
+
   useEffect(() => {
-    const localStorageVar = localStorage.getItem('lenguage_rt') ? localStorage.getItem('lenguage_rt') : 0;
-    const locale = localStorage.getItem('riantavares@locale') ? localStorage.getItem('riantavares@locale') : 'pt-BR';
+    checkLocale();
+    const localStorageVar = localStorage.getItem('lenguage_rt');
+    const requestLocale = localStorage.getItem('riantavares@locale') ? localStorage.getItem('riantavares@locale') : 'pt-BR';
     setLenguage(localStorageVar);
-    callPortfolio(locale);
+    callPortfolio(requestLocale);
   }, [])
 
   return (
