@@ -52,7 +52,7 @@ function App() {
   useEffect(() => {
     checkLocale();
     const localStorageVar = localStorage.getItem('lenguage_rt');
-    const requestLocale = localStorage.getItem('riantavares@locale') ? localStorage.getItem('riantavares@locale') : 'pt-BR';
+    const requestLocale = localStorage.getItem('riantavares@locale') ? localStorage.getItem('riantavares@locale') : 'en';
     setLenguage(localStorageVar);
     callPortfolio(requestLocale);
   }, [])
