@@ -1,7 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.91c6d068.css",
+<<<<<<< HEAD
     "main.js": "/static/js/main.8d8313a1.js",
+=======
+    "main.js": "/static/js/main.cae099ba.js",
+>>>>>>> aef7db4991e78a3f5fc2e2a5e144d004ab69d84e
     "static/media/UbuntuMono-Regular.svg": "/static/media/UbuntuMono-Regular.9daf371f891981385844.svg",
     "static/media/UbuntuMono-Bold.svg": "/static/media/UbuntuMono-Bold.f4467f1bbcea94212839.svg",
     "static/media/UbuntuMono-Regular.eot": "/static/media/UbuntuMono-Regular.0a9675d43939690980cf.eot",
@@ -23,10 +27,18 @@
     "static/media/school-item-1.png": "/static/media/school-item-1.480e47346762f1c21352.png",
     "index.html": "/index.html",
     "main.91c6d068.css.map": "/static/css/main.91c6d068.css.map",
+<<<<<<< HEAD
     "main.8d8313a1.js.map": "/static/js/main.8d8313a1.js.map"
   },
   "entrypoints": [
     "static/css/main.91c6d068.css",
     "static/js/main.8d8313a1.js"
+=======
+    "main.cae099ba.js.map": "/static/js/main.cae099ba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91c6d068.css",
+    "static/js/main.cae099ba.js"
+>>>>>>> aef7db4991e78a3f5fc2e2a5e144d004ab69d84e
   ]
 }
