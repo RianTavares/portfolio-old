@@ -74,8 +74,8 @@ export default function HideAppBar(props) {
             </div>
             {/* Troca de língua retirada para a próxima entrega */}
             <div className="menu-item-lenguage">
-                <button id="brazil" onClick={() => { setLenguage(0); localStorage.setItem('lenguage_rt', 0); localStorage.setItem('riantavares@locale', 'pt-BR'); window.location.reload();}}></button>
-                <button id="england" onClick={() => { setLenguage(1); localStorage.setItem('lenguage_rt', 1); localStorage.setItem('riantavares@locale', 'en'); window.location.reload();}}></button>
+                <button id="brazil" onClick={() => { setLenguage(0); localStorage.setItem('lenguage_rt', 0); window.location.reload();}}></button>
+                <button id="england" onClick={() => { setLenguage(1); localStorage.setItem('lenguage_rt', 1); window.location.reload();}}></button>
                 {/* <button id="germany" onClick={() => { setLenguage(2); localStorage.setItem('lenguage_rt', 2); window.location.reload();}}></button> */}
             </div>
           </Toolbar>
