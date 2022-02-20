@@ -36,7 +36,6 @@ function App() {
   const checkLocale = () => {
     const browserLocale = navigator.language;
     const storageLocale = localStorage.getItem('lenguage_rt');
-    console.log(storageLocale);
     if (!storageLocale && browserLocale) {
       if(browserLocale === 'en') localStorage.setItem('lenguage_rt', 1);
       if(browserLocale === 'pt-BR') localStorage.setItem('lenguage_rt', 0);
