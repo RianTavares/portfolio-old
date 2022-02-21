@@ -10,9 +10,9 @@ const language = [
       "item6": "Portfólio",
     },
     "section1": {
-      "title": "QUEM SOU EU?",
-      "paragraph1": "Oi, sou o Rian. Sou desenvolvedor web nascido e criado no Rio de Janeiro. E também já morei na Alemanha, sabia? Durante um ano como bolsista do DAAD e CAPES eu estudei alemão, informática na Ulm Universität e até fui estagiário em uma grande empresa alemã de tecnologia.",
-      "paragraph2": "Bom, eu sou um entusiasta quando o assunto é criar novas soluções e muito otimista. Amo a computação e sonho em fazer a diferença e ajudar as pessoas utilizando meu conhecimento. Atualmente, estou focado no estudo das tecnologias do ecossistema JavaScript.",
+      "title": "Olá,",
+      "paragraph1": "me chamo Rian Tavares. Sou desenvolvedor de software nascido e criado no Rio de Janeiro e atualmente baseado em Munique na Alemanha. Tenho mais de 7 anos de experiência. Sou um entusiasta do mundo UI/UX, sou mentor nas horas vagas e sonho em ajudar as pessoas utilizando meus conhecimentos.",
+      "paragraph2": "",
       "phrase": '"E pensar diferente é a unica coisa em nós que acredito que deve permanecer sempre a mesma."',
       "followme": "Você pode me encontrar nas redes sociais abaixo."
     },
@@ -231,9 +231,9 @@ const language = [
       "item6": "Portfolio",
     },
     "section1": {
-      "title": "WHO AM I?",
-      "paragraph1": "Hi, I'm Rian. I am a web developer born and raised in Rio de Janeiro. And I also lived in Germany, did you know? During a year as a student of DAAD and CAPES I learned German, studied computer science at Ulm Universität and even worked at a large German technology company.",
-      "paragraph2": "Well, I'm very optimistic and an enthusiast when it comes to creating new solutions. I love computing and have the dream of making the difference and helping people through my knowledge. I am currently focused on studying JavaScript ecosystem technologies.",
+      "title": "Hi,",
+      "paragraph1": "my name is Rian Tavares. I am a software developer born and raised in Rio de Janeiro and currently based in Munich, Germany. I have over 7 years of experience. I'm an enthusiast of the UI/UX world, I'm a mentor in my spare time and I have the dream of helping people through my knowledge.",
+      "paragraph2": "",
       "phrase": '"And thinking differently is the only thing in us that I believe must always remain the same."',
       "followme": "You can find me on the social networks below."
     },

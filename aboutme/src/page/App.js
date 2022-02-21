@@ -64,43 +64,21 @@ function App() {
       </section>
       <section className="page-content">
 
-        <Media query="(min-width: 975px)">
-          {matches =>
-            matches ? (
-              <section id="aboutme" className="section pattern-margin first">
-                <div className="section__desk">
-                  <div className="section__desk__img">
-                    <LazyLoadImage effect="blur" src="https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/rian-tavares.png" alt={"Rian Tavares"} />
-                  </div>
-                  <div className="section__desk__container">
-                    <h1 className="whoami">{l[selectedLenguage].section1.title}</h1>
-                    <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph1}</p>
-                    <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph2}</p>
-                    <p className="section__desk__container__text phrase">{l[selectedLenguage].section1.phrase}</p>
-                    <p className="section__desk__container__text">{l[selectedLenguage].section1.followme}</p>
-                    <Social />
-                  </div>
-                </div>
-              </section>
-            ) : (
-                <section id="aboutme" className="section pattern-margin first">
-                  <h1 className="section__title whoami">{l[selectedLenguage].section1.title}</h1>
-                  <div className="section__desk">
-                    <div className="section__desk__img">
-                      <LazyLoadImage effect="blur" src="https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/rian-tavares.png" alt={"Rian Tavares"} />
-                    </div>
-                    <div className="section__desk__container">
-                      <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph1}</p>
-                      <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph2}</p>
-                      <p className="section__desk__container__text phrase">{l[selectedLenguage].section1.phrase}</p>
-                      <p className="section__desk__container__text">{l[selectedLenguage].section1.followme}</p>
-                      <Social />
-                    </div>
-                  </div>
-                </section>
-              )
-          }
-        </Media>
+        <section id="aboutme" className="section pattern-margin first">
+          <div className="section__desk">
+            <div className="section__desk__img">
+              <LazyLoadImage effect="blur" src="https://riantavares.s3.sa-east-1.amazonaws.com/small_rian_tavares_076846e35a.png?140453.39999999944" alt={"Rian Tavares"} />
+            </div>
+            <div className="section__desk__container">
+              <h1 className="whoami">{l[selectedLenguage].section1.title}</h1>
+              <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph1}</p>
+              <p className="section__desk__container__text">{l[selectedLenguage].section1.paragraph2}</p>
+              <p className="section__desk__container__text phrase">{l[selectedLenguage].section1.phrase}</p>
+              <p className="section__desk__container__text">{l[selectedLenguage].section1.followme}</p>
+              <Social />
+            </div>
+          </div>
+        </section>
 
         {/* <section id="posts" className="section sec-posts"> 
         <div className="sec-posts__bg">

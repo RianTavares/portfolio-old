@@ -4,7 +4,8 @@
 |--------------------------------------------------------------------------
 */
 
-$BACKGROUND: #868585;
+$BACKGROUND: #000;
+$BACKGROUND_OLD: #868585;
 $TEXT_GRAY: #4B4748;
 $DETAIL_GRAY: #767273;
 $FOOTER: #151313;
@@ -20,6 +21,9 @@ $DETAILS_GREEN: #26AC8E;
 */
 
 $BANNER_TOP: '../../assets/imgs/banner-top-rian-tavares.jpg';
+$MACBOOK: '../../assets/imgs/macbook.png';
+$MASK_BANNER: '../../assets/imgs/mask-banner.png';
+$MOUNTAIN: '../../assets/imgs/night-mountains.jpeg';
 $BANNER_TOP_DESK: '../../assets/imgs/banner-top-rian-tavares-desk.jpg';
 $BRAZIL: '../../assets/imgs/portuguese.png';
 $ENGLAND: '../../assets/imgs/english.png';
@@ -40,3 +44,5 @@ $BREAKPOINT-DESK: 		        "only screen and (min-width: 1280px)";
 $BREAKPOINT-TABLET-LAND: 	    "only screen and (min-width: 975px)";
 $BREAKPOINT-TABLET: 		    "only screen and (min-width: 600px)";
 $BREAKPOINT-MOBILE-LAND: 		"only screen and (min-width: 480px)";
+
+$GUTTER: 32px;

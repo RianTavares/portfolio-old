@@ -26,14 +26,15 @@
                 }
 
                 &__img {
-                    width: 250px;
+                    display: none;
 
                     @media #{$BREAKPOINT-TABLET} {
+                        display: block;
                         width: 50%;
                     }
         
                     img {
-                        width: 100%;
+                        width: 90%;
                         margin-left: 10px;
                     }
                 }
@@ -75,9 +76,10 @@
         }
 
         .whoami {
-            margin: 60px 0 10px 0;
-            color: $WHITE_THEME;
-            text-align: center;
+            margin: $GUTTER/2 0 10px 0;
+            color: $DETAILS_GREEN;
+            text-align: left;
+            width: 100%;
 
             @media #{$BREAKPOINT-TABLET} {
                 font-size: 38px;
