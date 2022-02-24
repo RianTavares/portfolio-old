@@ -1,0 +1,18 @@
+.portfolio {  
+  margin-top: $GUTTER;
+  width: 100vw;
+  height: 100vh;
+  background-color: $WHITE_THEME;
+
+  &__content {
+    text-align: center;
+    padding: $GUTTER 0;
+
+    // @include margin-page;
+  }
+
+  &__title {
+    margin: 0;
+    color: $DETAILS_GREEN;
+  }
+}

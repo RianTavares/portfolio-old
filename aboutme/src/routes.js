@@ -4,7 +4,7 @@ import {
     Routes,
     Route
 } from "react-router-dom";
-import Main from './page/App';
+import Main from './pages/Main';
 
 const RoutesCpnt = () => {
     return (
