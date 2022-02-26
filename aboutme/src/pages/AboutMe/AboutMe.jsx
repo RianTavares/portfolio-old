@@ -4,7 +4,7 @@ import localesService from '../../core/locales/locales.service';
 
 const AboutMe = () => {
   return (
-    <section id="aboutme" className="section pattern-margin first">
+    <section className="aboutme-page" id="aboutme">
       <div className="section__desk">
         <div className="section__desk__img">
           <div className="section__shape">

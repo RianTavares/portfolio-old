@@ -1,0 +1,153 @@
+.project-page {
+
+  .project {
+    background-color: $WHITE_THEME;
+    min-height: 100vh;
+  }
+  
+  .project-header {
+    color: $DETAIL_GRAY;
+    background-color: $WHITE_THEME;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: $GUTTER;
+
+    border-bottom: #dddddd solid 1px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2); 
+
+    @media #{$BREAKPOINT-TABLET-LAND} {
+      height: 560px;
+    }
+
+    &__title {
+      margin: 0;
+      color: $TEXT_GRAY;
+      font-size: 32px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid $DETAIL_GRAY;
+      font-weight: bold;
+    }
+  
+    &__subtitle-cotainer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__name {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    &__date {
+      margin: 0;
+      font-size: 16px;
+    }
+    
+    &__container {
+      @include margin-page;
+      
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      
+      @media #{$BREAKPOINT-TABLET-LAND} {
+        flex-direction: row;
+      }
+
+    }
+    
+    &__info-container {
+      height: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      @media #{$BREAKPOINT-TABLET-LAND} {
+        height: 100%;
+        width: 50%;
+        justify-content: left;
+      }
+    }
+
+    &__info {
+      width: 100%;
+
+      @media #{$BREAKPOINT-TABLET-LAND} {
+        width: 80%;
+      }
+    }
+  
+    &__banner {
+      height: 50%;
+
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+  
+      @media #{$BREAKPOINT-TABLET-LAND} {
+        height: 100%;
+        width: 50%;
+      }
+
+      img {
+        width: 100%;
+        margin: 0 auto;
+        
+        @media #{$BREAKPOINT-TABLET} {
+          width: 80%;
+        }
+
+        @media #{$BREAKPOINT-TABLET-LAND} {
+          width: 100%;
+        }
+      }
+    }
+
+    &__badge {
+      width: 100px;
+    }
+
+    &__badge:not(:first-child) {
+      margin-left: $GUTTER/2;
+    }
+
+    &__availabilty {
+      display: flex;
+      justify-content: center;
+      margin: $GUTTER 0;
+    }
+  }
+
+  .project-body {
+    @include margin-page;
+    padding-top: $GUTTER*2;
+    padding-bottom: $GUTTER*5;
+
+    &__paragraph {
+      width: 100%;
+      margin: 0 auto;
+
+      @media #{$BREAKPOINT-TABLET-LAND} {
+        width: 70%;
+      }
+    }
+
+    &__title {
+      font-size: 26px;
+      text-align: left;
+      margin: $GUTTER/2 auto;
+
+      @media #{$BREAKPOINT-TABLET-LAND} {
+        width: 70%;
+      }
+    }
+
+    &__first-screen {
+      width: 100%;
+    }
+  }
+}

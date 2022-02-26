@@ -1,0 +1,10 @@
+.aboutme-page {
+  @include margin-page;
+
+  padding: $GUTTER 0;
+
+  @media #{$BREAKPOINT-TABLET-LAND} {
+    padding: $GUTTER 0 $GUTTER*2 0;
+  }
+
+}

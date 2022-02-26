@@ -1,18 +1,38 @@
 .portfolio {  
-  margin-top: $GUTTER;
   width: 100vw;
-  height: 100vh;
-  background-color: $WHITE_THEME;
+  height: 100%;
+  background-color: transparent;
+  color: $WHITE_THEME;
 
   &__content {
     text-align: center;
     padding: $GUTTER 0;
-
-    // @include margin-page;
   }
 
   &__title {
     margin: 0;
-    color: $DETAILS_GREEN;
+    font-size: 38px;
+
+    @media #{$BREAKPOINT-TABLET} {
+      font-size: 45px;
+    }
+
+    @media #{$BREAKPOINT-TABLET-LAND} {
+      font-size: 70px;
+    }
+  }
+
+  &__pre-title {
+    font-family: 'DM-Sans';
+    text-transform: uppercase;
+    margin: 0;
+    
+    @media #{$BREAKPOINT-TABLET-LAND} {
+      font-size: 22px;
+    }
+  }
+
+  &__header {
+    @include margin-page;
   }
 }

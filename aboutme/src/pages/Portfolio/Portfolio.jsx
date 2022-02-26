@@ -5,7 +5,10 @@ const Portfolio = () => {
   return (
     <section className="portfolio">
       <section className="portfolio__content">
-        <h1 className="portfolio__title"> Portfolio </h1>
+        <div className="portfolio__header">
+          <p className="portfolio__pre-title">Projetos e soluções desenvolvidas</p>
+          <h1 className="portfolio__title"> Portfolio </h1>
+        </div>
         <JobsSlide />
       </section>
     </section>
