@@ -8,7 +8,14 @@
   &__content {
     @include margin-page;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media #{$BREAKPOINT-TABLET-LAND} {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__image {

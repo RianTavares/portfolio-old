@@ -32,7 +32,6 @@ const Recommendations = () => {
     axios.get(`https://content-manager-rt.herokuapp.com/recommendations?_locale=${localesService.getLocale()}`)
     .then((response)=> {
       setRequestData(response.data);
-      console.log(requestData)
       setIsReady(true);
     });
   }

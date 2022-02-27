@@ -1,7 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+
 import JobsSlide from '../../components/JobsSlide';
+import localesService from '../../core/locales/locales.service';
 
 const Portfolio = () => {
+  const [requestData, setRequestData] = useState(null);
+  const [isReady, setIsReady] = useState(false);
+
+  const getProjects = () => {
+    axios.get(`https://content-manager-rt.herokuapp.com/projects?_locale=${localesService.getLocale()}`)
+    .then((response)=> {
+      setRequestData(response.data);
+      setIsReady(true);
+    });
+  }
+
+  useEffect(() => {
+    getProjects();
+  }, []);
+
+  if (!isReady || !requestData) return (<>Loading...</>)
+
   return (
     <section className="portfolio">
       <section className="portfolio__content">
@@ -9,7 +29,7 @@ const Portfolio = () => {
           <p className="portfolio__pre-title">Projetos e soluções desenvolvidas</p>
           <h1 className="portfolio__title"> Portfolio </h1>
         </div>
-        <JobsSlide />
+        <JobsSlide data={requestData} />
       </section>
     </section>
   )

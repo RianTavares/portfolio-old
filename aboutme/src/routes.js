@@ -13,7 +13,7 @@ const RoutesCpnt = () => {
         <BrowserRouter>
             <Routes>
                 <Route index path='/' element={<Main />}/>
-                <Route path='/project/:id' element={<Project />}/>
+                <Route path='/project/:slug' element={<Project />}/>
             </Routes>
         </BrowserRouter>
     )

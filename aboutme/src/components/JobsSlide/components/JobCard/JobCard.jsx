@@ -1,27 +1,31 @@
 import React, { useState, useEffect } from "react";
-import teste from '../../../../assets/imgs/portfolio-mockup-test.jpg';
+import { useNavigate } from "react-router-dom";
 
-const JobsCard = () => {
+const JobsCard = ({ data }) => {
+  const navigate = useNavigate();
+
+  const handleClick = (id) => {
+    navigate(`/project/${id}`);
+  }
 
   return (
     <div className="card">
-      <img src={teste} alt="teste" className="card__image" />
+      <img src={data.case.url} alt="teste" className="card__image" />
 
       <div className="card__info-container">
         <div className="card__info">
-          <p className="card__title">Rodobravo Transportes</p>
+          <p className="card__title">{data.name}</p>
 
           <div className="card__tags-container">
-            <div className="card__tag">
-              <strong className="card__tag-text">React JS</strong>
-            </div>
-            <div className="card__tag">
-              <strong className="card__tag-text">Aplicação web</strong>
-            </div>
+            {data.tags.map((item) => (
+              <div className="card__tag" key={item.id}>
+                <strong className="card__tag-text">{item.tag_name}</strong>
+              </div>
+            ))}
           </div>
 
-          <button className="card__button">
-            Veja mais detalhes do projeto
+          <button className="card__button" onClick={() => handleClick(data.slug)}>
+            {data.see_more_button}
           </button>
         </div>
       </div>

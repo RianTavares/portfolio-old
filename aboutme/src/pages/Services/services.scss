@@ -1,7 +1,7 @@
 .service-page {
   padding: $GUTTER 0;
   width: 100%;
-  height: 500px;
+  height: 100%;
   text-align: center;
 
   display: flex;
@@ -24,6 +24,7 @@
     background-color: rgba($DETAILS_GREEN, 0.2);
     background-size: 120% auto;
     background-position: center center;
+    min-height: 500px;
   }
 
   @media #{$BREAKPOINT-TABLET-LAND} {

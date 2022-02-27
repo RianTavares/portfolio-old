@@ -1,14 +1,101 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useParams } from "react-router-dom";
+import axios from 'axios';
+import parse from 'html-react-parser'
 
 import Menu from "../../components/Menu";
 import Footer from '../../components/Footer';
-import projectImage from '../../assets/imgs/teste-pj.jpeg';
-import test from '../../assets/imgs/teste-2.jpeg';
-import testBadge from '../../assets/imgs/demo-badge.png';
-import testBadge2 from '../../assets/imgs/apple-store-badge.png';
-import testBadge3 from '../../assets/imgs/google-play-badge.png';
+import demoButton from '../../assets/imgs/demo-badge.png';
+import appleBadge from '../../assets/imgs/apple-store-badge.png';
+import googleBadge from '../../assets/imgs/google-play-badge.png';
+import Skeleton from './components/Skeleton';
+
+import localesService from '../../core/locales/locales.service';
 
 const Project = () => {
+  const { slug } = useParams();
+  const [requestData, setRequestData] = useState(null);
+  const [isReady, setIsReady] = useState(false);
+  const [newElem, setNewElem] = useState();
+
+  const setSlugByLocale = (slugContext) => {
+    const locales = ['en', 'pt-BR'];
+    let newSlug = [];
+    locales.map((localeStr) => {
+      const check = slugContext.includes(localeStr);
+      if (check) return newSlug.push(slugContext.replace(localeStr, localesService.getLocale()));
+    })
+
+    return newSlug[0];
+  }
+
+  const getProjects = () => {
+    axios.get('https://content-manager-rt.herokuapp.com/projects/?_locale=all')
+      .then((response) => {
+        const slugByLocale = setSlugByLocale(slug);
+        const data = response.data.find((item) => item.slug === slugByLocale);
+        setRequestData(data);
+        setNewElem(parse(data.post));
+        setIsReady(true);
+      });
+  }
+
+
+  const dateFormatter = (dateStr) => {
+    const monthNamesBR = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun",
+      "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
+    const monthNamesEN = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+      "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const date = new Date(dateStr);
+    const year = date.getFullYear();
+    const month = localesService.getLocale() === 'en' ? monthNamesEN[date.getMonth()] : monthNamesBR[date.getMonth()];
+    return `${month} ${year}`;
+  }
+
+  const RenderExampleButton = () => {
+
+    if (requestData.ios && requestData.android) {
+      return (
+        <>
+          <a href={requestData.ios_url} target="_blank" rel="noreferrer">
+            <img className="project-header__badge" src={appleBadge} alt="Download on Apple Store" />
+          </a>
+          <a href={requestData.ios_android} target="_blank" rel="noreferrer">
+            <img className="project-header__badge" src={googleBadge} alt="Download on google play" />
+          </a>
+        </>
+      )
+    }
+
+    if (requestData.ios) {
+      return (
+        <a href={requestData.ios_url} target="_blank" rel="noreferrer">
+          <img className="project-header__badge" src={appleBadge} alt="Download on Apple Store" />
+        </a>
+      )
+    }
+
+    if (requestData.android) {
+      return (
+        <a href={requestData.ios_android} target="_blank" rel="noreferrer">
+          <img className="project-header__badge" src={googleBadge} alt="Download on google play" />
+        </a>
+      )
+    }
+
+    return (
+      <a href={requestData.web_url} target="_blank" rel="noreferrer">
+        <img className="project-header__badge" src={demoButton} alt="Check live website" />
+      </a>
+    )
+  }
+
+  useEffect(() => {
+    getProjects();
+    setSlugByLocale(slug);
+  }, []);
+
+  if (!isReady || !requestData) return (<Skeleton />)
   return (
     <div className="App">
       <section className="App__header">
@@ -16,52 +103,37 @@ const Project = () => {
       </section>
       <section className="project-page">
 
-      <section className="project">
+        <section className="project">
 
-        <section className="project-header">
-          <div className='project-header__container'>
-            <section className="project-header__info-container">
-              <div className="project-header__info">
-                <p className="project-header__title">Site institucional</p>
-                <div className="project-header__subtitle-cotainer">
-                  <p className="project-header__name">Rodobravo Transportes</p>
-                  <p className="project-header__date">Julho 2018</p>
+          <section className="project-header">
+            <div className='project-header__container'>
+              <section className="project-header__info-container">
+                <div className="project-header__info">
+                  <p className="project-header__title">{requestData.post_title}</p>
+                  <div className="project-header__subtitle-cotainer">
+                    <p className="project-header__name">{requestData.name}</p>
+                    <p className="project-header__date">{dateFormatter(requestData.date)}</p>
+                  </div>
+                  <p className="project-header__resume">
+                    {requestData.description}
+                  </p>
+                  <div className="project-header__availability">
+                    <RenderExampleButton />
+                  </div>
                 </div>
-                <p className="project-header__resume">
-                  Mussum Ipsum, cacilds vidis litro abertis. Mais vale um bebadis conhecidiss, 
-                  que um alcoolatra anonimis.Interessantiss quisso pudia ce receita de bolis, 
-                  mais bolis eu num gostis.Todo mundo vê os porris que eu tomo, mas ninguém vê os 
-                  tombis que eu levo!Diuretics paradis num copo é motivis de denguis.
-                </p>
-                <div className="project-header__availability">
-                  <img className="project-header__badge" src={testBadge} alt="badge blabla" />
-                  {/* <img className="project-header__badge" src={testBadge2} alt="badge blabla" /> */}
-                  {/* <img className="project-header__badge" src={testBadge3} alt="badge blabla" /> */}
-                </div>
-              </div>
-            </section>
+              </section>
 
-            <section className="project-header__banner">
-              <img src={projectImage} alt="project" />     
-            </section>
-          </div>
+              <section className="project-header__banner">
+                <img src={requestData.post_banner.url} alt="project" />
+              </section>
+            </div>
+          </section>
+
+          <main className="project-body">
+            {newElem}
+          </main>
+
         </section>
-
-        <main className="project-body">
-          <p className="project-body__title">Desenvolvimento</p>
-          <p  className="project-body__paragraph">
-            Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss deixa as pessoas mais interessantis.
-            Si num tem leite então bota uma pinga aí cumpadi!Interessantiss quisso pudia ce receita de bolis, 
-            mais bolis eu num gostis.Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!
-
-            Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Interagi no mé, cursus quis, vehicula ac 
-            nisi.Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.A ordem dos tratores não altera o pão duris.
-          </p>
-
-          <img src={test} className="project-body__first-screen" alt="teste" />
-        </main>
-
-      </section>
 
       </section>
       <Footer />
