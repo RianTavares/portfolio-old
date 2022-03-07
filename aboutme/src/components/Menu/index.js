@@ -71,12 +71,12 @@ export default function HideAppBar(props) {
                     menu
                 </button>
             </div>
-            {/* TODO - German support lenguage */}
-            <div className="menu-item-lenguage">
+
+            <div className="menu-item-language">
                 <button id="brazil" onClick={() => settingLocale('pt-BR')}></button>
                 <button id="england" onClick={() => settingLocale('en')}></button>
-                {/* <button id="germany" onClick={() => { setLenguage(2); localStorage.setItem('lenguage_rt', 2); window.location.reload();}}></button> */}
             </div> 
+
           </Toolbar>
         </AppBar>
       </HideOnScroll>

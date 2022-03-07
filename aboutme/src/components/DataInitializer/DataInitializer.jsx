@@ -19,13 +19,16 @@ const DataInitializer = (props) => {
   const checkStorageLocale = () => {
     const browserLocale = navigator.language;
     const storageLocale = localStorage.getItem('locale@riantavares');
+
     if (!storageLocale && browserLocale) {
       const locale = checkBrowserLocale(browserLocale);
       localStorage.setItem('locale@riantavares', locale);
     }
+
     if (!storageLocale && !browserLocale) {
       localStorage.setItem('locale@riantavares', 'en');
     }
+    
     getStorageLocale();
   }
 

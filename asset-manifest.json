@@ -1,8 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c215c03.css",
-    "main.js": "/static/js/main.f0586c35.js",
-    "static/media/sky-banner.jpg": "/static/media/sky-banner.2dc7e06aae4301f1e8eb.jpg",
+    "main.css": "/static/css/main.ca0be8fb.css",
+    "main.js": "/static/js/main.9b664990.js",
+    "static/js/643.da521163.chunk.js": "/static/js/643.da521163.chunk.js",
+    "static/css/393.1d6018e4.chunk.css": "/static/css/393.1d6018e4.chunk.css",
+    "static/js/393.ac081e42.chunk.js": "/static/js/393.ac081e42.chunk.js",
+    "static/js/16.f273476a.chunk.js": "/static/js/16.f273476a.chunk.js",
+    "static/js/717.eb6759f2.chunk.js": "/static/js/717.eb6759f2.chunk.js",
+    "static/media/sky-banner.jpg": "/static/media/sky-banner.b8547b3102aa5b8737a6.jpg",
     "static/media/UbuntuMono-Regular.svg": "/static/media/UbuntuMono-Regular.9daf371f891981385844.svg",
     "static/media/UbuntuMono-Bold.svg": "/static/media/UbuntuMono-Bold.f4467f1bbcea94212839.svg",
     "static/media/UbuntuMono-Regular.eot": "/static/media/UbuntuMono-Regular.0a9675d43939690980cf.eot",
@@ -10,6 +15,7 @@
     "static/media/rian-coffe.jpg": "/static/media/rian-coffe.1edb21c61f96bea6329d.jpg",
     "static/media/UbuntuMono-Bold.eot": "/static/media/UbuntuMono-Bold.7e64aab3d0772865bc35.eot",
     "static/media/UbuntuMono-Bold.ttf": "/static/media/UbuntuMono-Bold.938976cb0f3e5667c26c.ttf",
+    "static/media/sky-banner-low-quality.jpg": "/static/media/sky-banner-low-quality.905d7f8b98e0efb69d2d.jpg",
     "static/media/mask-banner.png": "/static/media/mask-banner.2408d6db25f86ae5f0b3.png",
     "static/media/UbuntuMono-Regular.woff": "/static/media/UbuntuMono-Regular.1b36b67c5a2869076128.woff",
     "static/media/UbuntuMono-Bold.woff": "/static/media/UbuntuMono-Bold.aab530489315e0225637.woff",
@@ -26,7 +32,6 @@
     "static/media/SegoeUI.woff": "/static/media/SegoeUI.a4819e3f73e54b1cb6ba.woff",
     "static/media/mobile-app-icon.png": "/static/media/mobile-app-icon.79914bfb5b6c77a29da6.png",
     "static/media/SegoeUI.woff2": "/static/media/SegoeUI.f8dafb9fb5e1e9e8ab0b.woff2",
-    "static/media/school-item-1.png": "/static/media/school-item-1.480e47346762f1c21352.png",
     "static/media/web-app-icon.png": "/static/media/web-app-icon.a4d2d92b96414af375e5.png",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -35,11 +40,16 @@
     "index.html": "/index.html",
     "static/media/mobile-circles.svg": "/static/media/mobile-circles.55c5ac308c1a51cbc364.svg",
     "static/media/desktop-circles-greens.svg": "/static/media/desktop-circles-greens.dd1fdfef5333f185cb07.svg",
-    "main.4c215c03.css.map": "/static/css/main.4c215c03.css.map",
-    "main.f0586c35.js.map": "/static/js/main.f0586c35.js.map"
+    "main.ca0be8fb.css.map": "/static/css/main.ca0be8fb.css.map",
+    "main.9b664990.js.map": "/static/js/main.9b664990.js.map",
+    "643.da521163.chunk.js.map": "/static/js/643.da521163.chunk.js.map",
+    "393.1d6018e4.chunk.css.map": "/static/css/393.1d6018e4.chunk.css.map",
+    "393.ac081e42.chunk.js.map": "/static/js/393.ac081e42.chunk.js.map",
+    "16.f273476a.chunk.js.map": "/static/js/16.f273476a.chunk.js.map",
+    "717.eb6759f2.chunk.js.map": "/static/js/717.eb6759f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c215c03.css",
-    "static/js/main.f0586c35.js"
+    "static/css/main.ca0be8fb.css",
+    "static/js/main.9b664990.js"
   ]
 }

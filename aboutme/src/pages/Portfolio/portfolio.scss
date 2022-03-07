@@ -34,5 +34,6 @@
 
   &__header {
     @include margin-page;
+    padding-bottom: $GUTTER;
   }
 }

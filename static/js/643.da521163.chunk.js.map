@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/643.da521163.chunk.js","mappings":"yKAMA,EAJoB,WAClB,OAAQ,gBAAKA,UAAU","sources":["components/Banner/BannerImage/BannerImage.jsx"],"sourcesContent":["import React from 'react';\n\nconst BannerImage = () => {\n  return (<div className=\"banner\"></div>)\n}\n\nexport default BannerImage;\n"],"names":["className"],"sourceRoot":""}

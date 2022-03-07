@@ -1,8 +1,9 @@
 import React from 'react';
 import Slider from "react-slick";
+import SlideItem from '../SlideItem';
 
 const Slide = (props) => {
-  const { children } = props;
+  const { data } = props;
   const settings = {
     className: 'slide-recommendation',
     slidesToShow: 1,
@@ -17,11 +18,23 @@ const Slide = (props) => {
     centerMode: false,
     pauseOnHover: true,
   }
-    return (
-      <Slider {...settings}>
-        {children}
-      </Slider>
-    );
+  return (
+    <>
+      {data.length > 0 &&
+        <Slider {...settings}>
+          {data.map((item) => (
+            <SlideItem
+              key={item.id}
+              text={item.recommendation}
+              name={item.name}
+              position={item.position}
+              img={item.profile_picture.url}
+            />
+          ))}
+        </Slider>
+      }
+    </>
+  );
 }
 
 export default Slide;

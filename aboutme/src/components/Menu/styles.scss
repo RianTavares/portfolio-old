@@ -103,13 +103,12 @@
     background-color: $BASE_GREEN !important;
 }
 
-.menu-item-lenguage {
+.menu-item-language {
     position: absolute;
     z-index: 1;
     right: 10px;
     width: 110px;
     display: flex;
-    // justify-content: space-between;
 
     * {
         margin: 0 5px 0 0;

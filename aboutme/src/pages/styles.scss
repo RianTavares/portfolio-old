@@ -225,22 +225,6 @@
                     }
                 }
               }
-              
-
-           .first-li::before {
-                background-image: url($ITEM_LIST_FIRST) !important;
-            }
-
-            ul li::before {
-                background-image: url($ITEM_LIST);
-                background-repeat: no-repeat;
-                background-size: 80px;
-                content: '';
-                display: inline-block;
-                height: 110px;
-                width: 80px;
-                background-repeat: no-repeat;
-            }
         }
 
         .sec-skills {

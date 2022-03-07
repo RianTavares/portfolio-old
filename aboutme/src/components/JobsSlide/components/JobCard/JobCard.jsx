@@ -10,7 +10,7 @@ const JobsCard = ({ data }) => {
 
   return (
     <div className="card">
-      <img src={data.case.url} alt="teste" className="card__image" />
+      <img src={data.case.url} alt={data.case.alternativeText} className="card__image" />
 
       <div className="card__info-container">
         <div className="card__info">

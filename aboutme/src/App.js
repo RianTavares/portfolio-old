@@ -1,10 +1,8 @@
 import React from "react";
 import { ThemeProvider } from 'styled-components';
-import { Provider } from 'react-redux';
 import i18n from 'i18n-js';
 
 import DataInitializer from "./components/DataInitializer";
-import store from './store';
 import Routes from './routes';
 import themes from './themes';
 import en from './core/locales/en';
@@ -25,13 +23,11 @@ function App() {
   const selectedTheme =  themes['light'];
   
   return (
-    <Provider store={store}>
-      <ThemeProvider theme={selectedTheme}>
-        <DataInitializer>
-          <Routes />
-        </DataInitializer>
-      </ThemeProvider>
-    </Provider>
+    <ThemeProvider theme={selectedTheme}>
+      <DataInitializer>
+        <Routes />
+      </DataInitializer>
+    </ThemeProvider>
   );
 }
 

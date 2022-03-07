@@ -4,15 +4,14 @@
 
 
 @import './main.scss'; 
-@import '../../components/Banner/styles.scss';
+@import '../../components/Banner/banner.scss';
 @import '../../components/Footer/styles.scss';
 @import '../../components/Social/styles.scss';
-@import '../../components/Posts/styles.scss';
-@import '../../components/Skills/styles.scss';
 @import '../../components/Menu/styles.scss';
-@import '../../components/Resume/styles.scss';
-@import '../../components/JobsSlide/slide.scss';
 @import '../../components/JobsSlide/components/JobCard/card.scss';
+@import '../../components/JobsSlide/components/Loading/loading.scss';
+@import '../../components/Banner/BannerImage/banner_image.scss';
+@import '../../components/Banner/BannerImageBlur/banner_blur.scss';
 @import '../../ui/general/GhostButton/ghost_button.scss';
 @import'../../pages/styles.scss';
 @import'../../pages/Portfolio/portfolio.scss';

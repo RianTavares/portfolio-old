@@ -1,0 +1,16 @@
+.page-header {
+  .banner {
+    width: 100%;
+    height: 100%;
+    background-image: url($MOUNTAIN);
+    background-attachment: fixed;
+    background-size: 150% 50%;
+    animation: blur 1s forwards;
+    -webkit-animation: blur 1s forwards;
+    -moz-animation: blur 1s forwards;
+
+    @media #{$BREAKPOINT-TABLET-LAND} {
+      background-size: 100% auto;
+    }
+  }
+}
