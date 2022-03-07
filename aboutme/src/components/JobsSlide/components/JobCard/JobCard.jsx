@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const JobsCard = ({ data }) => {
   const navigate = useNavigate();
 
-  const handleClick = (id) => {
-    navigate(`/project/${id}`);
+  const handleClick = (slug) => {
+    navigate(`/project/${slug}`);
   }
 
   return (

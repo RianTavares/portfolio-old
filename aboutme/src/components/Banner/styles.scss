@@ -10,6 +10,20 @@
     height: 100vh;
   }
 
+  .logo {
+    background-image: url($LOGO);
+    background-size: cover;
+    width: 300px;
+    height: 80px;
+    margin: 0 auto;
+
+    position: absolute;
+    z-index: 3;
+    top: $GUTTER;
+    left: 0;
+    right: 0;
+  }
+
 
   .mask {
     width: 100%;

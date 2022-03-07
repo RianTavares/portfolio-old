@@ -55,7 +55,7 @@ const Recommendations = () => {
     );
   }
   return (
-    <section className="recommendations-page">
+    <section className="recommendations-page" id="recommendations">
       <Slide>
         {requestData.map((item) => (
           <SlideItem 

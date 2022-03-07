@@ -1,9 +1,8 @@
 export default {
   nav: {
     aboutme: "Who am I",
-    experiences: "Work Experiences",
-    education: "Education",
-    skills: "Skills",
-    portfolio: "Portfolio"
+    portfolio: "Portfolio",
+    whatIDo: "What I do",
+    recommendations: "Recommendations"
   }
 }

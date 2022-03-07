@@ -40,8 +40,17 @@ body {
     background-color: $BACKGROUND;
 }
 
+figure {
+  width: 100%;
+  margin: 0;
+}
+
 .pattern-margin {
   @include margin-page;
+}
+
+a {
+  cursor: pointer;
 }
 
 

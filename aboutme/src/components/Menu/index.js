@@ -85,12 +85,10 @@ export default function HideAppBar(props) {
     <div className="menu-slide-bar" id="menu-slide-bar">
         <nav className="menu-slide-bar__nav">
             <div className="menu-slide-bar__nav__items">
-               <Link to="#aboutme" onClick={keepScrolling}>{localesService.translate("nav.aboutme")}</Link>
-               {/* <Link to="#posts" onClick={keepScrolling}>Posts</Link> */}
-               <Link to="#jobs" onClick={keepScrolling}>{localesService.translate("nav.experiences")}</Link>
-               <Link to="#education" onClick={keepScrolling}>{localesService.translate("nav.education")}</Link>
-               <Link to="#skills" onClick={keepScrolling}>{localesService.translate("nav.skills")}</Link>
-               <Link to="#portfolio" onClick={keepScrolling}>{localesService.translate("nav.portfolio")}</Link>
+               <Link to="/#aboutme" onClick={keepScrolling}>{localesService.translate("nav.aboutme")}</Link>
+               <Link to="/#whatido" onClick={keepScrolling}>{localesService.translate("nav.whatIDo")}</Link>
+               <Link to="/#recommendations" onClick={keepScrolling}>{localesService.translate("nav.recommendations")}</Link>
+               <Link to="/#portfolio" onClick={keepScrolling}>{localesService.translate("nav.portfolio")}</Link>
             </div>
 
         </nav>

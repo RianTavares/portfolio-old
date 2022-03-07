@@ -5,10 +5,10 @@ import parse from 'html-react-parser'
 
 import Menu from "../../components/Menu";
 import Footer from '../../components/Footer';
-import demoButton from '../../assets/imgs/demo-badge.png';
 import appleBadge from '../../assets/imgs/apple-store-badge.png';
 import googleBadge from '../../assets/imgs/google-play-badge.png';
 import Skeleton from './components/Skeleton';
+import { GhostButton } from '../../ui/general';
 
 import localesService from '../../core/locales/locales.service';
 
@@ -54,6 +54,8 @@ const Project = () => {
 
   const RenderExampleButton = () => {
 
+    if (!requestData.ios && !requestData.android && !requestData.web) return <></>
+
     if (requestData.ios && requestData.android) {
       return (
         <>
@@ -83,14 +85,11 @@ const Project = () => {
       )
     }
 
-    return (
-      <a href={requestData.web_url} target="_blank" rel="noreferrer">
-        <img className="project-header__badge" src={demoButton} alt="Check live website" />
-      </a>
-    )
+    return (<GhostButton url={requestData.web_url}/>)
   }
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     getProjects();
     setSlugByLocale(slug);
   }, []);
@@ -131,6 +130,18 @@ const Project = () => {
 
           <main className="project-body">
             {newElem}
+            <section className="project-body__footer">
+              <div className="project-body__footer-tag">
+                <p>Tags:</p>
+                <section className="project-body__tags-container">
+                  {requestData.tags.map((item) => (
+                    <div className="project-body__tag" key={item.id}>
+                      <strong className="project-body__tag-text">{item.tag_name}</strong>
+                    </div>
+                  ))}
+                </section>
+              </div>
+            </section>
           </main>
 
         </section>

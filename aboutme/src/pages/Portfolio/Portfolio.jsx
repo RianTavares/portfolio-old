@@ -9,7 +9,7 @@ const Portfolio = () => {
   const [isReady, setIsReady] = useState(false);
 
   const getProjects = () => {
-    axios.get(`https://content-manager-rt.herokuapp.com/projects?_locale=${localesService.getLocale()}`)
+    axios.get(`https://content-manager-rt.herokuapp.com/projects?_locale=${localesService.getLocale()}&_sort=id:DESC`)
     .then((response)=> {
       setRequestData(response.data);
       setIsReady(true);
@@ -23,7 +23,7 @@ const Portfolio = () => {
   if (!isReady || !requestData) return (<>Loading...</>)
 
   return (
-    <section className="portfolio">
+    <section className="portfolio" id="portfolio">
       <section className="portfolio__content">
         <div className="portfolio__header">
           <p className="portfolio__pre-title">Projetos e soluções desenvolvidas</p>

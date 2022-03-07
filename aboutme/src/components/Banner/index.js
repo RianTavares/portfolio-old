@@ -8,6 +8,7 @@ const Banner = () => {
                 {/* <TypedJs /> */}
                 {/* <div className="job fade-in">Front-end Developer</div> */}
                 <div className="mackbook"></div>
+                <div className="logo"></div>
                 <div className="mask"></div>
                 <div className="overlay"></div>
                 <div className="banner">
