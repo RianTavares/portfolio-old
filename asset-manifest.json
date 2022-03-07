@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6e5b0cfa.css",
-    "main.js": "/static/js/main.2b909bd0.js",
+    "main.css": "/static/css/main.4c215c03.css",
+    "main.js": "/static/js/main.586eff49.js",
     "static/media/sky-banner.jpg": "/static/media/sky-banner.2dc7e06aae4301f1e8eb.jpg",
     "static/media/UbuntuMono-Regular.svg": "/static/media/UbuntuMono-Regular.9daf371f891981385844.svg",
     "static/media/UbuntuMono-Bold.svg": "/static/media/UbuntuMono-Bold.f4467f1bbcea94212839.svg",
@@ -35,11 +35,11 @@
     "index.html": "/index.html",
     "static/media/mobile-circles.svg": "/static/media/mobile-circles.55c5ac308c1a51cbc364.svg",
     "static/media/desktop-circles-greens.svg": "/static/media/desktop-circles-greens.dd1fdfef5333f185cb07.svg",
-    "main.6e5b0cfa.css.map": "/static/css/main.6e5b0cfa.css.map",
-    "main.2b909bd0.js.map": "/static/js/main.2b909bd0.js.map"
+    "main.4c215c03.css.map": "/static/css/main.4c215c03.css.map",
+    "main.586eff49.js.map": "/static/js/main.586eff49.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e5b0cfa.css",
-    "static/js/main.2b909bd0.js"
+    "static/css/main.4c215c03.css",
+    "static/js/main.586eff49.js"
   ]
 }

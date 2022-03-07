@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    BrowserRouter,
+    HashRouter,
     Routes,
     Route
 } from "react-router-dom";
@@ -10,12 +10,12 @@ import Project from './pages/Project';
 
 const RoutesCpnt = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route index path='/' element={<Main />}/>
                 <Route path='/project/:slug' element={<Project />}/>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
