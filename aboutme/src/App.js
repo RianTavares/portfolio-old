@@ -11,14 +11,19 @@ import en from './core/locales/en';
 import pt from './core/locales/pt-BR';
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
+
+i18n.fallbacks = true;
+i18n.defaultLocale = 'en';
 i18n.translations = {
   en,
   pt,
   'pt-BR': pt,
+  'pt-br': pt,
 };
 
 function App() {
   const selectedTheme =  themes['light'];
+  
   return (
     <Provider store={store}>
       <ThemeProvider theme={selectedTheme}>

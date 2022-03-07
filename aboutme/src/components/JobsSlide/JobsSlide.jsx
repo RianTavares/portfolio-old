@@ -8,7 +8,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-const JobsSlider = ({ data }) => {
+const JobsSlider = (props) => {
+    const { data } = props;
+
     const settings = {
         className: 'slide',
         dots: false,
@@ -56,13 +58,15 @@ const JobsSlider = ({ data }) => {
         ],
     }
     return (
-        <div>
-            <Slider {...settings}>
-                {data.map((item) => (
-                    <JobCard key={item.id} data={item} />
-                ))}
-            </Slider>
-        </div>
+        <>
+            {data.length > 0 &&  
+                <Slider {...settings}>
+                    {data.map((item) => (
+                        <JobCard key={item.id} data={item} />
+                    ))}
+                </Slider>
+            }
+        </>
     );
 }
 
