@@ -14,4 +14,12 @@
 @import '../../components/Portfolio/styles.scss';
 @import '../../components/Menu/styles.scss';
 @import '../../components/Resume/styles.scss';
-@import'../../page/styles.scss';
+@import '../../components/JobsSlide/slide.scss';
+@import '../../components/JobsSlide/components/JobCard/card.scss';
+@import '../../ui/general/GhostButton/ghost_button.scss';
+@import'../../pages/styles.scss';
+@import'../../pages/Portfolio/portfolio.scss';
+@import'../../pages/Project/project_page.scss';
+@import'../../pages/Services/services.scss';
+@import'../../pages/AboutMe/about_me.scss';
+@import'../../pages/Recommendations/recommendations.scss';

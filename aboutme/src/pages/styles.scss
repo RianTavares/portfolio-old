@@ -1,0 +1,303 @@
+.App{
+    position: relative;
+    min-height: 100vh;
+    
+    &__header {
+        position: relative;
+    }
+
+    .page-content {
+        .section {
+            @include flex-col;
+
+            @media #{$BREAKPOINT-TABLET} {
+                position: relative;
+            }
+            
+            &__title {
+                color: $WHITE_THEME;
+            }
+
+            &__shape {
+                position: relative;
+                overflow: hidden;
+                width: 252px;
+                height: 228px;
+                background: transparent;
+
+                transform: rotate(35deg);
+                border-top-left-radius: 246px;
+                border-bottom-left-radius: 191px;
+                border-bottom-right-radius: 315px;
+                border-top-right-radius: 64px;
+
+                @media #{$BREAKPOINT-TABLET-LAND} {
+                    width: 369px;
+                    height: 304px;
+                }
+
+                &--overlay {
+                    background: linear-gradient(180deg, rgba(255, 255, 255, 0) -19%, rgba(100, 200, 178, 0.45) 36%);
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &__shape::before {
+                content: "";
+                position: absolute;
+                width: 190%;
+                height: 115%;
+                top: 0;
+                left: -50%;
+                z-index: -1;
+                transform: rotate(323deg);
+                background: url('../assets/imgs/rian-coffe.jpg') 0 0 repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        
+            
+            &__desk {
+                @include flex-col;
+
+                @media #{$BREAKPOINT-TABLET} {
+                    flex-direction: row;
+                }
+
+                &__img {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 64px;
+
+                    @media #{$BREAKPOINT-TABLET} {
+                        width: 50%;
+                    }
+
+                    @media #{$BREAKPOINT-TABLET-LAND} {
+                        display: block;
+                    }
+        
+                    img {
+                        width: 90%;
+                        margin-left: 10px;
+                    }
+                }
+
+                &__container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    @media #{$BREAKPOINT-TABLET} {
+                        width: 50%;
+                    }
+
+                    &__text {
+                        color: $WHITE_THEME;
+                        margin-top: 0;
+                        text-align: justify;
+    
+                        @media #{$BREAKPOINT-TABLET} {
+                            width: 100%;
+                        }
+                    }
+
+                    &__text:first-child {
+                        margin-top: 30px;
+                    }
+
+                    &__text:last-child {
+                        margin-bottom: 0px;
+                    }
+
+                    .phrase {
+                        font-style: italic;
+                        font-size: 16px;
+                    }
+                }
+            }
+        
+        }
+
+        .whoami {
+            margin: $GUTTER/2 0 10px 0;
+            color: $DETAILS_GREEN;
+            text-align: left;
+            width: 100%;
+
+            @media #{$BREAKPOINT-TABLET} {
+                font-size: 38px;
+                margin-top: 0;
+            }
+        }
+
+        .sec-posts {
+            margin-top: 50px;
+            background-color: $DETAIL_GRAY;
+            width: 100%;
+
+            @media #{$BREAKPOINT-TABLET} {
+                margin: 80px auto 0 auto;
+                
+            }
+
+            &__bg {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                text-align: center;
+
+                @media #{$BREAKPOINT-TABLET} {
+                    max-width: 1000px;
+                    width: calc(100% - 30px);
+                    margin: 0 auto;
+                }
+            }
+
+            p {
+                color: $WHITE_THEME;
+                margin-bottom: 20px;
+            }
+        }
+
+
+        .sec-jobs {
+            margin-top: 60px;
+            &__content {
+                background-color: $WHITE_THEME;
+                width: 100%;
+                height: 100%;
+                padding-bottom: 90px;
+            }
+        }
+
+        .sec-schools {
+
+            &__container {
+                padding-bottom: 90px;
+                width: 100%;
+
+                @media #{$BREAKPOINT-TABLET} {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+            &__education {
+                @media #{$BREAKPOINT-TABLET} {
+                    width: 50%;
+                }
+            }
+            
+
+            h1 {
+                text-align: center;
+            }
+
+            ul {
+                padding: 0;
+                list-style-type: none;
+
+                li {
+                    margin-bottom: -45px;
+                    color: $WHITE_THEME;
+                    
+                    span {
+                        position: relative;
+                        top: -14px;
+                        font-size: small;
+
+                        @media #{$BREAKPOINT-TABLET} {
+                            font-size: initial;
+                        }
+                        
+                        .education-time {
+                            width: 180px;
+                            position: absolute;
+                            top: -21px;
+                            font-family: 'Ubuntu-Mono-Bold';
+                            color: #64C8B2;
+                            font-size: 16px;
+                        } 
+                    }
+                }
+              }
+              
+
+           .first-li::before {
+                background-image: url($ITEM_LIST_FIRST) !important;
+            }
+
+            ul li::before {
+                background-image: url($ITEM_LIST);
+                background-repeat: no-repeat;
+                background-size: 80px;
+                content: '';
+                display: inline-block;
+                height: 110px;
+                width: 80px;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .sec-skills {
+            &__list {
+                @media #{$BREAKPOINT-TABLET} {
+                    width: 50%;
+                }
+
+                &__title {
+                    color: $WHITE_THEME;
+                    padding: 80px 0 50px 0;
+                    margin-bottom: 0;
+                    @media #{$BREAKPOINT-TABLET} {
+                        padding: unset;
+                    }
+                }
+            }
+        }
+
+        .sec-portfolio {
+            &__container {
+                padding-bottom: 90px;
+                width: 100%;
+                height: 100%;
+                background-color: $WHITE_THEME;
+
+                @media #{$BREAKPOINT-TABLET} {
+                    padding-bottom: 180px;
+                }
+
+                &__title {
+                    text-align: center;
+                    color: $DETAILS_GREEN;
+                }
+            }
+        }
+
+        .title-posts {
+            width: 100%;
+        }
+
+        .title-green {
+            color: $DETAILS_GREEN;
+            text-align: center;
+        }
+
+        .last {
+            @media #{$BREAKPOINT-TABLET} {
+                padding-bottom: 160px;
+            }
+        }
+
+        .first {
+            @media #{$BREAKPOINT-TABLET} {
+                padding-top: 50px;
+            }
+        }
+    }
+}
+

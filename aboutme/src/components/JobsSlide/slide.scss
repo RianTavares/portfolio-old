@@ -1,0 +1,25 @@
+.slide {
+  margin-top: $GUTTER;
+  
+  .slick-prev {
+    z-index: 9999;
+  }
+
+  .slick-prev, .slick-next {
+    top: 45%;
+  }
+
+  .slick-prev:before, .slick-next:before {
+    background-color: $DETAILS_GREEN;
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe-UI-Regular';
+    font-weight: bold;
+    font-size: 30px;
+    opacity: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -25,7 +25,7 @@
 
 #### :blush:
 - Se você curtiu o projeto não esquece de dar uma :star: 
-- Me segue lá no Instagram também [@riantba](https://www.instagram.com/riantba/) :heart:
+- Me segue lá no Instagram também [@riantavares.dev](https://www.instagram.com/riantavares.dev/) :heart:
 - E claro, me segue aqui no [github](https://github.com/RianTavares) né :)
 
 

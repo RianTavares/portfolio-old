@@ -1,0 +1,5 @@
+.aboutme-page {
+  @include margin-page;
+
+  padding: $GUTTER 0 $GUTTER*3 0;
+}

@@ -4,13 +4,16 @@ import {
     Routes,
     Route
 } from "react-router-dom";
-import Main from './page/App';
+
+import Main from './pages/Main';
+import Project from './pages/Project';
 
 const RoutesCpnt = () => {
     return (
         <BrowserRouter>
             <Routes>
                 <Route index path='/' element={<Main />}/>
+                <Route path='/project/:slug' element={<Project />}/>
             </Routes>
         </BrowserRouter>
     )

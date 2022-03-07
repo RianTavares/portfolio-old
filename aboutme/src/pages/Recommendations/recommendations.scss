@@ -1,0 +1,45 @@
+.recommendations-page {
+  width: 100%;
+  height: 100%;
+  background-color: $DETAILS_GREEN;
+  padding: $GUTTER*3 0;
+  color: $WHITE_THEME;
+
+  &__content {
+    @include margin-page;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media #{$BREAKPOINT-TABLET-LAND} {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__image {
+    width: 200px;
+    border-radius: 50%;
+    display: none;
+
+    @media #{$BREAKPOINT-TABLET-LAND} {
+      display: block;
+    }
+  }
+
+  &__column:not(:first-child) {
+    width: 100%;
+    @media #{$BREAKPOINT-TABLET-LAND} {
+      width: 70%;
+    }
+  }
+
+  &__name {
+    margin-bottom: 0;
+  }
+
+  &__position {
+    margin: 0;
+  }
+}

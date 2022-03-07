@@ -1,11 +1,13 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
+
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
 import Social from '../Social';
-import { HashLink as Link } from 'react-router-hash-link';
-import l from '../../components/LenguageSwitcher/lenguage';
+import localesService from '../../core/locales/locales.service';
+
 
 
 function HideOnScroll(props) {
@@ -21,14 +23,6 @@ function HideOnScroll(props) {
 }
 
 export default function HideAppBar(props) {
-
-    const [selectedLenguage, setLenguage] = useState(0);
-
-    useEffect(()=>{
-        const localStorageVar = localStorage.getItem('lenguage_rt') ? localStorage.getItem('lenguage_rt') : 0;
-        setLenguage(localStorageVar);
-    },[])
-
     const buttonWasClicked = () => { 
         const body = document.body;
         const button = document.querySelector('#button-menu');
@@ -62,6 +56,11 @@ export default function HideAppBar(props) {
           body.style.top = 0;
     }
 
+    const settingLocale = (locale) => {
+      localStorage.setItem('locale@riantavares', locale); 
+      window.location.reload();
+    }
+
   return (
     <React.Fragment>
       <HideOnScroll {...props}>
@@ -72,12 +71,12 @@ export default function HideAppBar(props) {
                     menu
                 </button>
             </div>
-            {/* Troca de língua retirada para a próxima entrega */}
+            {/* TODO - German support lenguage */}
             <div className="menu-item-lenguage">
-                <button id="brazil" onClick={() => { setLenguage(0); localStorage.setItem('lenguage_rt', 0); window.location.reload();}}></button>
-                <button id="england" onClick={() => { setLenguage(1); localStorage.setItem('lenguage_rt', 1); window.location.reload();}}></button>
+                <button id="brazil" onClick={() => settingLocale('pt-BR')}></button>
+                <button id="england" onClick={() => settingLocale('en')}></button>
                 {/* <button id="germany" onClick={() => { setLenguage(2); localStorage.setItem('lenguage_rt', 2); window.location.reload();}}></button> */}
-            </div>
+            </div> 
           </Toolbar>
         </AppBar>
       </HideOnScroll>
@@ -86,12 +85,10 @@ export default function HideAppBar(props) {
     <div className="menu-slide-bar" id="menu-slide-bar">
         <nav className="menu-slide-bar__nav">
             <div className="menu-slide-bar__nav__items">
-               <Link to="#aboutme" onClick={keepScrolling}>{l[selectedLenguage].menu.item1}</Link>
-               {/* <Link to="#posts" onClick={keepScrolling}>Posts</Link> */}
-               <Link to="#jobs" onClick={keepScrolling}>{l[selectedLenguage].menu.item3}</Link>
-               <Link to="#education" onClick={keepScrolling}>{l[selectedLenguage].menu.item4}</Link>
-               <Link to="#skills" onClick={keepScrolling}>{l[selectedLenguage].menu.item5}</Link>
-               <Link to="#portfolio" onClick={keepScrolling}>{l[selectedLenguage].menu.item6}</Link>
+               <Link to="/#aboutme" onClick={keepScrolling}>{localesService.translate("nav.aboutme")}</Link>
+               <Link to="/#whatido" onClick={keepScrolling}>{localesService.translate("nav.whatIDo")}</Link>
+               <Link to="/#recommendations" onClick={keepScrolling}>{localesService.translate("nav.recommendations")}</Link>
+               <Link to="/#portfolio" onClick={keepScrolling}>{localesService.translate("nav.portfolio")}</Link>
             </div>
 
         </nav>

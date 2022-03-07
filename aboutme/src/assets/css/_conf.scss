@@ -4,9 +4,11 @@
 |--------------------------------------------------------------------------
 */
 
-$BACKGROUND: #868585;
+$BACKGROUND: #000;
+$BACKGROUND_SECONDARY: #868585;
 $TEXT_GRAY: #4B4748;
 $DETAIL_GRAY: #767273;
+$GRAY_VERY_LIGHT: #fafafa;
 $FOOTER: #151313;
 $WHITE_THEME: #DFDFDF;
 $BASE_GREEN: #64C8B2;
@@ -20,6 +22,12 @@ $DETAILS_GREEN: #26AC8E;
 */
 
 $BANNER_TOP: '../../assets/imgs/banner-top-rian-tavares.jpg';
+$LOGO: '../../assets/imgs/rian-tavares-logo.png';
+$MACBOOK: '../../assets/imgs/macbook.png';
+$COFFE: '../../assets/imgs/rian-coffe.jpg';
+$MASK_BANNER: '../../assets/imgs/mask-banner.png';
+// $MOUNTAIN: '../../assets/imgs/night-mountains.jpeg';
+$MOUNTAIN: '../../assets/imgs/sky-banner.jpg';
 $BANNER_TOP_DESK: '../../assets/imgs/banner-top-rian-tavares-desk.jpg';
 $BRAZIL: '../../assets/imgs/portuguese.png';
 $ENGLAND: '../../assets/imgs/english.png';
@@ -40,3 +48,5 @@ $BREAKPOINT-DESK: 		        "only screen and (min-width: 1280px)";
 $BREAKPOINT-TABLET-LAND: 	    "only screen and (min-width: 975px)";
 $BREAKPOINT-TABLET: 		    "only screen and (min-width: 600px)";
 $BREAKPOINT-MOBILE-LAND: 		"only screen and (min-width: 480px)";
+
+$GUTTER: 32px;
