@@ -1,42 +1,50 @@
-<h1 align="center">
-    <img alt="About Me" src="https://avatars2.githubusercontent.com/u/8935295?s=460&u=cf7e17066e5487b68e4f23e8114c55737eccbf27&v=4g" height="300px" style="border-radius: 50%; border: 5px solid #26ac8e; "/>
-</h1>
+<div align="center">
+  <a href="https://github.com/RianTavares/riantavares.github.io" alt="Rian Tavares Dev">
+    <img width="300px" src="https://raw.githubusercontent.com/RianTavares/riantavares.github.io/master/aboutme/src/assets/imgs/rian-tavares-logo.png">
+  </a>
+</div>
 
-<blockquote align="center">“E pensar diferente é a unica coisa em nós que acredito que deve permanecer sempre a mesma.”</blockquote>
+<hr />
 
-## :man_technologist: Sobre estre projeto
-<p>
-    Sempre tive a vontade de criar uma página que fosse minha, que fosse um currículo web, um portfólio, onde as pessoas pudessem visualizar meus trabalhos e projetos pessoais, pudessem me conhecer um pouco melhor e eu queria fazer do meu jeitinho. Afinal, para ter um simples currículo online a gente pode usar o linkedin já né? Meu desejo era de tentar passar o meu jeito, a minha criatividade através da minha página. 
-</p>
-<p>
-    Well, seja bem-vindo a este desejo que realizei através desse projeto. 
-    Confere a página <a href="https://riantavares.github.io/" target="_blank">clicando aqui!</a>
-</p>
-<p>
-    Espero que gostem! Nesse caso não esqueça de dar uma :star: 
-</p>
+<div align="center">
+    <a href="https://www.codefactor.io/repository/github/riantavares/riantavares.github.io">
+        <img src="https://www.codefactor.io/repository/github/riantavares/riantavares.github.io/badge" alt="CodeFactor" />
+    </a>
+    <a href="https://github.com/facebook/react">
+        <img src="https://img.shields.io/badge/.-React-%2361DAFB?logo=react" alt="React" />
+    </a>
+</div>
+<br />
 
-
-## Telas do projeto
-
-
+## About this project
+I always wanted to create something to share my projects, so I decided to make a sort of portfolio in my way to expose a small part of my creativity and personality. This project is the result of this feeling and represents me. 
 
 
+## Features
 
-#### :blush:
-- Se você curtiu o projeto não esquece de dar uma :star: 
-- Me segue lá no Instagram também [@riantavares.dev](https://www.instagram.com/riantavares.dev/) :heart:
-- E claro, me segue aqui no [github](https://github.com/RianTavares) né :)
+- [✓] User friendly
+- [✓] Mobile First
+- [✓] Integrated with a CMS (Strapi)
+- [✓] Internationalization (pt and en)
+- [✓] Lazy load for images
+- [✓] List of projects with full description
+- [✓] Up and running [riantavares.dev](https://www.riantavares.dev/) 🚀
+
+## Technology and resources
+- React JS
+- SASS
+- BEM
+
+## Style Guide
+I used a linter library (ESLint) with the Airbnb Style Guide, one of the most popular style guides available on Github, to guide the development through a set of best practices and guidelines for keeping the code quality.
+
+## Local setup with Node
+
+1. Download or Clone the project and extract it
+2. Download [Node.js](https://nodejs.org/it/) and install it.
+3. Run `npm install` in the `aboutme/` folder
+4. Start the app in the development mode via command line `npm start`
+5. The project now is running on [http://localhost:3000](http://localhost:3000)
 
 
-<h1>Licença</h1>
-
-GNU GENERAL PUBLIC LICENSE
-
-Copyright (c) 2020 Rian Tavares 
-
-
-
-
-
-
+I hope you like it! In that case, don't forget to give a ⭐         
