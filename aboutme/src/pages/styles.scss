@@ -110,7 +110,7 @@
                     }
 
                     &__text:last-child {
-                        margin-bottom: 0px;
+                        margin-bottom: 0;
                     }
 
                     .phrase {
@@ -140,7 +140,7 @@
             width: 100%;
 
             @media #{$BREAKPOINT-TABLET} {
-                margin: 80px auto 0 auto;
+                margin: 80px auto 0;
                 
             }
 
@@ -235,7 +235,7 @@
 
                 &__title {
                     color: $WHITE_THEME;
-                    padding: 80px 0 50px 0;
+                    padding: 80px 0 50px;
                     margin-bottom: 0;
                     @media #{$BREAKPOINT-TABLET} {
                         padding: unset;

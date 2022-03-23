@@ -5,14 +5,9 @@
         height: 100px;
         background-color: $FOOTER;
 
-    // @media #{$BREAKPOINT-TABLET} {
-    //     position: absolute;
-    //     bottom: 0;
-    // }
-
     .social {
         justify-content: space-between;
-        margin: 0px auto 0 auto;
+        margin: 0 auto;
         padding: 10px 0 0 0;
         position: relative;
         top: 0;
