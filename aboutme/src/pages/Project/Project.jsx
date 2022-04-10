@@ -62,7 +62,7 @@ const Project = () => {
           <a href={requestData.ios_url} target="_blank" rel="noreferrer">
             <img className="project-header__badge" src={appleBadge} alt="Download on Apple Store" />
           </a>
-          <a href={requestData.ios_android} target="_blank" rel="noreferrer">
+          <a href={requestData.android_url} target="_blank" rel="noreferrer">
             <img className="project-header__badge" src={googleBadge} alt="Download on google play" />
           </a>
         </>
@@ -79,7 +79,7 @@ const Project = () => {
 
     if (requestData.android) {
       return (
-        <a href={requestData.ios_android} target="_blank" rel="noreferrer">
+        <a href={requestData.android_url} target="_blank" rel="noreferrer">
           <img className="project-header__badge" src={googleBadge} alt="Download on google play" />
         </a>
       )
