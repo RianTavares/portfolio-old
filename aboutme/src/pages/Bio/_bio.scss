@@ -1,0 +1,91 @@
+.bio-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;  
+  background-color: $light_black_10;
+  padding: $GUTTER*3 0;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title, &__subtitle {
+    color: $theme_white;
+  }
+
+  &__title {
+    margin: $GUTTER 0 $GUTTER*2 0;
+  }
+
+  &__subtitle {
+    margin: $GUTTER 0 $GUTTER 0;
+    text-align: left;
+  }
+
+  &__profile-pic {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+  }
+
+  &__content {
+    width: calc(100% - 64px);
+
+    @media #{$BREAKPOINT-TABLET} {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  }
+
+  &__menu, &__social-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: $GUTTER/2;
+    width: 100%;
+  }
+
+  &__link {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+
+    text-decoration: none;
+    font-family: 'Segoe-UI-Regular';
+    color: $light_gray_20;
+    font-size: 2.4rem;
+
+    @media #{$BREAKPOINT-TABLET} {
+      flex-grow: 1;
+      flex-basis: 300px;
+    }
+
+    &-portfolio {
+      background: linear-gradient(90deg, #02d0ff 0%, #26AC8E 100%);
+    }
+
+    &-insta {
+      background: linear-gradient( 45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100% );
+    }
+
+    &-linkedin {
+      background-color: #0A65C2;
+    }
+
+    &-twitter {
+      background: linear-gradient( 45deg, #7AC6E0 0%, #63ACD4 25%, #5290C7 50%, #3C77BB 75%, #2F5CAE 100% );
+    }
+
+    &-github {
+      background: linear-gradient( 45deg, #4B5661 0%, #616D78 25%, #9EA4B1 50%, #B6BBC4 75%, #B6BBC4 100% );
+    }
+  }
+}

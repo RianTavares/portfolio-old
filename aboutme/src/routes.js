@@ -7,6 +7,7 @@ import {
 
 import Main from './pages/Main';
 import Project from './pages/Project';
+import Bio from './pages/Bio';
 
 const RoutesCpnt = () => {
     return (
@@ -14,6 +15,7 @@ const RoutesCpnt = () => {
             <Routes>
                 <Route index path='/' element={<Main />}/>
                 <Route path='/project/:slug' element={<Project />}/>
+                <Route path='/bio' element={<Bio />}/>
             </Routes>
         </HashRouter>
     )
