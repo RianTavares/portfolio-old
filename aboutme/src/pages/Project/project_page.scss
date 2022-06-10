@@ -1,12 +1,12 @@
 .project-page {
   .project {
-    background-color: $WHITE_THEME;
+    background-color: $theme_white;
     min-height: 100vh;
   }
 
   .project-header {
     color: $DETAIL_GRAY;
-    background-color: $WHITE_THEME;
+    background-color: $theme_white;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
@@ -184,7 +184,7 @@
       padding: $GUTTER/8 $GUTTER/2;
       background: $DETAILS_GREEN;
       border-radius: 40px;
-      color: $WHITE_THEME;
+      color: $theme_white;
 
       font-family: "Segoe-UI-Regular";
       font-size: 14px;

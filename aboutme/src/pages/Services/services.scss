@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $GRAY_VERY_LIGHT;
+  color: $light_gray_20;
 
   -webkit-box-shadow: inset  1px 4px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, 0.1);
@@ -33,7 +33,7 @@
 
   &__pre-title {
     margin: 0;
-    color: $GRAY_VERY_LIGHT;
+    color: $light_gray_20;
     font-family: 'DM-Sans';
     font-size: 18px;
 
@@ -43,7 +43,7 @@
   }
 
   &__title {
-    color: $GRAY_VERY_LIGHT;
+    color: $light_gray_20;
     font-size: 45px;
 
     @media #{$BREAKPOINT-TABLET-LAND} {

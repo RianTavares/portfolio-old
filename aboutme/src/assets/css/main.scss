@@ -35,10 +35,30 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: $BACKGROUND;
+
+    scrollbar-color: $theme_green;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #17161d;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $theme_green;
+  border-radius: 8px;
+}
+
 
 figure {
   width: 100%;
@@ -74,7 +94,7 @@ h3 {
   margin: 0;
   text-align: center;
   width: 100%;
-  color: $WHITE_THEME;
+  color: $theme_white;
   font-family: 'Segoe-UI-Regular';
   font-style: italic;
   font-size: 13px;

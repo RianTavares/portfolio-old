@@ -3,16 +3,26 @@
 | COLORS
 |--------------------------------------------------------------------------
 */
+$light_black_10: #151313;
+$black: #000;
 
-$BACKGROUND: #000;
-$BACKGROUND_SECONDARY: #868585;
-$TEXT_GRAY: #4B4748;
-$DETAIL_GRAY: #767273;
-$GRAY_VERY_LIGHT: #fafafa;
-$FOOTER: #151313;
-$WHITE_THEME: #DFDFDF;
-$BASE_GREEN: #64C8B2;
-$DETAILS_GREEN: #26AC8E;
+$light_gray_20: #fafafa;
+$light_gray_10: #868585;
+$gray: #767273;
+$dark_gray_10: #4B4748;
+
+$theme_green: #64C8B2;
+$dark_theme_green: #26AC8E;
+
+$theme_white: #DFDFDF;
+
+$BACKGROUND: $black;
+$BACKGROUND_SECONDARY: $light_gray_10;
+$TEXT_GRAY: $dark_gray_10;
+$DETAIL_GRAY: $gray;
+$FOOTER: $light_black_10;
+$BASE_GREEN: $theme_green;
+$DETAILS_GREEN: $dark_theme_green;
 
 
 /*

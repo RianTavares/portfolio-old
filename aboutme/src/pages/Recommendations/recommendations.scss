@@ -3,7 +3,7 @@
   height: 100%;
   background-color: $DETAILS_GREEN;
   padding: $GUTTER*3 0;
-  color: $WHITE_THEME;
+  color: $theme_white;
 
   &__content {
     @include margin-page;
