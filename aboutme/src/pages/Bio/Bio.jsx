@@ -1,39 +1,72 @@
-import React from 'react';
+/* eslint-disable array-callback-return */
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
 import profile from '../../assets/imgs/profile-pic.jpeg';
+import Loading from '../../components/JobsSlide/components/Loading';
 
 const Bio = () => {
+  const [requestData, setRequestData] = useState(null);
+  const [isReady, setIsReady] = useState(false);
+
+  const getBioData = () => {
+    axios.get('https://content-manager-rt.herokuapp.com/bios?_locale=en')
+      .then((response) => {
+        setRequestData(response.data[0]);
+        setIsReady(true);
+      });
+  }
+
+  useEffect(() => {
+    getBioData();
+  }, []);
+
+  if (!isReady || !requestData) {
+    return (
+      <section className="App">
+        <section className="bio-page">
+          <Loading />
+        </section>
+      </section>
+    )
+  }
+
   return (
     <section className="App">
+      {console.log(requestData)}
       <section className="bio-page">
 
         <header className="bio-page__header">
           <img src={profile} className="bio-page__profile-pic" alt='Profile'/>
           <hgroup>
-            <h1 className="bio-page__title">Rian Tavares</h1>
+            <h1 className="bio-page__title">{requestData.title}</h1>
           </hgroup>
         </header>
 
         <main className="bio-page__content">
           <div className='bio-page__menu'>
-            <a className='bio-page__link bio-page__link-portfolio' href="https://www.riantavares.dev/" rel="noreferrer" target="_blank">
-              Portfolio
-            </a>
+            {requestData.buttons.map(button => {
+              if (!button.social_media) {
+                return (
+                  <a key={button.id} className={`bio-page__link bio-page__link-${button.type}`} href={button.url} rel="noreferrer" target="_blank">
+                    {button.title}
+                  </a>
+                )
+              }
+            })}
           </div>
 
           <h2 className='bio-page__subtitle'>Redes Sociais</h2>
           <div className='bio-page__social-media'>
-            <a className='bio-page__link bio-page__link-insta' href="https://www.instagram.com/riantavares.dev/" rel="noreferrer" target="_blank">
-              Instagram
-            </a>
-            <a className='bio-page__link bio-page__link-twitter' href="https://twitter.com/RianTavaresDev" rel="noreferrer" target="_blank">
-              Twitter
-            </a>
-            <a className='bio-page__link bio-page__link-linkedin' href="https://www.linkedin.com/in/riantavares/" rel="noreferrer" target="_blank">
-              Linkedin
-            </a>
-            <a className='bio-page__link bio-page__link-github' href="https://github.com/RianTavares" rel="noreferrer" target="_blank">
-              GitHub
-            </a>
+          {requestData.buttons.map(button => {
+              if (button.social_media) {
+                return (
+                  <a key={button.id} className={`bio-page__link bio-page__link-${button.type}`} href={button.url} rel="noreferrer" target="_blank">
+                    {button.title}
+                  </a>
+                )
+              }
+            })}
           </div>
         </main>
 
