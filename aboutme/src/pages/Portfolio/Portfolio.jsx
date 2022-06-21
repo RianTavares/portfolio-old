@@ -1,8 +1,6 @@
 import React, { useEffect, useState, Suspense, lazy } from 'react';
 import axios from 'axios';
-
 import Loading from '../../components/JobsSlide/components/Loading';
-// import JobsSlide from '../../components/JobsSlide';
 import localesService from '../../core/locales/locales.service';
 
 const Portfolio = () => {
@@ -27,8 +25,8 @@ const Portfolio = () => {
       <section className="portfolio" id="portfolio">
         <section className="portfolio__content">
           <div className="portfolio__header">
-            <p className="portfolio__pre-title">Projetos e soluções desenvolvidas</p>
-            <h1 className="portfolio__title"> Portfolio </h1>
+            <p className="portfolio__pre-title">{localesService.translate('portfolio.subtitle')}</p>
+            <h1 className="portfolio__title"> {localesService.translate('portfolio.title')} </h1>
           </div>
           <Loading />
         </section>
@@ -40,8 +38,8 @@ const Portfolio = () => {
     <section className="portfolio" id="portfolio">
       <section className="portfolio__content">
         <div className="portfolio__header">
-          <p className="portfolio__pre-title">Projetos e soluções desenvolvidas</p>
-          <h1 className="portfolio__title"> Portfolio </h1>
+          <p className="portfolio__pre-title">{localesService.translate('portfolio.subtitle')}</p>
+          <h1 className="portfolio__title"> {localesService.translate('portfolio.title')} </h1>
         </div>
         <Suspense fallback={<Loading />}>
           <JobsSlide data={requestData} />
