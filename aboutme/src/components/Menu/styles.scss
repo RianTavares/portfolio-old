@@ -1,3 +1,22 @@
+.menu {
+    &__language-switch {
+        position: absolute;
+        z-index: 1;
+        right: $GUTTER / 2; 
+
+        @media #{$BREAKPOINT-TABLET} {
+            right: $GUTTER - 8; 
+        }
+
+        .MuiOutlinedInput-root {
+            .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+                padding: 0;
+                display: flex;
+            }
+        }
+    }
+}
+
 .menu-open {
     position: fixed;
     overflow: hidden;
@@ -136,3 +155,4 @@
         background-image: url($GERMANY);
     }
 }
+

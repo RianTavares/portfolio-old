@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable max-len */
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 
@@ -5,8 +7,13 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
 import Social from '../Social';
 import localesService from '../../core/locales/locales.service';
+
+import brazil from '../../assets/imgs/flags/brazil.png';
+import us from '../../assets/imgs/flags/us.png';
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -20,6 +27,8 @@ function HideOnScroll(props) {
 }
 
 export default function HideAppBar(props) {
+  const [localeOption, setLocaleOption] = React.useState(localesService.getLocale());
+
   const buttonWasClicked = () => {
     const { body } = document;
     const button = document.querySelector('#button-menu');
@@ -58,6 +67,12 @@ export default function HideAppBar(props) {
     window.location.reload();
   };
 
+  const handleLocaleChange = (event) => {
+    const { value } = event.target;
+    setLocaleOption(value);
+    settingLocale(value);
+  };
+
   return (
     <>
       <HideOnScroll {...props}>
@@ -69,10 +84,26 @@ export default function HideAppBar(props) {
               </button>
             </div>
 
-            <div className="menu-item-language">
-              <button type="button" aria-label="Portuguese" id="brazil" onClick={() => settingLocale('pt-BR')} />
-              <button type="button" aria-label="English" id="england" onClick={() => settingLocale('en')} />
-            </div>
+            <section className="menu__language-switch">
+              <Select
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={localeOption}
+                sx={{
+                  background: 'rgba(0, 0, 0, .1)',
+                  borderRadius: 24,
+                  height: 37,
+                }}
+                onChange={handleLocaleChange}
+              >
+                <MenuItem value="pt-BR">
+                  <img src={brazil} alt="teste" />
+                </MenuItem>
+                <MenuItem value="en">
+                  <img src={us} alt="teste" />
+                </MenuItem>
+              </Select>
+            </section>
 
           </Toolbar>
         </AppBar>
