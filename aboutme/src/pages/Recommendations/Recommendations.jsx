@@ -1,5 +1,6 @@
-import React, { useEffect, useState, Suspense, lazy } from 'react';
-// import Slide from './components/Slide';
+import React, {
+  useEffect, useState, Suspense, lazy,
+} from 'react';
 import axios from 'axios';
 import localesService from '../../core/locales/locales.service';
 import Skeleton from './components/SkeletonRecommendation';
@@ -15,7 +16,7 @@ const Recommendations = () => {
         setRequestData(response.data);
         setIsReady(true);
       });
-  }
+  };
 
   useEffect(() => {
     getRecommendations();
@@ -31,11 +32,11 @@ const Recommendations = () => {
   return (
     <section className="recommendations-page" id="recommendations">
 
-          <Suspense fallback={<Skeleton />}>
-            <Slide data={requestData}/>
-          </Suspense>
+      <Suspense fallback={<Skeleton />}>
+        <Slide data={requestData} />
+      </Suspense>
     </section>
   );
-}
+};
 
 export default Recommendations;

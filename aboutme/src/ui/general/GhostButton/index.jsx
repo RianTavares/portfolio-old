@@ -1,1 +1,1 @@
-export { default } from "./GhostButton";
+export { default } from './GhostButton';

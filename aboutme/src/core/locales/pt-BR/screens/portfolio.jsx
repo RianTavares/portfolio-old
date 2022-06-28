@@ -1,4 +1,4 @@
 export default {
-  title: "Portfólio",
-  subtitle: "Projetos e soluções desenvolvidas"
-}
+  title: 'Portfólio',
+  subtitle: 'Projetos e soluções desenvolvidas',
+};

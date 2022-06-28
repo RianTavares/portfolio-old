@@ -1,18 +1,16 @@
 import React from 'react';
 
-//Project components
+// Project components
 import BannerTop from '../../components/Banner';
 import Footer from '../../components/Footer';
-import Menu from "../../components/Menu";
-import Portfolio from "../Portfolio";
+import Menu from '../../components/Menu';
+import Portfolio from '../Portfolio';
 import AboutMe from '../AboutMe';
 import Services from '../Services';
 import Recommendations from '../Recommendations';
 
-const Main = () => {
-
-  return (
-    <section className="App">
+const Main = () => (
+  <section className="App">
     <section className="App__header">
       <Menu />
       <BannerTop />
@@ -25,7 +23,6 @@ const Main = () => {
     </section>
     <Footer />
   </section>
-  )
-}
+);
 
 export default Main;

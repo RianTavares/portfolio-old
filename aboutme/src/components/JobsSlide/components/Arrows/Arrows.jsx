@@ -1,14 +1,18 @@
 import React from 'react';
 
 const Arrows = (props) => {
-  const { className, style, onClick, type } = props;
+  const {
+    className, style, onClick, type,
+  } = props;
 
-  if(type === "next") {
+  if (type === 'next') {
     return (
-      <div 
+      <button
+        type="button"
         className={className}
-        style={{ ...style, 
-          display: "flex", 
+        style={{
+          ...style,
+          display: 'flex',
           right: 0,
           width: 50,
           height: 100,
@@ -16,15 +20,17 @@ const Arrows = (props) => {
         onClick={onClick}
       >
         seta
-      </div>
-    )
+      </button>
+    );
   }
 
   return (
-    <div 
+    <button
+      type="button"
       className={className}
-      style={{ ...style, 
-        display: "flex", 
+      style={{
+        ...style,
+        display: 'flex',
         left: 0,
         width: 50,
         height: 100,
@@ -32,8 +38,8 @@ const Arrows = (props) => {
       onClick={onClick}
     >
       seta
-    </div>
-  )
-}
+    </button>
+  );
+};
 
-export default Arrows
+export default Arrows;

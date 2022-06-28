@@ -1,5 +1,6 @@
+/* eslint-disable react/jsx-no-useless-fragment */
 import React, { useEffect, useState } from 'react';
-import i18n from "i18n-js";
+import i18n from 'i18n-js';
 
 const DataInitializer = (props) => {
   const { children } = props;
@@ -7,15 +8,22 @@ const DataInitializer = (props) => {
 
   const checkBrowserLocale = (locale) => {
     if (locale.includes('en')) {
-      return 'en'
+      return 'en';
     }
 
     if (locale.includes('pt')) {
-      return 'pt-BR'
+      return 'pt-BR';
     }
 
-    return 'en'
-  }
+    return 'en';
+  };
+
+  const getStorageLocale = async () => {
+    const localStorageVar = await localStorage.getItem('locale@riantavares');
+
+    i18n.locale = localStorageVar;
+    if (localStorageVar) setIsReady(true);
+  };
   const checkStorageLocale = () => {
     const browserLocale = navigator.language;
     const storageLocale = localStorage.getItem('locale@riantavares');
@@ -28,22 +36,19 @@ const DataInitializer = (props) => {
     if (!storageLocale && !browserLocale) {
       localStorage.setItem('locale@riantavares', 'en');
     }
-    
+
     getStorageLocale();
-  }
-
-  const getStorageLocale = async () => {
-    const localStorageVar = await localStorage.getItem('locale@riantavares');
-
-    i18n.locale = localStorageVar;
-    if (localStorageVar) setIsReady(true);
-  }
+  };
 
   useEffect(() => {
     checkStorageLocale();
-  }, [])
+  }, []);
 
-  return (<>{isReady && children}</>)
-}
+  return (
+    <>
+      {isReady && children }
+    </>
+  );
+};
 
 export default DataInitializer;

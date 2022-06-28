@@ -1,4 +1,6 @@
-import React, { useEffect, useState, Suspense, lazy } from 'react';
+import React, {
+  useEffect, useState, Suspense, lazy,
+} from 'react';
 import axios from 'axios';
 import Loading from '../../components/JobsSlide/components/Loading';
 import localesService from '../../core/locales/locales.service';
@@ -14,7 +16,7 @@ const Portfolio = () => {
         setRequestData(response.data);
         setIsReady(true);
       });
-  }
+  };
 
   useEffect(() => {
     getProjects();
@@ -26,12 +28,14 @@ const Portfolio = () => {
         <section className="portfolio__content">
           <div className="portfolio__header">
             <p className="portfolio__pre-title">{localesService.translate('portfolio.subtitle')}</p>
-            <h1 className="portfolio__title"> {localesService.translate('portfolio.title')} </h1>
+            <h1 className="portfolio__title">
+              {localesService.translate('portfolio.title')}
+            </h1>
           </div>
           <Loading />
         </section>
       </section>
-    )
+    );
   }
 
   return (
@@ -39,14 +43,16 @@ const Portfolio = () => {
       <section className="portfolio__content">
         <div className="portfolio__header">
           <p className="portfolio__pre-title">{localesService.translate('portfolio.subtitle')}</p>
-          <h1 className="portfolio__title"> {localesService.translate('portfolio.title')} </h1>
+          <h1 className="portfolio__title">
+            {localesService.translate('portfolio.title')}
+          </h1>
         </div>
         <Suspense fallback={<Loading />}>
           <JobsSlide data={requestData} />
         </Suspense>
       </section>
     </section>
-  )
-}
+  );
+};
 
 export default Portfolio;

@@ -1,3 +1,3 @@
 export default {
-  title: "Veja o projeto online"
-}
+  title: 'Veja o projeto online',
+};

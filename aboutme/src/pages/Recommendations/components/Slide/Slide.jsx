@@ -1,5 +1,6 @@
+/* eslint-disable react/jsx-no-useless-fragment */
 import React from 'react';
-import Slider from "react-slick";
+import Slider from 'react-slick';
 import SlideItem from '../SlideItem';
 
 const Slide = (props) => {
@@ -17,10 +18,11 @@ const Slide = (props) => {
     arrows: false,
     centerMode: false,
     pauseOnHover: true,
-  }
+  };
   return (
     <>
-      {data.length > 0 &&
+      {data.length > 0
+        && (
         <Slider {...settings}>
           {data.map((item) => (
             <SlideItem
@@ -32,9 +34,9 @@ const Slide = (props) => {
             />
           ))}
         </Slider>
-      }
+        )}
     </>
   );
-}
+};
 
 export default Slide;

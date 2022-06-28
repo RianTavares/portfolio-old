@@ -1,7 +1,5 @@
 import React from 'react';
 
-const BannerImageBlur = () => {
-  return (<div className="banner--blur"></div>)
-}
+const BannerImageBlur = () => (<div className="banner--blur" />);
 
 export default BannerImageBlur;

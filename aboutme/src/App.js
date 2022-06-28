@@ -1,8 +1,9 @@
-import React from "react";
+/* eslint-disable react/jsx-filename-extension */
+import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import i18n from 'i18n-js';
 
-import DataInitializer from "./components/DataInitializer";
+import DataInitializer from './components/DataInitializer';
 import Routes from './routes';
 import themes from './themes';
 import en from './core/locales/en';
@@ -20,8 +21,8 @@ i18n.translations = {
 };
 
 function App() {
-  const selectedTheme =  themes['light'];
-  
+  const selectedTheme = themes.light;
+
   return (
     <ThemeProvider theme={selectedTheme}>
       <DataInitializer>

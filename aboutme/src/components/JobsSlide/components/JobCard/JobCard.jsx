@@ -1,12 +1,12 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const JobsCard = ({ data }) => {
   const navigate = useNavigate();
 
   const handleClick = (slug) => {
     navigate(`/project/${slug}`);
-  }
+  };
 
   return (
     <div className="card">
@@ -24,13 +24,13 @@ const JobsCard = ({ data }) => {
             ))}
           </div>
 
-          <button className="card__button" onClick={() => handleClick(data.slug)}>
+          <button type="button" className="card__button" onClick={() => handleClick(data.slug)}>
             {data.see_more_button}
           </button>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default JobsCard;

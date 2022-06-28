@@ -35,7 +35,8 @@
     "eject": "react-scripts eject",
     "root:clean": "rm -rf ../static/ && rm ../* ",
     "copy": "cp -R src/assets/constantsRootFiles/ ../ && cp -R build/ ../",
-    "build:prd": "react-scripts build && npm run copy"
+    "build:prd": "react-scripts build && npm run copy",
+    "lint": "eslint ./src/ --fix"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,5 +52,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-jsx-a11y": "^6.6.0"
   }
 }

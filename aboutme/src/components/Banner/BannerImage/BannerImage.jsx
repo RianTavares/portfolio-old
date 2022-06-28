@@ -1,7 +1,5 @@
 import React from 'react';
 
-const BannerImage = () => {
-  return (<div className="banner"></div>)
-}
+const BannerImage = () => (<div className="banner" />);
 
 export default BannerImage;
