@@ -36,7 +36,11 @@
     "root:clean": "rm -rf ../static/ && rm ../* ",
     "copy": "cp -R src/assets/constantsRootFiles/ ../ && cp -R build/ ../",
     "build:prd": "react-scripts build && npm run copy",
-    "lint": "eslint ./src/ --fix"
+    "lint": "eslint ./src/ --fix",
+    "prepare": "cd .. && npx husky install .config/.husky"
+  },
+  "lint-staged":{
+    "**/*.{js,jsx,ts,tsx}": "eslint --fix"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -55,6 +59,8 @@
   },
   "devDependencies": {
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-jsx-a11y": "^6.6.0"
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3"
   }
 }
