@@ -29,15 +29,14 @@
     "styled-components": "^5.3.3"
   },
   "scripts": {
-    "start": "export NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "root:clean": "rm -rf ../static/ && rm ../* ",
     "copy": "cp -R src/assets/constantsRootFiles/ ../ && cp -R build/ ../",
     "build:prd": "react-scripts build && npm run copy",
-    "lint": "eslint ./src/ --fix",
-    "prepare": "cd .. && npx husky install .config/.husky"
+    "lint": "eslint ./src/ --fix"
   },
   "lint-staged":{
     "**/*.{js,jsx,ts,tsx}": "eslint --fix"
